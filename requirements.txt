@@ -5,7 +5,6 @@ python-multipart==0.0.6
 
 # Database
 sqlalchemy==2.0.23
-sqlite3
 alembic==1.12.1
 
 # ML Libraries

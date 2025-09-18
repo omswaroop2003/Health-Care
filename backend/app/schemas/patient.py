@@ -64,7 +64,7 @@ class PatientResponse(BaseModel):
     estimated_wait_time: Optional[int] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class PatientUpdate(BaseModel):
     chief_complaint: Optional[str] = None
@@ -73,4 +73,4 @@ class PatientUpdate(BaseModel):
     consciousness_level: Optional[str] = Field(None, pattern="^(Alert|Voice|Pain|Unresponsive)$")
 
     class Config:
-        orm_mode = True
+        from_attributes = True

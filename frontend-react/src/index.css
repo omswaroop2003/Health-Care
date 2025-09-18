@@ -1,0 +1,15 @@
+/* Custom styles to complement Tailwind CSS CDN */
+.metric-card {
+  @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+}
+
+.esi-badge {
+  @apply px-3 py-1 rounded-full text-white font-semibold text-sm;
+}
+
+/* ESI Level colors from config */
+.bg-esi-1 { background-color: #FF0000; }
+.bg-esi-2 { background-color: #FF6600; }
+.bg-esi-3 { background-color: #FFCC00; }
+.bg-esi-4 { background-color: #99CC00; }
+.bg-esi-5 { background-color: #00CC00; }

@@ -16,7 +16,7 @@ class TriageResponse(BaseModel):
     estimated_wait_time: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class TriageOverride(BaseModel):
     patient_id: int
@@ -34,7 +34,7 @@ class QueueStatus(BaseModel):
     status: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class TriageStatistics(BaseModel):
     total_patients: int
