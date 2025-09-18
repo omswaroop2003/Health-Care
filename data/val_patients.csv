@@ -1,0 +1,1001 @@
+age,gender,arrival_time,chief_complaint,bp_systolic,bp_diastolic,heart_rate,o2_saturation,respiratory_rate,temperature,pain_scale,consciousness_level,bleeding,breathing_difficulty,trauma_indicator,chronic_conditions,medications_count,allergies,previous_admissions,true_esi_level
+33,Male,2025-09-18 13:47:39.154669,ear pain,126,75,80,98,18,37.1,4,Alert,False,False,False,['Diabetes'],1,"['Shellfish', 'Sulfa']",0,4
+38,Male,2025-09-18 15:11:39.157675,mild headache,113,81,67,100,18,36.5,3,Alert,True,False,False,[],0,[],3,4
+46,Male,2025-09-18 14:44:39.146168,asthma exacerbation,119,87,67,95,19,37.7,6,Alert,True,True,False,"['Diabetes', 'COPD']",4,['Penicillin'],4,3
+87,Female,2025-09-18 14:44:39.150164,kidney stone pain,123,84,63,93,24,36.5,4,Alert,False,False,False,"['COPD', 'Heart Disease', 'Asthma']",6,['Latex'],4,3
+55,Female,2025-09-18 13:38:39.160674,minor rash,140,73,66,96,16,37.4,2,Alert,False,False,False,['Asthma'],2,[],5,5
+22,Female,2025-09-18 15:19:39.152159,back pain,118,85,81,99,15,37.1,3,Alert,False,False,False,[],0,[],0,4
+64,Male,2025-09-18 14:49:39.153663,mild headache,127,80,73,98,16,37.5,3,Alert,False,False,True,"['Hypertension', 'COPD']",2,[],2,4
+14,Male,2025-09-18 13:32:39.153663,back pain,118,79,84,100,13,36.7,4,Alert,False,False,False,[],0,['Peanuts'],1,4
+44,Female,2025-09-18 15:00:39.152159,mild headache,126,81,82,97,12,37.1,3,Alert,False,False,True,"['Cancer', 'Arthritis']",4,[],1,4
+18,Male,2025-09-18 13:54:39.147171,moderate laceration,109,93,106,95,21,37.2,5,Alert,False,True,False,[],0,[],0,3
+42,Female,2025-09-18 14:08:39.150164,broken bone suspected,141,75,81,96,22,36.9,4,Alert,False,True,False,[],0,[],2,3
+52,Male,2025-09-18 14:48:39.151160,fever with vomiting,157,94,86,94,23,36.6,6,Alert,False,False,False,"['Diabetes', 'Kidney Disease']",2,[],1,3
+36,Male,2025-09-18 14:07:39.151160,moderate abdominal pain,109,66,76,93,23,37.6,7,Alert,True,False,False,['Cancer'],3,[],2,3
+31,Male,2025-09-18 14:41:39.153663,ear pain,112,72,70,98,18,36.6,2,Alert,False,False,False,[],0,[],2,4
+36,Female,2025-09-18 13:43:39.152159,moderate laceration,117,69,85,95,24,36.9,7,Alert,False,False,False,['Hypertension'],3,['Sulfa'],0,3
+5,Male,2025-09-18 13:58:39.145172,severe abdominal pain,74,56,141,88,31,36.6,7,Voice,True,False,False,['Asthma'],3,['Shellfish'],0,2
+39,Female,2025-09-18 15:12:39.146168,severe bleeding from head wound,171,106,121,90,27,36.5,8,Alert,True,False,True,['Heart Disease'],1,"['Sulfa', 'Shellfish']",1,2
+0,Male,2025-09-18 13:29:39.160674,medication refill,94,80,93,100,18,37.4,1,Alert,False,False,False,['Hypertension'],3,"['Shellfish', 'Latex']",0,5
+65,Female,2025-09-18 14:08:39.150164,broken bone suspected,156,93,68,93,19,37.6,5,Alert,False,False,False,"['Kidney Disease', 'COPD', 'Cancer', 'Arthritis']",4,[],2,3
+73,Female,2025-09-18 14:00:39.153663,sprained ankle,126,72,65,100,17,36.9,3,Alert,False,False,False,['Diabetes'],1,[],0,4
+39,Male,2025-09-18 14:22:39.152159,broken bone suspected,107,91,95,94,19,38.2,7,Alert,False,False,False,['COPD'],1,[],2,3
+40,Male,2025-09-18 14:56:39.155677,minor burn,110,70,75,98,15,36.7,5,Alert,False,False,False,['Diabetes'],2,[],4,4
+76,Female,2025-09-18 14:46:39.148170,moderate abdominal pain,128,68,70,96,22,36.5,4,Alert,False,False,True,"['Arthritis', 'Hypertension', 'Diabetes']",6,[],0,3
+0,Male,2025-09-18 13:30:39.145172,severe burn,70,55,70,89,31,36.1,7,Voice,False,False,False,['Asthma'],1,[],0,2
+52,Male,2025-09-18 14:00:39.152159,minor laceration,138,70,70,97,17,37.2,2,Alert,False,False,False,"['COPD', 'Diabetes']",2,"['Sulfa', 'Shellfish']",3,4
+56,Male,2025-09-18 14:26:39.158679,sore throat,131,83,76,96,16,37.3,2,Alert,False,False,False,['Arthritis'],2,[],3,4
+42,Female,2025-09-18 15:13:39.152159,sore throat,135,82,67,100,15,36.5,2,Alert,False,False,False,"['Kidney Disease', 'Cancer']",6,"['Penicillin', 'Peanuts']",2,4
+59,Female,2025-09-18 14:09:39.150164,fever with vomiting,113,86,86,96,23,36.7,5,Alert,False,False,False,"['Diabetes', 'Asthma']",4,"['Penicillin', 'Shellfish']",1,3
+49,Male,2025-09-18 14:29:39.154669,sore throat,130,80,73,98,12,37.0,4,Alert,False,False,False,"['Diabetes', 'Kidney Disease']",6,[],0,4
+23,Male,2025-09-18 14:58:39.152159,mild headache,127,79,60,99,18,37.1,3,Alert,False,False,False,[],0,[],0,4
+37,Female,2025-09-18 13:52:39.149169,asthma exacerbation,140,71,90,95,18,37.1,4,Alert,False,False,False,['Arthritis'],3,[],1,3
+80,Female,2025-09-18 15:22:39.159673,routine check-up,135,84,78,98,15,36.7,0,Alert,False,False,False,"['Kidney Disease', 'Asthma', 'Cancer', 'Heart Disease']",4,"['Peanuts', 'Shellfish']",3,5
+42,Female,2025-09-18 14:34:39.155677,sore throat,118,70,83,100,12,36.5,4,Alert,False,False,False,['Heart Disease'],2,[],2,4
+23,Male,2025-09-18 14:11:39.154669,mild headache,139,74,76,96,12,37.2,5,Alert,True,False,False,[],0,['Penicillin'],0,4
+52,Male,2025-09-18 15:01:39.149169,kidney stone pain,123,68,71,96,24,37.8,4,Alert,True,False,False,"['Arthritis', 'Heart Disease']",4,[],4,3
+34,Female,2025-09-18 14:08:39.159673,common cold symptoms,119,82,83,98,16,37.2,2,Alert,False,False,False,['Heart Disease'],1,[],3,5
+46,Male,2025-09-18 14:04:39.145172,difficulty breathing,95,64,51,92,26,37.4,7,Voice,False,True,False,"['Heart Disease', 'Diabetes']",4,[],2,2
+41,Male,2025-09-18 13:46:39.155677,sprained ankle,136,84,60,100,13,37.1,2,Alert,False,False,False,[],0,[],2,4
+27,Male,2025-09-18 15:06:39.147171,moderate abdominal pain,113,87,103,94,18,37.5,5,Alert,False,True,False,['Heart Disease'],1,[],1,3
+16,Female,2025-09-18 14:13:39.150164,moderate laceration,116,91,68,93,18,37.3,7,Alert,False,False,False,['Diabetes'],2,[],0,3
+59,Male,2025-09-18 13:58:39.152159,sore throat,112,77,73,99,14,36.6,3,Alert,True,False,False,[],0,"['Sulfa', 'Latex']",5,4
+9,Male,2025-09-18 14:47:39.149169,broken bone suspected,117,70,118,96,23,36.7,7,Alert,False,False,False,[],0,['Sulfa'],0,3
+63,Male,2025-09-18 14:47:39.147171,moderate abdominal pain,150,79,107,94,23,38.3,4,Alert,False,False,False,"['Kidney Disease', 'COPD', 'Asthma', 'Heart Disease']",8,[],5,3
+41,Male,2025-09-18 13:39:39.150164,asthma exacerbation,133,92,67,95,20,37.7,7,Alert,True,False,True,"['Hypertension', 'Heart Disease']",6,['Penicillin'],0,3
+37,Female,2025-09-18 14:49:39.156676,mild headache,138,75,77,98,12,36.9,5,Alert,False,False,False,[],0,[],3,4
+30,Male,2025-09-18 14:05:39.154669,minor laceration,133,82,61,98,14,37.1,2,Alert,False,False,False,[],0,[],0,4
+44,Male,2025-09-18 14:10:39.149169,broken bone suspected,138,79,92,94,20,37.5,6,Alert,True,False,False,['Kidney Disease'],1,['Sulfa'],4,3
+15,Male,2025-09-18 14:24:39.154669,back pain,132,74,88,97,13,36.7,3,Alert,False,False,False,[],0,[],1,4
+23,Female,2025-09-18 13:43:39.158679,sore throat,116,83,78,98,18,37.2,2,Alert,False,False,False,['COPD'],2,[],1,4
+31,Female,2025-09-18 14:52:39.157675,minor burn,128,72,71,99,16,37.2,5,Alert,False,False,True,['Arthritis'],1,"['Shellfish', 'Latex']",0,4
+44,Female,2025-09-18 15:20:39.152159,asthma exacerbation,136,83,89,93,23,37.5,5,Alert,False,False,False,"['Heart Disease', 'Hypertension']",4,"['Shellfish', 'Penicillin']",3,3
+10,Male,2025-09-18 14:27:39.153663,minor burn,139,81,68,100,13,36.6,2,Alert,False,False,False,['Arthritis'],1,"['Penicillin', 'Latex']",0,4
+25,Female,2025-09-18 13:32:39.149169,asthma exacerbation,102,77,68,93,20,38.0,5,Alert,False,False,False,[],0,['Penicillin'],1,3
+4,Male,2025-09-18 14:50:39.154669,minor burn,102,83,88,98,13,36.7,5,Alert,True,False,False,['Asthma'],1,"['Sulfa', 'Latex']",0,4
+12,Female,2025-09-18 15:07:39.152159,minor laceration,123,82,74,96,13,36.8,4,Alert,False,False,False,['Asthma'],1,"['Penicillin', 'Peanuts']",1,4
+18,Female,2025-09-18 14:25:39.155677,sprained ankle,134,85,61,100,18,36.8,5,Alert,False,False,False,['Diabetes'],2,[],1,4
+47,Male,2025-09-18 13:25:39.153663,minor laceration,122,80,76,99,18,36.6,2,Alert,False,False,False,[],0,['Peanuts'],0,4
+0,Female,2025-09-18 14:03:39.150164,broken bone suspected,111,89,91,95,24,37.0,5,Alert,False,False,False,['Heart Disease'],1,"['Penicillin', 'Latex']",0,3
+20,Female,2025-09-18 15:15:39.150164,moderate abdominal pain,151,72,83,94,23,37.5,4,Alert,True,False,False,[],0,[],2,3
+66,Female,2025-09-18 15:00:39.152159,sprained ankle,111,71,85,99,13,37.4,5,Alert,False,False,False,"['Hypertension', 'Diabetes', 'Kidney Disease', 'Arthritis']",8,[],4,4
+3,Female,2025-09-18 14:41:39.155677,sprained ankle,94,81,105,99,15,37.4,4,Alert,True,False,False,['Asthma'],2,[],0,4
+81,Female,2025-09-18 13:36:39.158679,minor burn,123,83,63,96,13,36.5,4,Alert,False,False,False,['Asthma'],3,[],3,4
+50,Female,2025-09-18 14:22:39.150164,fever with vomiting,108,88,96,95,21,37.1,6,Alert,False,True,False,[],0,[],2,3
+52,Male,2025-09-18 14:37:39.152159,minor burn,121,80,68,98,17,36.9,3,Alert,False,False,False,['Heart Disease'],2,['Peanuts'],4,4
+26,Female,2025-09-18 14:03:39.154669,back pain,123,81,81,97,13,37.5,5,Alert,False,False,False,['Kidney Disease'],1,[],2,4
+52,Female,2025-09-18 13:55:39.144167,respiratory failure,76,58,154,85,8,34.4,9,Pain,True,True,True,['Cancer'],3,"['Latex', 'Penicillin']",0,1
+42,Male,2025-09-18 15:08:39.152159,ear pain,115,82,73,98,13,36.9,4,Alert,True,False,False,['Cancer'],1,['Peanuts'],3,4
+1,Male,2025-09-18 15:23:39.151160,moderate laceration,124,70,129,95,24,37.6,6,Alert,True,False,False,['Diabetes'],1,"['Peanuts', 'Latex']",0,3
+35,Male,2025-09-18 14:41:39.158679,minor burn,134,81,82,97,17,37.5,5,Alert,False,False,False,[],0,[],1,4
+67,Male,2025-09-18 14:54:39.144167,active seizure,61,60,144,88,34,35.4,9,Pain,True,True,True,"['Kidney Disease', 'Heart Disease', 'Asthma', 'Arthritis']",8,['Penicillin'],0,1
+0,Female,2025-09-18 13:34:39.144167,severe burn,153,102,148,90,26,38.4,8,Voice,True,True,True,['Hypertension'],3,[],0,2
+31,Female,2025-09-18 14:59:39.154669,sprained ankle,110,72,85,96,13,37.5,4,Alert,False,False,False,['Heart Disease'],2,[],2,4
+48,Female,2025-09-18 14:02:39.159673,minor rash,112,85,88,98,13,37.1,2,Alert,False,False,False,"['Diabetes', 'COPD']",4,[],0,5
+56,Male,2025-09-18 14:18:39.157675,minor laceration,122,85,85,99,14,36.6,4,Alert,False,False,False,['Hypertension'],2,[],2,4
+0,Female,2025-09-18 14:18:39.151160,broken bone suspected,107,86,119,95,22,38.3,6,Alert,False,False,False,['Heart Disease'],3,"['Peanuts', 'Shellfish']",0,3
+42,Female,2025-09-18 13:31:39.151160,moderate head injury,130,91,101,93,19,36.7,6,Alert,False,False,True,"['Diabetes', 'Asthma']",6,"['Sulfa', 'Shellfish']",3,3
+55,Female,2025-09-18 15:21:39.147171,moderate abdominal pain,138,72,72,95,20,36.9,7,Alert,False,False,True,['COPD'],1,[],1,3
+19,Female,2025-09-18 14:12:39.150164,fever with vomiting,141,74,90,95,18,36.7,4,Alert,False,False,True,[],0,[],0,3
+30,Female,2025-09-18 14:29:39.146168,kidney stone pain,136,75,65,96,20,38.1,7,Alert,True,True,False,['Asthma'],3,"['Penicillin', 'Shellfish']",2,3
+71,Female,2025-09-18 15:24:39.159673,minor rash,134,79,82,100,13,37.2,2,Alert,False,False,False,"['Asthma', 'COPD']",6,['Penicillin'],3,5
+10,Male,2025-09-18 14:33:39.159673,routine check-up,131,80,72,97,15,37.4,2,Alert,False,False,False,['Arthritis'],3,[],1,5
+60,Male,2025-09-18 15:19:39.159673,mild constipation,140,70,78,100,15,37.2,2,Alert,False,False,False,['Arthritis'],1,[],0,5
+35,Male,2025-09-18 14:18:39.157675,minor laceration,115,80,86,96,17,37.4,3,Alert,False,False,False,[],0,['Sulfa'],0,4
+37,Male,2025-09-18 14:19:39.145172,severe bleeding from head wound,90,65,118,91,27,38.6,10,Voice,False,True,True,['Heart Disease'],2,"['Latex', 'Peanuts']",0,2
+56,Male,2025-09-18 13:27:39.158679,minor burn,129,81,81,97,14,36.6,3,Alert,False,False,False,"['Asthma', 'Kidney Disease']",4,[],5,4
+20,Female,2025-09-18 14:12:39.157675,minor burn,139,83,65,96,14,37.1,5,Alert,False,False,False,['Heart Disease'],2,"['Shellfish', 'Peanuts']",2,4
+9,Male,2025-09-18 14:41:39.160674,mild constipation,114,73,88,99,12,37.1,0,Alert,False,False,False,['Kidney Disease'],1,[],0,5
+63,Male,2025-09-18 13:27:39.152159,sore throat,110,80,85,99,12,36.8,2,Alert,False,False,False,"['Cancer', 'COPD', 'Kidney Disease', 'Hypertension']",8,['Sulfa'],1,4
+28,Female,2025-09-18 14:19:39.157675,back pain,124,73,64,99,18,36.7,4,Alert,False,False,False,['Heart Disease'],2,['Latex'],0,4
+44,Male,2025-09-18 14:07:39.152159,minor laceration,127,80,88,97,12,37.5,4,Alert,False,False,False,['COPD'],3,[],1,4
+35,Male,2025-09-18 15:25:39.151160,fever with vomiting,131,88,83,96,23,38.4,7,Alert,False,False,False,['Cancer'],1,[],0,3
+61,Female,2025-09-18 14:52:39.153663,mild headache,140,74,81,96,17,37.1,4,Alert,False,False,False,['Heart Disease'],3,[],0,4
+51,Female,2025-09-18 15:14:39.150164,moderate laceration,132,76,60,95,19,38.0,5,Alert,False,False,True,[],0,[],0,3
+3,Female,2025-09-18 14:56:39.160674,minor rash,109,78,110,99,14,36.8,1,Alert,False,False,False,[],0,[],0,5
+37,Male,2025-09-18 13:37:39.153663,back pain,115,74,65,100,14,37.1,3,Alert,False,False,False,['Cancer'],1,"['Peanuts', 'Penicillin']",2,4
+41,Male,2025-09-18 13:50:39.149169,fever with vomiting,119,72,85,95,21,38.4,6,Alert,False,False,False,['Asthma'],2,[],0,3
+0,Female,2025-09-18 14:01:39.152159,back pain,117,84,88,97,16,37.5,4,Alert,False,False,False,['Hypertension'],2,[],0,4
+50,Female,2025-09-18 14:21:39.150164,kidney stone pain,107,71,95,94,24,37.6,7,Alert,False,False,False,"['Diabetes', 'Asthma']",6,[],2,3
+44,Male,2025-09-18 14:36:39.160674,routine check-up,123,83,84,98,15,37.3,0,Alert,False,False,False,['Heart Disease'],3,[],1,5
+0,Female,2025-09-18 13:38:39.157675,minor burn,106,83,98,96,14,36.5,3,Alert,True,False,False,[],0,['Shellfish'],0,4
+44,Female,2025-09-18 14:59:39.157675,minor burn,122,83,72,96,15,37.3,2,Alert,False,False,False,['Kidney Disease'],1,[],4,4
+33,Male,2025-09-18 13:25:39.160674,common cold symptoms,139,83,68,100,15,37.5,2,Alert,False,False,False,['Asthma'],3,[],3,5
+6,Female,2025-09-18 14:54:39.151160,kidney stone pain,99,93,113,93,19,37.4,5,Alert,False,False,False,[],0,[],0,3
+23,Male,2025-09-18 14:08:39.149169,asthma exacerbation,101,76,103,93,19,37.4,4,Alert,True,False,False,['Asthma'],2,[],0,3
+63,Female,2025-09-18 13:56:39.158679,minor burn,123,73,83,100,12,36.6,3,Alert,False,False,True,"['Diabetes', 'Asthma']",2,"['Penicillin', 'Shellfish']",2,4
+91,Female,2025-09-18 15:06:39.160674,routine check-up,110,75,74,96,15,37.0,2,Alert,False,False,False,"['Hypertension', 'Diabetes', 'Kidney Disease', 'Cancer']",12,[],1,5
+58,Female,2025-09-18 13:26:39.152159,asthma exacerbation,136,94,85,95,20,37.5,5,Alert,False,False,False,"['Cancer', 'Diabetes']",4,"['Penicillin', 'Peanuts']",2,3
+55,Female,2025-09-18 14:22:39.159673,minor rash,139,82,72,97,17,37.0,0,Alert,False,False,False,"['Arthritis', 'Hypertension']",2,[],2,5
+52,Male,2025-09-18 14:32:39.149169,asthma exacerbation,113,92,104,95,20,36.9,6,Alert,True,True,False,"['Hypertension', 'Diabetes']",6,[],0,3
+55,Male,2025-09-18 15:15:39.151160,moderate abdominal pain,130,95,85,95,21,37.0,4,Alert,False,False,False,"['Asthma', 'Diabetes']",4,"['Latex', 'Peanuts']",0,3
+33,Male,2025-09-18 14:43:39.155677,minor burn,114,85,81,100,16,36.6,2,Alert,False,False,False,['Diabetes'],2,[],1,4
+67,Male,2025-09-18 14:27:39.153663,sore throat,128,73,63,96,18,36.6,2,Alert,True,False,False,"['Arthritis', 'Diabetes']",2,[],3,4
+26,Female,2025-09-18 13:51:39.149169,moderate head injury,147,90,100,93,20,37.2,5,Alert,False,False,False,['Kidney Disease'],3,"['Peanuts', 'Sulfa']",1,3
+39,Male,2025-09-18 14:24:39.150164,asthma exacerbation,105,76,78,94,18,38.2,6,Alert,False,False,False,['Diabetes'],1,[],2,3
+41,Female,2025-09-18 14:39:39.152159,moderate abdominal pain,132,89,88,95,20,38.5,7,Alert,False,False,False,"['Diabetes', 'Cancer']",4,[],0,3
+0,Male,2025-09-18 14:53:39.160674,routine check-up,101,79,108,99,17,37.3,0,Alert,False,False,False,[],0,[],0,5
+29,Female,2025-09-18 14:14:39.158679,sprained ankle,118,70,77,97,14,36.6,4,Alert,False,False,False,['Cancer'],1,[],1,4
+63,Female,2025-09-18 14:19:39.159673,minor rash,127,70,88,99,18,37.2,2,Alert,False,False,False,"['COPD', 'Heart Disease', 'Kidney Disease']",9,[],2,5
+27,Female,2025-09-18 14:42:39.159673,medication refill,122,71,68,100,17,36.9,0,Alert,False,False,False,[],0,"['Shellfish', 'Sulfa']",2,5
+8,Female,2025-09-18 13:59:39.158679,ear pain,110,72,100,98,15,36.7,3,Alert,False,False,False,[],0,[],0,4
+38,Female,2025-09-18 13:31:39.153663,ear pain,134,70,72,97,12,37.0,2,Alert,False,False,False,['Arthritis'],3,[],0,4
+19,Male,2025-09-18 14:34:39.158679,minor laceration,123,83,78,98,13,37.3,3,Alert,False,False,False,['Asthma'],2,['Latex'],1,4
+21,Female,2025-09-18 15:20:39.153663,mild headache,136,73,64,97,15,37.3,5,Alert,False,False,False,[],0,[],1,4
+85,Male,2025-09-18 14:40:39.154669,sprained ankle,117,81,76,100,13,37.2,2,Alert,False,False,False,"['Hypertension', 'Arthritis']",6,['Shellfish'],3,4
+0,Male,2025-09-18 15:24:39.152159,fever with vomiting,115,81,130,96,23,36.6,6,Alert,False,False,False,['Arthritis'],1,[],0,3
+74,Female,2025-09-18 14:36:39.149169,asthma exacerbation,137,76,69,94,23,38.2,6,Alert,True,False,False,"['Kidney Disease', 'Cancer', 'Hypertension']",9,['Peanuts'],5,3
+30,Male,2025-09-18 15:00:39.155677,minor laceration,122,73,86,97,16,37.4,2,Alert,False,False,False,['Kidney Disease'],2,[],3,4
+7,Female,2025-09-18 14:33:39.160674,medication refill,117,78,97,100,12,37.5,0,Alert,False,False,False,[],0,"['Shellfish', 'Sulfa']",0,5
+93,Female,2025-09-18 15:10:39.145172,severe burn,184,96,53,88,30,37.0,8,Alert,False,False,False,"['Hypertension', 'COPD', 'Heart Disease']",6,[],1,2
+40,Male,2025-09-18 14:15:39.155677,ear pain,133,83,90,96,14,36.7,2,Alert,False,False,True,[],0,[],2,4
+29,Male,2025-09-18 13:44:39.152159,sprained ankle,128,79,74,98,16,36.8,4,Alert,False,False,False,['Arthritis'],3,['Latex'],0,4
+38,Male,2025-09-18 14:53:39.146168,fever with vomiting,105,93,87,96,22,38.4,4,Alert,True,False,False,['Hypertension'],1,[],0,3
+46,Female,2025-09-18 14:53:39.161670,minor rash,139,84,64,100,12,36.7,0,Alert,False,False,False,[],0,[],3,5
+30,Female,2025-09-18 15:00:39.150164,asthma exacerbation,127,95,84,94,20,38.1,7,Alert,False,False,False,['Asthma'],1,[],2,3
+29,Male,2025-09-18 14:22:39.154669,mild headache,130,85,90,97,14,36.6,4,Alert,True,False,False,['Heart Disease'],3,['Sulfa'],2,4
+47,Male,2025-09-18 14:21:39.157675,mild headache,122,76,62,99,17,36.8,4,Alert,False,False,False,[],0,['Sulfa'],4,4
+70,Male,2025-09-18 13:31:39.153663,sore throat,111,77,67,99,15,36.9,2,Alert,False,False,False,"['Hypertension', 'Cancer', 'Diabetes', 'Kidney Disease']",12,['Peanuts'],3,4
+48,Female,2025-09-18 14:15:39.147171,moderate head injury,151,94,64,96,21,37.4,5,Alert,True,False,True,['Kidney Disease'],2,['Sulfa'],0,3
+36,Female,2025-09-18 15:05:39.159673,medication refill,132,76,73,98,17,37.2,0,Alert,False,False,False,['COPD'],3,[],2,5
+54,Male,2025-09-18 14:24:39.154669,minor laceration,110,82,73,97,16,36.8,5,Alert,False,False,False,[],0,[],1,4
+41,Male,2025-09-18 13:54:39.157675,minor laceration,125,78,78,100,17,37.4,3,Alert,False,False,False,['Arthritis'],3,"['Peanuts', 'Penicillin']",3,4
+33,Female,2025-09-18 14:13:39.160674,routine check-up,133,75,61,99,13,37.3,2,Alert,False,False,False,['Cancer'],1,['Shellfish'],2,5
+49,Female,2025-09-18 14:42:39.150164,broken bone suspected,155,69,108,94,21,37.9,5,Alert,False,False,False,[],0,"['Shellfish', 'Penicillin']",1,3
+0,Female,2025-09-18 13:33:39.148170,broken bone suspected,106,66,87,93,22,37.7,7,Alert,True,False,False,[],0,[],0,3
+36,Female,2025-09-18 13:56:39.152159,kidney stone pain,131,85,98,94,19,36.7,7,Alert,True,False,True,['Heart Disease'],2,[],0,3
+39,Male,2025-09-18 13:57:39.155677,sore throat,112,80,63,96,15,36.6,3,Alert,False,False,False,['Heart Disease'],1,[],0,4
+72,Female,2025-09-18 14:24:39.150164,moderate head injury,106,92,70,93,23,36.8,5,Alert,False,False,True,['Heart Disease'],3,[],2,3
+20,Male,2025-09-18 15:13:39.146168,broken bone suspected,107,78,77,96,22,37.7,4,Alert,True,True,False,[],0,[],2,3
+55,Female,2025-09-18 14:35:39.158679,mild headache,116,84,76,100,18,36.9,5,Alert,False,False,False,"['Arthritis', 'Diabetes']",6,['Shellfish'],5,4
+92,Male,2025-09-18 13:50:39.145172,severe burn,181,103,121,89,24,37.3,9,Alert,True,False,False,"['Hypertension', 'Asthma', 'Diabetes']",6,[],0,2
+51,Male,2025-09-18 13:44:39.147171,moderate head injury,101,84,110,93,22,36.7,6,Alert,True,False,False,[],0,[],2,3
+29,Female,2025-09-18 15:07:39.158679,sore throat,130,80,71,100,16,36.7,4,Alert,False,False,False,['Cancer'],2,[],1,4
+72,Female,2025-09-18 15:09:39.152159,mild headache,118,72,66,100,15,37.4,5,Alert,False,False,False,"['Asthma', 'Kidney Disease']",4,[],4,4
+44,Male,2025-09-18 13:44:39.152159,sore throat,132,84,70,97,12,37.0,3,Alert,False,False,False,['COPD'],1,[],0,4
+18,Female,2025-09-18 14:38:39.158679,minor laceration,139,84,62,98,14,36.7,4,Alert,True,False,False,[],0,[],0,4
+39,Female,2025-09-18 13:49:39.150164,moderate head injury,116,83,109,96,20,37.8,6,Alert,False,False,False,[],0,[],2,3
+49,Female,2025-09-18 14:16:39.145172,severe bleeding from head wound,92,58,117,92,25,37.5,7,Alert,True,False,False,"['Cancer', 'Asthma']",2,[],2,2
+54,Female,2025-09-18 13:58:39.154669,mild headache,124,76,81,100,17,36.8,2,Alert,False,False,False,[],0,['Shellfish'],1,4
+65,Female,2025-09-18 13:38:39.145172,severe burn,167,105,52,92,28,36.9,9,Alert,True,True,False,"['Kidney Disease', 'Cancer']",6,['Shellfish'],4,2
+56,Female,2025-09-18 15:19:39.147171,broken bone suspected,130,82,68,93,18,38.4,7,Alert,False,False,False,"['Cancer', 'Diabetes']",4,[],1,3
+34,Male,2025-09-18 14:16:39.151160,fever with vomiting,126,89,78,94,22,38.3,5,Alert,True,False,False,[],0,[],2,3
+14,Female,2025-09-18 14:02:39.151160,kidney stone pain,138,90,68,93,23,37.1,4,Alert,False,False,False,[],0,[],0,3
+43,Female,2025-09-18 13:59:39.159673,minor rash,119,78,73,100,17,37.3,0,Alert,False,False,False,['Asthma'],3,"['Latex', 'Sulfa']",4,5
+47,Female,2025-09-18 14:08:39.158679,sprained ankle,110,82,66,100,12,37.0,5,Alert,False,False,False,['Heart Disease'],3,['Peanuts'],2,4
+45,Female,2025-09-18 14:53:39.160674,common cold symptoms,136,79,87,99,16,37.3,1,Alert,False,False,False,['Hypertension'],3,[],2,5
+1,Male,2025-09-18 14:44:39.144167,cardiac arrest,70,53,65,76,34,39.9,9,Pain,False,True,True,['COPD'],3,[],0,1
+66,Female,2025-09-18 13:29:39.152159,moderate laceration,126,84,101,93,22,37.0,6,Alert,False,False,True,"['Diabetes', 'Hypertension', 'Heart Disease']",6,[],4,3
+0,Female,2025-09-18 15:13:39.157675,minor burn,120,79,100,96,13,36.6,2,Alert,False,False,False,[],0,[],0,4
+29,Male,2025-09-18 15:00:39.152159,minor burn,116,79,86,97,18,37.2,5,Alert,False,False,False,[],0,[],1,4
+18,Male,2025-09-18 14:53:39.149169,kidney stone pain,146,84,89,96,23,37.7,7,Alert,False,False,False,['Arthritis'],2,"['Penicillin', 'Shellfish']",0,3
+32,Female,2025-09-18 14:12:39.145172,severe burn,93,55,126,89,32,38.7,9,Alert,False,False,False,[],0,[],1,2
+28,Female,2025-09-18 14:26:39.152159,mild headache,140,72,72,98,13,36.8,3,Alert,False,False,False,['Diabetes'],2,[],0,4
+22,Female,2025-09-18 14:58:39.147171,asthma exacerbation,135,77,100,93,21,36.6,5,Alert,True,False,False,[],0,[],2,3
+8,Female,2025-09-18 14:49:39.157675,minor laceration,112,71,106,99,18,37.1,5,Alert,False,False,False,['Arthritis'],2,[],0,4
+36,Male,2025-09-18 13:41:39.155677,ear pain,118,82,88,99,12,37.0,2,Alert,True,False,False,['Heart Disease'],3,[],2,4
+40,Female,2025-09-18 14:26:39.149169,broken bone suspected,110,77,68,93,24,37.3,5,Alert,True,False,False,[],0,[],1,3
+47,Male,2025-09-18 14:55:39.150164,kidney stone pain,101,80,61,94,21,38.4,7,Alert,False,False,False,['Diabetes'],1,[],4,3
+12,Female,2025-09-18 15:05:39.149169,broken bone suspected,153,68,95,95,22,36.6,7,Alert,False,False,False,['Hypertension'],1,[],0,3
+48,Female,2025-09-18 13:42:39.149169,fever with vomiting,152,70,83,94,24,36.8,6,Alert,True,False,False,['Kidney Disease'],3,[],3,3
+73,Female,2025-09-18 15:05:39.156676,minor laceration,121,74,89,100,18,36.7,3,Alert,False,False,False,['Asthma'],1,[],0,4
+50,Female,2025-09-18 15:15:39.153663,sprained ankle,136,77,77,99,18,36.7,5,Alert,False,False,False,[],0,"['Peanuts', 'Sulfa']",0,4
+66,Male,2025-09-18 15:11:39.144167,severe allergic reaction with difficulty breathing,67,57,45,76,32,40.5,10,Unresponsive,False,True,False,"['Diabetes', 'Hypertension', 'Arthritis', 'Cancer']",12,[],4,1
+77,Female,2025-09-18 14:59:39.146168,difficulty breathing,166,103,115,92,29,36.9,7,Alert,True,False,False,"['Asthma', 'Cancer', 'Hypertension', 'COPD']",12,['Penicillin'],3,2
+48,Male,2025-09-18 13:32:39.152159,back pain,125,70,88,98,17,37.4,5,Alert,False,False,False,[],0,[],4,4
+50,Male,2025-09-18 15:04:39.159673,minor rash,137,72,61,98,13,37.0,0,Alert,False,False,False,['Cancer'],3,['Penicillin'],1,5
+39,Female,2025-09-18 14:48:39.152159,minor laceration,129,82,72,97,12,37.4,3,Alert,False,False,False,[],0,[],0,4
+37,Male,2025-09-18 13:42:39.153663,minor laceration,110,76,87,97,16,37.4,2,Alert,True,False,False,[],0,[],2,4
+41,Female,2025-09-18 14:30:39.155677,sore throat,133,82,81,96,17,37.0,3,Alert,False,False,False,"['Hypertension', 'Arthritis']",2,[],4,4
+22,Female,2025-09-18 13:52:39.151160,kidney stone pain,153,75,107,93,23,37.4,6,Alert,True,True,False,[],0,"['Latex', 'Sulfa']",1,3
+13,Female,2025-09-18 14:40:39.157675,ear pain,115,70,86,96,17,37.3,5,Alert,True,False,False,[],0,[],1,4
+17,Male,2025-09-18 14:20:39.155677,back pain,124,84,84,97,12,37.4,5,Alert,False,False,False,[],0,['Sulfa'],1,4
+8,Male,2025-09-18 13:54:39.155677,sore throat,120,83,86,98,14,37.4,5,Alert,False,False,False,['Heart Disease'],3,[],0,4
+31,Male,2025-09-18 14:53:39.151160,fever with vomiting,133,86,110,96,18,36.7,7,Alert,True,False,False,[],0,[],2,3
+44,Male,2025-09-18 13:27:39.153663,back pain,110,74,65,99,15,36.9,3,Alert,False,False,False,[],0,[],4,4
+59,Male,2025-09-18 13:29:39.152159,sore throat,140,79,69,96,16,37.3,3,Alert,False,False,False,['Arthritis'],2,[],0,4
+11,Female,2025-09-18 14:32:39.150164,broken bone suspected,141,81,94,96,23,38.3,7,Alert,False,False,False,[],0,[],1,3
+78,Male,2025-09-18 13:35:39.147171,broken bone suspected,112,67,110,94,19,37.6,4,Alert,False,True,False,"['Cancer', 'Kidney Disease', 'Hypertension']",3,[],1,3
+56,Male,2025-09-18 14:23:39.146168,severe abdominal pain,91,65,123,92,29,39.0,9,Voice,False,True,False,"['Hypertension', 'COPD']",4,['Sulfa'],4,2
+40,Female,2025-09-18 14:11:39.158679,mild headache,112,73,86,97,13,37.3,2,Alert,False,False,False,[],0,[],2,4
+49,Male,2025-09-18 14:08:39.159673,routine check-up,116,83,63,98,16,36.5,1,Alert,False,False,False,[],0,[],3,5
+43,Female,2025-09-18 13:53:39.154669,back pain,123,77,86,100,16,36.8,3,Alert,True,False,False,['Heart Disease'],3,[],2,4
+18,Male,2025-09-18 13:47:39.148170,moderate head injury,118,67,81,95,18,38.0,6,Alert,False,True,False,['Arthritis'],3,[],0,3
+15,Female,2025-09-18 15:18:39.148170,moderate laceration,135,72,104,96,24,38.0,6,Alert,False,False,True,[],0,"['Latex', 'Sulfa']",0,3
+3,Male,2025-09-18 14:44:39.147171,kidney stone pain,99,77,121,94,22,37.3,5,Alert,False,False,False,[],0,[],0,3
+50,Male,2025-09-18 13:59:39.158679,ear pain,134,79,64,100,13,36.7,5,Alert,False,False,False,"['COPD', 'Cancer']",6,[],5,4
+83,Female,2025-09-18 14:50:39.145172,stroke symptoms,95,58,47,91,25,36.6,8,Alert,False,False,False,"['Heart Disease', 'COPD', 'Cancer']",9,[],1,2
+35,Female,2025-09-18 13:27:39.147171,kidney stone pain,104,75,88,94,24,36.6,6,Alert,False,True,False,[],0,['Peanuts'],1,3
+85,Male,2025-09-18 14:33:39.144167,severe bleeding from head wound,180,96,46,90,27,37.7,7,Voice,False,True,False,['Asthma'],2,[],2,2
+67,Female,2025-09-18 14:10:39.160674,medication refill,131,73,64,99,17,36.5,1,Alert,False,False,False,"['Heart Disease', 'Cancer']",4,[],2,5
+59,Female,2025-09-18 13:59:39.157675,minor laceration,110,79,84,97,16,36.9,3,Alert,False,False,False,['Hypertension'],1,[],5,4
+16,Male,2025-09-18 14:41:39.159673,medication refill,111,73,81,96,12,37.3,0,Alert,False,False,False,[],0,"['Penicillin', 'Peanuts']",0,5
+43,Female,2025-09-18 15:22:39.147171,asthma exacerbation,140,84,89,95,23,38.0,4,Alert,False,True,True,"['Hypertension', 'Asthma']",4,[],2,3
+77,Female,2025-09-18 14:28:39.145172,chest pain with sweating,95,65,52,90,31,38.2,10,Alert,False,True,False,['Heart Disease'],1,[],1,2
+21,Male,2025-09-18 14:56:39.160674,minor rash,119,77,78,96,14,37.2,2,Alert,False,False,False,[],0,[],1,5
+48,Male,2025-09-18 15:04:39.159673,mild constipation,113,76,80,100,13,37.2,0,Alert,False,False,False,[],0,[],4,5
+54,Female,2025-09-18 14:19:39.150164,moderate abdominal pain,138,68,65,93,24,37.1,5,Alert,False,False,False,['Cancer'],3,[],4,3
+23,Female,2025-09-18 14:09:39.159673,minor rash,126,75,81,97,13,37.3,1,Alert,False,False,False,[],0,[],1,5
+86,Male,2025-09-18 13:51:39.152159,ear pain,131,77,71,99,13,37.0,3,Alert,False,False,True,['Heart Disease'],1,[],3,4
+62,Female,2025-09-18 15:07:39.147171,broken bone suspected,128,68,73,93,19,37.9,4,Alert,True,False,True,"['COPD', 'Arthritis', 'Hypertension']",3,[],3,3
+33,Female,2025-09-18 13:36:39.150164,moderate head injury,132,93,76,95,23,36.7,4,Alert,False,False,False,[],0,[],2,3
+27,Male,2025-09-18 13:38:39.152159,ear pain,111,77,88,100,14,37.2,4,Alert,False,False,False,['Asthma'],1,"['Latex', 'Shellfish']",1,4
+71,Female,2025-09-18 15:01:39.154669,sore throat,116,75,68,98,14,37.1,4,Alert,False,False,False,"['Cancer', 'Kidney Disease', 'Diabetes', 'Hypertension']",12,[],0,4
+94,Male,2025-09-18 14:04:39.144167,altered mental status,86,64,129,90,26,38.1,7,Alert,False,False,False,"['Heart Disease', 'Arthritis', 'Diabetes']",9,[],3,2
+38,Male,2025-09-18 13:57:39.153663,sprained ankle,111,80,74,96,18,37.4,2,Alert,False,False,False,[],0,[],1,4
+55,Female,2025-09-18 14:56:39.152159,fever with vomiting,103,85,93,93,20,37.7,7,Alert,False,True,False,"['COPD', 'Kidney Disease']",2,[],2,3
+23,Male,2025-09-18 13:29:39.158679,sprained ankle,116,79,88,96,13,36.7,2,Alert,False,False,False,[],0,[],2,4
+41,Male,2025-09-18 13:40:39.155677,back pain,136,82,81,97,14,37.4,5,Alert,False,False,False,"['Kidney Disease', 'Cancer']",6,"['Sulfa', 'Penicillin']",1,4
+30,Female,2025-09-18 13:53:39.150164,moderate abdominal pain,141,80,93,93,20,37.6,4,Alert,False,True,False,['COPD'],1,"['Penicillin', 'Peanuts']",3,3
+40,Female,2025-09-18 14:57:39.151160,moderate abdominal pain,109,89,96,95,20,37.0,5,Alert,False,False,False,['Heart Disease'],3,[],2,3
+44,Female,2025-09-18 13:46:39.155677,minor laceration,140,78,77,99,17,36.7,4,Alert,False,False,False,['Diabetes'],1,"['Latex', 'Peanuts']",2,4
+36,Male,2025-09-18 14:26:39.144167,severe allergic reaction with difficulty breathing,192,130,134,87,8,40.7,10,Pain,False,True,False,['Diabetes'],1,[],3,1
+56,Female,2025-09-18 14:49:39.158679,ear pain,135,70,80,99,18,36.8,2,Alert,False,False,False,['Kidney Disease'],3,[],3,4
+25,Male,2025-09-18 15:05:39.154669,sore throat,116,77,78,96,15,37.1,4,Alert,False,False,False,[],0,[],0,4
+65,Male,2025-09-18 14:34:39.151160,kidney stone pain,122,77,79,94,20,37.1,4,Alert,False,True,False,"['Hypertension', 'Cancer', 'Arthritis', 'Heart Disease']",4,[],1,3
+38,Female,2025-09-18 15:20:39.152159,moderate abdominal pain,144,73,105,94,21,37.3,6,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",2,3
+68,Male,2025-09-18 13:57:39.153663,ear pain,127,81,71,97,15,37.1,3,Alert,False,False,False,"['Diabetes', 'Arthritis', 'Kidney Disease']",9,['Peanuts'],5,4
+80,Female,2025-09-18 15:17:39.144167,respiratory failure,209,114,166,71,7,40.3,9,Pain,True,True,True,"['Cancer', 'Kidney Disease', 'Diabetes', 'Asthma']",4,[],3,1
+52,Female,2025-09-18 15:10:39.160674,medication refill,115,83,84,100,17,36.7,0,Alert,False,False,False,['Asthma'],1,"['Penicillin', 'Shellfish']",0,5
+18,Male,2025-09-18 13:46:39.152159,fever with vomiting,159,75,64,94,19,38.5,4,Alert,False,False,False,['Hypertension'],1,[],0,3
+95,Female,2025-09-18 14:09:39.145172,altered mental status,169,110,47,90,28,38.2,7,Alert,False,True,False,['COPD'],3,[],0,2
+81,Female,2025-09-18 14:24:39.147171,broken bone suspected,113,65,88,93,18,36.6,5,Alert,False,False,True,"['Kidney Disease', 'COPD', 'Arthritis', 'Hypertension']",12,[],5,3
+46,Male,2025-09-18 14:45:39.155677,sprained ankle,129,75,72,98,14,36.6,4,Alert,True,False,False,"['Cancer', 'Arthritis']",4,['Sulfa'],0,4
+45,Female,2025-09-18 14:16:39.150164,moderate head injury,124,72,97,95,23,36.6,6,Alert,False,True,False,[],0,['Sulfa'],2,3
+21,Female,2025-09-18 13:42:39.158679,back pain,137,76,74,98,15,36.7,4,Alert,False,False,False,['COPD'],3,['Latex'],1,4
+37,Female,2025-09-18 15:14:39.157675,sprained ankle,112,78,89,98,14,36.9,4,Alert,False,False,False,['Arthritis'],1,['Latex'],0,4
+62,Female,2025-09-18 15:11:39.155677,ear pain,135,79,71,100,17,37.5,5,Alert,False,False,False,"['Cancer', 'COPD']",4,[],2,4
+33,Male,2025-09-18 14:56:39.158679,minor laceration,123,80,90,100,15,36.8,2,Alert,False,False,False,[],0,[],2,4
+47,Female,2025-09-18 13:25:39.146168,fever with vomiting,118,89,89,96,23,36.8,7,Alert,False,False,True,['Kidney Disease'],3,[],0,3
+37,Male,2025-09-18 13:55:39.159673,common cold symptoms,113,76,67,100,15,37.2,1,Alert,False,False,False,[],0,"['Latex', 'Sulfa']",0,5
+71,Female,2025-09-18 14:45:39.145172,severe burn,170,110,126,88,26,36.0,8,Voice,False,False,False,"['Hypertension', 'Kidney Disease', 'COPD']",3,[],3,2
+51,Female,2025-09-18 13:41:39.152159,moderate head injury,132,87,85,94,20,36.6,5,Alert,False,False,True,"['Arthritis', 'Diabetes']",6,[],5,3
+19,Female,2025-09-18 15:12:39.150164,fever with vomiting,117,77,94,96,22,38.3,4,Alert,False,False,False,[],0,[],1,3
+35,Female,2025-09-18 13:45:39.146168,fever with vomiting,110,88,67,94,24,36.7,7,Alert,True,False,False,[],0,"['Shellfish', 'Peanuts']",1,3
+10,Female,2025-09-18 14:42:39.160674,mild constipation,120,81,71,96,18,37.3,1,Alert,False,False,False,[],0,[],1,5
+29,Female,2025-09-18 14:45:39.160674,routine check-up,137,71,81,98,16,37.5,1,Alert,False,False,False,[],0,[],0,5
+39,Male,2025-09-18 15:24:39.148170,broken bone suspected,113,91,64,93,20,38.2,7,Alert,False,True,False,['Hypertension'],1,[],3,3
+61,Male,2025-09-18 14:49:39.146168,moderate laceration,109,91,63,96,24,37.2,4,Alert,False,False,False,"['Cancer', 'Heart Disease', 'Kidney Disease', 'Diabetes']",4,[],0,3
+27,Male,2025-09-18 14:50:39.149169,moderate head injury,103,68,87,96,19,36.9,4,Alert,False,False,False,[],0,"['Latex', 'Sulfa']",1,3
+47,Male,2025-09-18 14:49:39.154669,minor laceration,116,79,71,99,18,37.3,2,Alert,False,False,False,"['COPD', 'Heart Disease']",2,"['Peanuts', 'Latex']",2,4
+33,Female,2025-09-18 15:16:39.158679,sprained ankle,136,82,84,99,13,37.1,5,Alert,False,False,False,['COPD'],3,[],1,4
+15,Male,2025-09-18 14:47:39.159673,mild constipation,123,84,67,97,12,36.5,0,Alert,False,False,False,[],0,[],1,5
+37,Male,2025-09-18 13:52:39.154669,back pain,129,73,83,100,15,36.9,5,Alert,False,False,False,['Diabetes'],1,"['Penicillin', 'Shellfish']",0,4
+31,Male,2025-09-18 14:39:39.151160,kidney stone pain,144,70,88,96,19,37.7,4,Alert,False,False,False,['Arthritis'],1,[],1,3
+48,Female,2025-09-18 14:02:39.153663,minor burn,139,85,60,98,12,37.3,5,Alert,False,False,False,"['Cancer', 'Hypertension']",2,[],0,4
+95,Female,2025-09-18 15:20:39.144167,chest pain with sweating,90,60,126,92,24,38.3,9,Voice,True,True,False,"['Kidney Disease', 'Arthritis']",6,['Shellfish'],0,2
+85,Male,2025-09-18 13:44:39.144167,respiratory failure,197,140,31,78,38,40.9,10,Unresponsive,False,True,False,"['Kidney Disease', 'Arthritis', 'Hypertension']",6,[],4,1
+40,Female,2025-09-18 15:03:39.155677,sprained ankle,139,74,77,97,12,36.8,5,Alert,False,False,False,[],0,[],1,4
+37,Female,2025-09-18 14:05:39.155677,minor burn,138,77,76,96,18,37.3,5,Alert,False,False,False,[],0,[],1,4
+58,Male,2025-09-18 14:44:39.158679,sprained ankle,111,80,66,100,15,36.7,5,Alert,False,False,False,"['Heart Disease', 'Kidney Disease']",6,"['Peanuts', 'Shellfish']",4,4
+71,Female,2025-09-18 14:12:39.150164,moderate laceration,115,75,91,95,21,36.6,5,Alert,False,False,True,"['Diabetes', 'Kidney Disease']",2,[],4,3
+52,Male,2025-09-18 13:53:39.160674,medication refill,110,76,78,99,18,36.6,1,Alert,False,False,False,['Asthma'],2,"['Sulfa', 'Penicillin']",5,5
+36,Male,2025-09-18 13:45:39.154669,sore throat,126,71,88,99,12,37.3,5,Alert,False,False,False,[],0,[],1,4
+42,Male,2025-09-18 15:15:39.157675,sore throat,133,70,63,100,12,37.0,4,Alert,False,False,False,[],0,[],0,4
+34,Male,2025-09-18 13:54:39.151160,asthma exacerbation,127,81,73,96,24,36.6,7,Alert,True,False,False,[],0,['Peanuts'],0,3
+44,Female,2025-09-18 14:52:39.160674,medication refill,125,75,86,99,12,36.8,1,Alert,False,False,False,['Diabetes'],3,[],1,5
+17,Female,2025-09-18 14:34:39.157675,minor burn,120,79,71,99,17,36.6,5,Alert,False,False,False,['Heart Disease'],1,['Peanuts'],0,4
+35,Female,2025-09-18 14:19:39.149169,moderate laceration,122,68,76,96,18,38.4,5,Alert,False,True,False,['Asthma'],1,"['Latex', 'Penicillin']",2,3
+3,Female,2025-09-18 14:24:39.158679,back pain,92,78,80,99,16,36.7,4,Alert,False,False,False,[],0,[],0,4
+68,Female,2025-09-18 15:14:39.144167,severe abdominal pain,170,104,128,92,32,37.0,7,Alert,False,False,False,['Heart Disease'],1,[],4,2
+0,Female,2025-09-18 14:13:39.149169,broken bone suspected,90,80,127,96,21,38.4,4,Alert,False,False,False,['Hypertension'],2,[],0,3
+61,Female,2025-09-18 14:20:39.154669,back pain,123,74,69,98,18,37.0,2,Alert,False,False,True,['Arthritis'],1,['Peanuts'],0,4
+21,Female,2025-09-18 14:27:39.159673,minor rash,135,81,85,100,12,36.6,2,Alert,False,False,False,[],0,['Penicillin'],0,5
+23,Female,2025-09-18 14:40:39.152159,moderate laceration,116,86,108,94,24,37.3,5,Alert,False,False,False,[],0,"['Penicillin', 'Sulfa']",0,3
+18,Female,2025-09-18 15:04:39.158679,back pain,119,77,83,100,15,37.4,5,Alert,False,False,False,['Diabetes'],1,[],0,4
+18,Male,2025-09-18 14:41:39.152159,minor laceration,138,79,84,97,17,36.7,4,Alert,False,False,False,['COPD'],1,"['Sulfa', 'Shellfish']",0,4
+59,Male,2025-09-18 14:43:39.150164,moderate head injury,122,83,90,94,19,38.1,7,Alert,False,False,False,['Kidney Disease'],1,"['Shellfish', 'Sulfa']",4,3
+65,Male,2025-09-18 13:56:39.154669,minor laceration,132,75,72,100,18,37.3,2,Alert,False,False,False,"['Arthritis', 'Heart Disease']",6,"['Sulfa', 'Shellfish']",1,4
+36,Female,2025-09-18 14:33:39.148170,moderate head injury,145,74,101,94,18,36.8,6,Alert,False,False,True,['Kidney Disease'],1,[],1,3
+16,Female,2025-09-18 13:59:39.146168,asthma exacerbation,123,85,71,96,20,36.5,4,Alert,False,False,False,[],0,"['Latex', 'Shellfish']",0,3
+25,Male,2025-09-18 14:33:39.145172,altered mental status,171,100,130,91,28,35.7,8,Alert,False,True,False,['Hypertension'],2,[],0,2
+49,Female,2025-09-18 13:46:39.154669,sprained ankle,110,81,64,99,15,36.6,3,Alert,False,False,False,"['Kidney Disease', 'COPD']",2,"['Sulfa', 'Shellfish']",4,4
+41,Female,2025-09-18 14:56:39.154669,minor burn,127,84,84,97,13,36.8,5,Alert,False,False,False,['Asthma'],2,"['Sulfa', 'Shellfish']",1,4
+28,Female,2025-09-18 14:01:39.148170,moderate head injury,108,75,85,94,18,38.2,4,Alert,True,True,False,[],0,[],1,3
+8,Male,2025-09-18 14:51:39.146168,moderate laceration,88,93,114,93,20,37.7,5,Alert,False,False,False,[],0,['Peanuts'],0,3
+36,Male,2025-09-18 13:51:39.150164,broken bone suspected,111,83,108,95,20,38.5,4,Alert,False,False,False,[],0,"['Latex', 'Shellfish']",2,3
+57,Female,2025-09-18 14:38:39.160674,routine check-up,126,77,85,96,17,37.3,1,Alert,False,False,False,['Diabetes'],3,[],5,5
+42,Male,2025-09-18 15:21:39.153663,sprained ankle,139,77,85,98,15,36.6,2,Alert,False,False,False,"['Kidney Disease', 'Diabetes']",2,[],0,4
+39,Male,2025-09-18 14:30:39.152159,minor burn,134,74,90,99,16,37.0,3,Alert,False,False,True,['Kidney Disease'],1,[],0,4
+45,Male,2025-09-18 14:46:39.151160,broken bone suspected,112,65,82,96,18,37.3,6,Alert,True,False,False,[],0,[],1,3
+40,Male,2025-09-18 14:06:39.148170,fever with vomiting,147,79,104,96,23,38.4,7,Alert,False,False,False,['COPD'],1,[],3,3
+70,Female,2025-09-18 13:37:39.146168,severe abdominal pain,95,60,53,92,28,36.1,10,Alert,False,False,True,['Hypertension'],1,[],1,2
+41,Male,2025-09-18 14:30:39.157675,minor burn,120,85,89,100,15,36.6,2,Alert,False,False,False,['COPD'],1,[],2,4
+36,Female,2025-09-18 14:21:39.149169,moderate laceration,116,91,103,93,21,37.7,4,Alert,False,False,True,[],0,['Peanuts'],1,3
+34,Female,2025-09-18 14:44:39.148170,kidney stone pain,119,93,76,96,22,38.2,7,Alert,True,True,False,['Hypertension'],1,[],0,3
+11,Female,2025-09-18 14:22:39.153663,back pain,112,77,90,98,13,37.5,2,Alert,False,False,False,['Asthma'],3,[],1,4
+27,Male,2025-09-18 13:29:39.160674,common cold symptoms,111,74,63,100,12,37.2,2,Alert,False,False,False,['Arthritis'],3,[],2,5
+0,Male,2025-09-18 14:12:39.161670,minor rash,92,72,82,99,16,36.9,2,Alert,False,False,False,[],0,[],0,5
+62,Male,2025-09-18 14:45:39.150164,broken bone suspected,160,66,94,94,24,36.9,7,Alert,False,True,False,"['Heart Disease', 'Cancer']",4,[],2,3
+39,Female,2025-09-18 14:34:39.154669,mild headache,118,79,69,96,12,37.4,2,Alert,False,False,True,['Hypertension'],3,['Penicillin'],1,4
+34,Female,2025-09-18 13:36:39.153663,sore throat,116,79,75,98,15,36.8,5,Alert,False,False,False,[],0,[],2,4
+56,Female,2025-09-18 13:32:39.154669,mild headache,125,76,63,99,15,37.0,4,Alert,True,False,False,['Asthma'],1,"['Latex', 'Shellfish']",1,4
+85,Female,2025-09-18 14:48:39.145172,stroke symptoms,92,65,51,90,28,38.2,8,Voice,False,True,False,"['Kidney Disease', 'COPD', 'Cancer', 'Arthritis']",8,['Latex'],2,2
+72,Female,2025-09-18 14:08:39.154669,sprained ankle,124,77,88,97,12,36.5,5,Alert,False,False,False,"['Heart Disease', 'Kidney Disease', 'Arthritis']",6,[],2,4
+35,Male,2025-09-18 15:00:39.153663,minor laceration,122,72,65,98,17,37.0,5,Alert,False,False,False,[],0,['Latex'],1,4
+14,Male,2025-09-18 15:10:39.154669,sprained ankle,130,73,89,100,17,36.8,2,Alert,False,False,False,['Diabetes'],3,[],1,4
+57,Female,2025-09-18 15:19:39.148170,moderate laceration,152,87,71,96,22,36.5,7,Alert,False,False,False,"['Hypertension', 'Kidney Disease']",4,[],5,3
+42,Male,2025-09-18 14:48:39.152159,back pain,128,78,72,99,18,37.3,3,Alert,False,False,False,['Cancer'],3,"['Peanuts', 'Penicillin']",2,4
+27,Male,2025-09-18 13:28:39.158679,sprained ankle,111,76,80,96,15,37.4,4,Alert,True,False,False,['Diabetes'],1,[],1,4
+26,Male,2025-09-18 14:17:39.157675,minor laceration,124,75,64,98,16,36.6,3,Alert,False,False,False,[],0,[],2,4
+2,Female,2025-09-18 14:53:39.157675,sore throat,109,82,98,96,17,36.9,3,Alert,False,False,False,['COPD'],3,[],0,4
+30,Male,2025-09-18 13:46:39.153663,minor burn,117,83,74,100,15,37.2,2,Alert,False,False,False,['Kidney Disease'],3,[],1,4
+0,Male,2025-09-18 14:07:39.146168,chest pain with sweating,149,107,147,88,27,38.6,10,Alert,False,False,False,[],0,['Sulfa'],0,2
+42,Male,2025-09-18 13:43:39.161670,mild constipation,138,78,82,98,12,36.8,1,Alert,False,False,False,[],0,['Latex'],3,5
+29,Male,2025-09-18 15:03:39.158679,medication refill,134,76,72,100,16,37.4,1,Alert,False,False,False,['Kidney Disease'],1,[],0,5
+40,Male,2025-09-18 14:20:39.151160,moderate abdominal pain,160,94,64,95,21,38.2,4,Alert,False,True,False,[],0,[],1,3
+50,Male,2025-09-18 14:44:39.155677,sore throat,137,73,84,98,17,37.0,2,Alert,False,False,False,[],0,"['Sulfa', 'Peanuts']",3,4
+55,Female,2025-09-18 14:24:39.158679,ear pain,131,78,88,99,18,36.8,5,Alert,False,False,False,"['Cancer', 'Kidney Disease']",2,['Sulfa'],0,4
+61,Male,2025-09-18 14:27:39.159673,common cold symptoms,126,81,65,99,14,36.7,2,Alert,False,False,False,['Cancer'],3,['Latex'],0,5
+56,Female,2025-09-18 13:44:39.154669,minor laceration,129,78,88,97,18,36.8,4,Alert,False,False,False,['Arthritis'],3,[],1,4
+22,Female,2025-09-18 13:57:39.157675,mild headache,132,83,68,96,15,37.4,2,Alert,False,False,True,[],0,[],2,4
+5,Male,2025-09-18 15:22:39.146168,altered mental status,152,106,73,88,30,36.0,7,Alert,False,False,False,['Asthma'],1,"['Sulfa', 'Peanuts']",0,2
+60,Male,2025-09-18 14:24:39.148170,moderate laceration,108,69,77,95,18,38.3,6,Alert,False,False,True,['Asthma'],2,[],1,3
+5,Male,2025-09-18 14:02:39.160674,medication refill,114,79,100,96,18,37.5,2,Alert,False,False,False,[],0,[],0,5
+85,Female,2025-09-18 14:02:39.146168,severe burn,165,99,45,89,31,36.7,9,Voice,False,False,False,"['Diabetes', 'Heart Disease']",4,[],0,2
+26,Female,2025-09-18 15:13:39.152159,sore throat,137,71,78,99,12,37.1,4,Alert,False,False,False,[],0,[],0,4
+51,Female,2025-09-18 14:02:39.154669,minor laceration,127,85,89,100,17,36.6,3,Alert,False,False,False,['Cancer'],3,[],3,4
+56,Female,2025-09-18 14:08:39.148170,fever with vomiting,115,84,65,93,18,38.0,4,Alert,False,True,False,[],0,[],3,3
+81,Male,2025-09-18 15:13:39.146168,severe bleeding from head wound,183,96,118,92,30,36.3,10,Alert,False,False,False,"['COPD', 'Heart Disease']",2,[],5,2
+53,Male,2025-09-18 13:50:39.146168,chest pain with sweating,89,55,54,92,27,37.9,8,Voice,False,False,False,"['Asthma', 'Diabetes']",6,[],1,2
+54,Male,2025-09-18 14:52:39.154669,mild headache,129,85,61,97,13,37.0,4,Alert,False,False,False,['Cancer'],2,[],4,4
+56,Female,2025-09-18 13:31:39.160674,routine check-up,131,84,69,100,14,36.9,0,Alert,False,False,False,['Cancer'],1,[],4,5
+29,Female,2025-09-18 13:40:39.160674,minor rash,131,83,61,99,14,36.6,2,Alert,False,False,False,[],0,"['Peanuts', 'Latex']",0,5
+8,Female,2025-09-18 14:38:39.156676,ear pain,101,82,90,96,14,37.5,5,Alert,False,False,False,['Diabetes'],2,[],0,4
+53,Female,2025-09-18 14:32:39.159673,minor rash,116,73,64,96,16,37.1,1,Alert,False,False,False,[],0,"['Latex', 'Sulfa']",0,5
+63,Female,2025-09-18 14:15:39.145172,altered mental status,175,97,45,88,31,37.9,9,Voice,True,False,True,"['COPD', 'Kidney Disease']",2,"['Peanuts', 'Shellfish']",3,2
+23,Male,2025-09-18 15:01:39.154669,minor laceration,127,74,60,98,18,37.1,4,Alert,False,False,False,['Diabetes'],3,[],2,4
+0,Male,2025-09-18 14:17:39.145172,altered mental status,150,105,141,90,30,37.6,10,Alert,True,False,True,[],0,[],0,2
+52,Female,2025-09-18 15:12:39.152159,back pain,128,82,75,98,15,37.0,2,Alert,False,False,False,"['Diabetes', 'Cancer']",4,['Penicillin'],0,4
+39,Male,2025-09-18 13:45:39.157675,mild headache,136,76,66,99,18,36.5,5,Alert,True,False,False,['Asthma'],3,[],2,4
+25,Male,2025-09-18 13:41:39.153663,minor burn,123,82,62,96,16,36.6,5,Alert,False,False,False,[],0,[],2,4
+18,Male,2025-09-18 13:55:39.160674,common cold symptoms,112,85,67,96,17,36.7,1,Alert,False,False,False,['Diabetes'],1,"['Peanuts', 'Shellfish']",1,5
+59,Female,2025-09-18 13:38:39.158679,minor laceration,122,83,87,96,18,37.4,5,Alert,False,False,False,"['Kidney Disease', 'Heart Disease']",2,[],2,4
+60,Male,2025-09-18 15:16:39.158679,minor laceration,127,81,80,98,15,36.5,2,Alert,False,False,False,"['Asthma', 'Diabetes']",4,[],2,4
+39,Male,2025-09-18 13:49:39.160674,medication refill,113,73,82,99,14,37.3,1,Alert,False,False,False,[],0,['Shellfish'],1,5
+21,Female,2025-09-18 15:01:39.160674,medication refill,135,73,64,100,17,36.5,1,Alert,False,False,False,['Heart Disease'],2,[],0,5
+37,Female,2025-09-18 13:46:39.158679,minor laceration,136,77,60,98,16,37.3,5,Alert,False,False,False,[],0,[],2,4
+53,Female,2025-09-18 14:35:39.158679,sprained ankle,112,85,85,99,12,37.2,3,Alert,False,False,False,[],0,[],1,4
+31,Female,2025-09-18 13:59:39.158679,minor laceration,130,76,64,97,16,37.4,5,Alert,False,False,False,[],0,[],2,4
+52,Male,2025-09-18 14:17:39.158679,sore throat,131,78,60,98,15,37.2,5,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",1,4
+35,Female,2025-09-18 15:17:39.154669,ear pain,138,84,73,96,12,37.5,2,Alert,False,False,True,[],0,"['Peanuts', 'Shellfish']",3,4
+37,Male,2025-09-18 13:27:39.152159,minor burn,125,72,86,99,15,37.5,5,Alert,False,False,False,[],0,[],1,4
+41,Female,2025-09-18 14:21:39.145172,stroke symptoms,180,97,48,90,29,36.4,8,Alert,False,False,True,"['Asthma', 'COPD']",4,[],4,2
+67,Female,2025-09-18 15:25:39.149169,moderate abdominal pain,158,79,89,95,22,37.2,5,Alert,False,False,False,"['Kidney Disease', 'Cancer']",2,[],2,3
+65,Male,2025-09-18 13:33:39.148170,moderate abdominal pain,114,85,105,93,22,37.3,5,Alert,False,False,False,['Asthma'],1,[],4,3
+60,Male,2025-09-18 14:54:39.155677,mild headache,131,81,73,98,15,36.8,5,Alert,False,False,False,[],0,[],0,4
+37,Male,2025-09-18 14:03:39.157675,minor burn,128,80,71,99,12,37.2,4,Alert,False,False,False,[],0,"['Sulfa', 'Shellfish']",3,4
+28,Male,2025-09-18 15:04:39.146168,moderate head injury,148,69,81,95,24,38.2,5,Alert,False,True,False,['Hypertension'],1,"['Shellfish', 'Latex']",1,3
+28,Female,2025-09-18 14:36:39.147171,broken bone suspected,136,77,72,94,18,36.9,6,Alert,False,False,False,['Asthma'],3,[],2,3
+30,Male,2025-09-18 15:14:39.152159,ear pain,118,71,69,98,16,37.3,3,Alert,False,False,False,['Kidney Disease'],2,['Peanuts'],0,4
+37,Male,2025-09-18 13:58:39.155677,mild headache,137,82,67,96,15,37.0,2,Alert,False,False,False,['Hypertension'],1,"['Shellfish', 'Sulfa']",2,4
+0,Male,2025-09-18 14:21:39.151160,fever with vomiting,89,73,130,96,19,37.2,6,Alert,False,False,True,[],0,[],0,3
+57,Female,2025-09-18 13:51:39.153663,sore throat,132,84,87,98,12,36.7,5,Alert,False,False,False,"['Cancer', 'Diabetes']",6,[],0,4
+37,Female,2025-09-18 13:58:39.151160,moderate laceration,134,70,103,93,20,38.2,4,Alert,False,False,False,['Diabetes'],3,[],3,3
+5,Female,2025-09-18 13:57:39.144167,chest pain with sweating,146,99,135,88,30,38.5,10,Voice,True,False,False,['Asthma'],1,[],0,2
+0,Female,2025-09-18 15:23:39.145172,altered mental status,73,56,69,91,29,37.5,7,Voice,False,False,False,['Kidney Disease'],2,[],0,2
+67,Male,2025-09-18 15:12:39.160674,medication refill,117,84,86,98,12,37.1,0,Alert,False,False,False,['Asthma'],3,[],0,5
+48,Female,2025-09-18 14:21:39.150164,moderate abdominal pain,138,82,84,95,23,37.5,7,Alert,False,False,False,"['COPD', 'Heart Disease']",2,[],4,3
+42,Female,2025-09-18 13:57:39.161670,medication refill,122,79,83,98,14,37.5,0,Alert,False,False,False,['Asthma'],1,[],3,5
+95,Male,2025-09-18 13:55:39.151160,kidney stone pain,104,90,83,93,24,37.9,7,Alert,False,True,True,"['Heart Disease', 'Asthma', 'Kidney Disease', 'Cancer']",8,"['Shellfish', 'Peanuts']",4,3
+16,Female,2025-09-18 14:57:39.148170,moderate head injury,105,81,85,94,20,37.2,6,Alert,False,False,False,['Diabetes'],3,[],0,3
+16,Female,2025-09-18 13:31:39.152159,minor burn,131,70,68,96,14,36.8,3,Alert,False,False,False,['Diabetes'],3,[],1,4
+35,Male,2025-09-18 14:54:39.150164,moderate head injury,159,77,62,96,23,36.9,7,Alert,False,False,True,[],0,[],0,3
+102,Female,2025-09-18 13:50:39.154669,sore throat,131,73,83,98,17,36.5,5,Alert,False,False,False,"['Asthma', 'Diabetes']",2,[],1,4
+65,Male,2025-09-18 14:42:39.145172,altered mental status,88,58,127,91,25,36.0,9,Voice,False,True,False,"['Cancer', 'Asthma']",4,[],2,2
+51,Female,2025-09-18 15:13:39.150164,moderate head injury,128,92,67,95,20,37.5,4,Alert,False,True,False,['Kidney Disease'],2,[],2,3
+53,Male,2025-09-18 14:04:39.150164,broken bone suspected,129,80,77,94,20,36.6,4,Alert,False,False,False,[],0,[],2,3
+87,Female,2025-09-18 14:16:39.154669,ear pain,117,82,83,99,16,36.6,2,Alert,False,False,False,"['Cancer', 'Diabetes', 'Kidney Disease']",3,[],0,4
+54,Female,2025-09-18 14:21:39.155677,minor burn,126,77,67,98,17,36.9,2,Alert,False,False,False,['COPD'],1,[],5,4
+45,Female,2025-09-18 14:06:39.151160,kidney stone pain,114,73,109,96,22,38.2,7,Alert,False,False,False,"['Cancer', 'Diabetes']",2,['Sulfa'],0,3
+43,Female,2025-09-18 15:11:39.160674,medication refill,123,79,76,100,17,37.3,2,Alert,False,False,False,"['COPD', 'Hypertension']",6,[],1,5
+18,Female,2025-09-18 14:43:39.151160,asthma exacerbation,104,69,93,95,24,37.4,6,Alert,False,True,False,[],0,[],1,3
+57,Female,2025-09-18 14:08:39.152159,kidney stone pain,159,81,72,95,19,37.1,6,Alert,False,False,True,"['Arthritis', 'COPD']",6,"['Latex', 'Penicillin']",4,3
+44,Female,2025-09-18 14:27:39.160674,common cold symptoms,133,70,72,100,18,37.2,1,Alert,False,False,False,[],0,[],1,5
+35,Male,2025-09-18 13:55:39.157675,mild headache,132,82,81,99,17,36.9,4,Alert,False,False,False,[],0,['Sulfa'],2,4
+64,Female,2025-09-18 13:28:39.158679,minor burn,117,70,62,97,18,37.2,2,Alert,True,False,False,"['Hypertension', 'COPD', 'Asthma', 'Kidney Disease']",8,['Shellfish'],5,4
+12,Female,2025-09-18 14:48:39.153663,ear pain,120,72,81,96,16,37.4,4,Alert,False,False,False,['Cancer'],1,[],0,4
+33,Male,2025-09-18 13:43:39.160674,routine check-up,116,73,80,97,16,37.5,0,Alert,False,False,False,['Heart Disease'],3,[],0,5
+52,Female,2025-09-18 13:44:39.152159,fever with vomiting,113,70,69,96,19,37.9,6,Alert,False,False,True,"['Kidney Disease', 'Arthritis']",4,[],5,3
+17,Female,2025-09-18 13:36:39.160674,routine check-up,128,83,78,97,17,37.0,0,Alert,False,False,False,['Cancer'],3,['Penicillin'],1,5
+18,Male,2025-09-18 14:18:39.148170,broken bone suspected,134,81,71,95,21,36.9,7,Alert,False,False,False,['Diabetes'],1,[],1,3
+10,Male,2025-09-18 15:15:39.159673,medication refill,122,83,64,100,16,37.3,1,Alert,False,False,False,[],0,['Latex'],1,5
+34,Male,2025-09-18 14:05:39.158679,ear pain,127,75,80,98,16,37.2,3,Alert,False,False,False,[],0,[],3,4
+16,Female,2025-09-18 14:34:39.155677,minor laceration,121,83,84,96,15,36.7,5,Alert,False,False,False,[],0,[],0,4
+20,Female,2025-09-18 14:15:39.151160,asthma exacerbation,103,84,75,95,21,37.1,6,Alert,False,False,False,['Kidney Disease'],3,[],1,3
+28,Female,2025-09-18 14:02:39.158679,minor laceration,116,81,87,100,13,37.3,4,Alert,False,False,True,[],0,['Peanuts'],0,4
+2,Male,2025-09-18 15:07:39.161670,mild constipation,106,74,109,99,18,37.2,1,Alert,False,False,False,[],0,[],0,5
+50,Female,2025-09-18 14:37:39.151160,fever with vomiting,156,65,83,93,18,38.5,6,Alert,False,False,False,"['Asthma', 'Arthritis']",4,[],5,3
+37,Male,2025-09-18 15:15:39.152159,mild headache,125,74,75,97,13,37.0,3,Alert,False,False,False,['Hypertension'],1,[],1,4
+80,Female,2025-09-18 14:44:39.154669,mild headache,125,76,66,98,17,37.4,4,Alert,True,False,False,['Arthritis'],2,[],2,4
+33,Female,2025-09-18 13:31:39.147171,moderate abdominal pain,128,78,70,93,23,38.2,6,Alert,False,True,True,['Asthma'],1,[],2,3
+59,Female,2025-09-18 14:44:39.153663,back pain,123,75,72,100,12,36.8,3,Alert,False,False,False,['Hypertension'],1,[],4,4
+16,Male,2025-09-18 15:16:39.160674,minor rash,127,73,84,97,17,37.0,1,Alert,False,False,False,[],0,[],0,5
+0,Female,2025-09-18 15:24:39.149169,moderate head injury,94,66,115,95,23,37.0,5,Alert,False,False,False,[],0,[],0,3
+54,Female,2025-09-18 15:07:39.160674,routine check-up,121,70,66,97,13,36.9,1,Alert,False,False,False,['Hypertension'],3,[],0,5
+14,Female,2025-09-18 13:50:39.159673,mild constipation,134,82,89,96,14,37.3,1,Alert,False,False,False,['COPD'],2,[],0,5
+51,Male,2025-09-18 15:04:39.150164,asthma exacerbation,119,92,92,96,19,37.0,4,Alert,False,False,True,[],0,[],3,3
+34,Male,2025-09-18 14:37:39.159673,routine check-up,124,78,65,97,14,37.1,0,Alert,False,False,False,['COPD'],2,['Latex'],2,5
+76,Female,2025-09-18 13:38:39.158679,ear pain,125,77,79,96,12,37.0,4,Alert,False,False,True,['Hypertension'],1,"['Shellfish', 'Penicillin']",1,4
+48,Female,2025-09-18 15:18:39.158679,minor laceration,118,80,66,96,17,37.3,3,Alert,False,False,True,[],0,[],4,4
+47,Male,2025-09-18 14:31:39.151160,kidney stone pain,155,72,89,95,22,38.0,5,Alert,False,False,False,"['Cancer', 'Kidney Disease']",2,[],4,3
+38,Female,2025-09-18 14:30:39.147171,moderate head injury,133,76,64,95,23,36.8,5,Alert,False,True,False,['Kidney Disease'],1,['Shellfish'],2,3
+82,Female,2025-09-18 14:26:39.145172,altered mental status,179,100,46,92,25,38.4,10,Alert,False,True,True,"['Heart Disease', 'Asthma', 'COPD', 'Cancer']",12,[],0,2
+24,Female,2025-09-18 14:15:39.150164,kidney stone pain,128,82,94,95,19,37.1,6,Alert,False,True,False,['Hypertension'],1,[],1,3
+45,Male,2025-09-18 14:46:39.153663,mild headache,112,85,72,96,17,36.7,5,Alert,False,False,False,"['Cancer', 'Arthritis']",4,[],2,4
+29,Male,2025-09-18 15:15:39.157675,mild headache,138,71,77,97,16,37.0,5,Alert,False,False,True,['Diabetes'],3,[],0,4
+36,Female,2025-09-18 15:17:39.154669,sprained ankle,127,77,67,99,18,36.5,5,Alert,False,False,True,[],0,"['Sulfa', 'Peanuts']",1,4
+83,Female,2025-09-18 14:43:39.154669,mild headache,135,72,80,100,16,36.7,5,Alert,False,False,False,['COPD'],2,"['Sulfa', 'Penicillin']",0,4
+27,Female,2025-09-18 13:53:39.150164,kidney stone pain,109,66,97,93,20,37.5,6,Alert,False,True,False,[],0,[],2,3
+58,Male,2025-09-18 13:30:39.157675,minor laceration,119,72,68,98,17,36.6,4,Alert,False,False,False,"['Cancer', 'Hypertension']",4,[],5,4
+6,Male,2025-09-18 14:43:39.154669,minor burn,109,85,97,98,14,36.9,4,Alert,False,False,False,[],0,[],0,4
+86,Female,2025-09-18 14:21:39.155677,back pain,110,77,63,98,12,37.5,3,Alert,False,False,False,"['Cancer', 'Diabetes']",6,[],3,4
+30,Male,2025-09-18 15:25:39.160674,medication refill,129,81,74,100,13,37.2,1,Alert,False,False,False,[],0,[],3,5
+39,Male,2025-09-18 15:00:39.157675,minor laceration,130,79,84,98,15,36.9,2,Alert,True,False,False,[],0,"['Peanuts', 'Latex']",2,4
+44,Male,2025-09-18 13:45:39.155677,ear pain,140,71,88,99,15,37.0,3,Alert,False,False,False,['Kidney Disease'],2,[],1,4
+45,Male,2025-09-18 15:07:39.159673,medication refill,135,81,71,96,12,36.6,2,Alert,False,False,False,"['Heart Disease', 'Hypertension']",4,[],3,5
+4,Female,2025-09-18 14:53:39.144167,chest pain with sweating,149,102,150,89,27,37.2,10,Alert,True,False,False,[],0,"['Sulfa', 'Latex']",0,2
+16,Female,2025-09-18 13:40:39.152159,fever with vomiting,115,69,84,93,21,37.5,6,Alert,False,False,False,['Cancer'],3,[],1,3
+72,Female,2025-09-18 14:20:39.148170,fever with vomiting,136,73,60,93,22,37.2,6,Alert,False,False,False,"['Cancer', 'Asthma']",6,[],2,3
+32,Male,2025-09-18 14:58:39.152159,back pain,117,82,66,96,14,36.8,5,Alert,False,False,True,[],0,[],2,4
+68,Male,2025-09-18 13:40:39.150164,moderate head injury,133,87,99,95,24,37.5,5,Alert,False,False,False,"['Arthritis', 'Hypertension', 'Asthma', 'COPD']",12,[],0,3
+51,Male,2025-09-18 14:13:39.153663,minor laceration,112,85,79,97,17,37.4,3,Alert,False,False,False,"['Kidney Disease', 'Asthma']",4,['Shellfish'],0,4
+19,Female,2025-09-18 13:29:39.147171,moderate laceration,113,66,88,94,23,37.6,5,Alert,False,False,False,[],0,[],0,3
+9,Female,2025-09-18 14:17:39.159673,minor rash,104,71,110,98,12,37.1,2,Alert,False,False,False,[],0,['Peanuts'],0,5
+30,Male,2025-09-18 14:38:39.150164,asthma exacerbation,101,92,109,94,20,36.6,5,Alert,False,False,True,['Asthma'],2,[],3,3
+56,Female,2025-09-18 13:56:39.161670,common cold symptoms,135,85,61,96,15,37.0,0,Alert,False,False,False,[],0,[],1,5
+18,Female,2025-09-18 15:03:39.151160,moderate laceration,128,90,87,96,24,38.1,7,Alert,False,True,False,[],0,[],1,3
+50,Male,2025-09-18 14:53:39.152159,sore throat,124,80,62,99,12,36.9,4,Alert,False,False,False,"['Arthritis', 'COPD']",2,[],2,4
+11,Male,2025-09-18 15:06:39.150164,kidney stone pain,120,65,88,96,19,37.1,7,Alert,False,False,False,[],0,[],1,3
+76,Female,2025-09-18 14:37:39.157675,mild headache,110,76,75,97,18,37.5,3,Alert,False,False,True,['Kidney Disease'],2,[],3,4
+19,Female,2025-09-18 14:58:39.147171,moderate abdominal pain,140,93,90,94,23,38.2,5,Alert,False,False,False,[],0,[],1,3
+44,Male,2025-09-18 13:59:39.144167,severe trauma,61,56,148,83,33,40.4,8,Pain,False,True,False,"['Arthritis', 'Kidney Disease']",4,[],1,1
+63,Male,2025-09-18 13:42:39.160674,routine check-up,121,76,70,97,16,37.4,1,Alert,False,False,False,"['Asthma', 'Diabetes', 'Hypertension']",9,[],4,5
+21,Female,2025-09-18 14:52:39.149169,kidney stone pain,104,88,65,96,18,38.0,5,Alert,False,False,False,['Cancer'],2,[],2,3
+8,Male,2025-09-18 14:35:39.154669,mild headache,97,74,108,98,12,37.5,2,Alert,False,False,True,['Arthritis'],3,[],0,4
+12,Male,2025-09-18 13:56:39.156676,sore throat,132,83,65,97,14,36.6,3,Alert,False,False,False,['Asthma'],2,[],1,4
+38,Female,2025-09-18 14:08:39.160674,common cold symptoms,123,77,81,98,15,36.7,1,Alert,False,False,False,['Heart Disease'],1,['Peanuts'],1,5
+52,Male,2025-09-18 13:51:39.152159,kidney stone pain,102,70,62,93,23,37.5,5,Alert,True,True,False,[],0,[],3,3
+26,Male,2025-09-18 15:25:39.149169,moderate abdominal pain,119,86,109,94,18,37.7,5,Alert,False,False,False,['COPD'],1,"['Peanuts', 'Shellfish']",0,3
+55,Female,2025-09-18 14:38:39.147171,asthma exacerbation,114,71,101,95,21,37.2,5,Alert,False,False,False,[],0,[],4,3
+54,Male,2025-09-18 13:39:39.157675,sprained ankle,118,76,60,98,16,37.2,5,Alert,False,False,False,"['Asthma', 'Kidney Disease']",4,[],0,4
+36,Male,2025-09-18 13:57:39.160674,medication refill,135,81,62,97,18,36.7,2,Alert,False,False,False,[],0,['Sulfa'],2,5
+26,Female,2025-09-18 15:22:39.157675,sore throat,140,76,82,100,15,37.3,3,Alert,False,False,False,['Kidney Disease'],2,[],0,4
+59,Female,2025-09-18 13:34:39.158679,sprained ankle,121,77,84,96,13,37.4,5,Alert,False,False,False,[],0,[],3,4
+82,Female,2025-09-18 14:33:39.144167,stroke symptoms,93,58,48,91,29,37.4,10,Alert,False,True,False,"['COPD', 'Diabetes', 'Hypertension']",9,[],0,2
+28,Male,2025-09-18 15:00:39.158679,sprained ankle,116,82,64,98,18,37.0,2,Alert,False,False,True,[],0,['Shellfish'],1,4
+58,Male,2025-09-18 14:49:39.148170,kidney stone pain,128,91,78,95,18,38.2,6,Alert,False,False,False,[],0,[],0,3
+48,Female,2025-09-18 14:37:39.158679,ear pain,123,74,70,97,18,37.0,4,Alert,False,False,False,"['Cancer', 'Kidney Disease']",4,['Penicillin'],4,4
+35,Female,2025-09-18 13:47:39.152159,moderate abdominal pain,120,95,85,94,21,37.6,6,Alert,False,True,False,[],0,[],2,3
+12,Female,2025-09-18 14:19:39.150164,broken bone suspected,133,89,74,95,21,36.8,6,Alert,False,True,True,[],0,"['Shellfish', 'Penicillin']",0,3
+19,Female,2025-09-18 14:56:39.152159,sore throat,130,76,75,97,17,37.4,3,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",1,4
+5,Female,2025-09-18 15:12:39.160674,routine check-up,107,84,104,97,17,37.4,2,Alert,False,False,False,['COPD'],2,[],0,5
+48,Female,2025-09-18 15:09:39.148170,asthma exacerbation,102,74,110,94,19,37.9,4,Alert,False,True,True,['Diabetes'],2,[],4,3
+52,Female,2025-09-18 13:49:39.155677,ear pain,113,79,80,98,17,36.7,2,Alert,False,False,True,[],0,['Sulfa'],5,4
+59,Female,2025-09-18 13:49:39.150164,kidney stone pain,106,69,110,93,23,38.4,6,Alert,False,True,False,['COPD'],2,[],5,3
+61,Male,2025-09-18 15:23:39.160674,medication refill,137,74,83,98,13,36.9,2,Alert,False,False,False,"['Cancer', 'Hypertension']",2,[],4,5
+10,Female,2025-09-18 13:29:39.159673,common cold symptoms,114,78,60,96,16,37.1,1,Alert,False,False,False,[],0,[],1,5
+55,Female,2025-09-18 14:05:39.148170,moderate head injury,132,94,69,93,24,38.3,7,Alert,False,False,False,[],0,[],0,3
+12,Female,2025-09-18 14:58:39.151160,moderate laceration,101,76,65,96,18,37.0,7,Alert,False,False,False,[],0,[],1,3
+66,Female,2025-09-18 14:37:39.148170,moderate abdominal pain,133,84,102,93,23,38.2,6,Alert,False,True,True,"['Arthritis', 'Heart Disease', 'Cancer', 'Diabetes']",12,['Penicillin'],4,3
+61,Female,2025-09-18 14:48:39.152159,back pain,110,76,60,99,15,36.8,2,Alert,False,False,False,"['Kidney Disease', 'Cancer', 'Heart Disease', 'Arthritis']",12,[],5,4
+0,Male,2025-09-18 15:12:39.148170,moderate abdominal pain,126,65,105,93,18,37.0,6,Alert,False,False,True,[],0,[],0,3
+34,Female,2025-09-18 15:15:39.151160,asthma exacerbation,110,84,73,93,18,37.0,7,Alert,True,False,False,[],0,[],3,3
+20,Male,2025-09-18 13:42:39.148170,broken bone suspected,120,73,69,94,22,36.9,4,Alert,False,False,False,[],0,['Shellfish'],2,3
+20,Male,2025-09-18 15:19:39.158679,common cold symptoms,124,77,75,99,14,36.9,0,Alert,False,False,False,['Asthma'],3,[],1,5
+40,Male,2025-09-18 15:16:39.154669,mild headache,131,74,63,96,15,36.7,4,Alert,False,False,False,['Heart Disease'],1,[],4,4
+33,Male,2025-09-18 14:36:39.146168,chest pain with sweating,93,63,52,92,32,36.8,9,Voice,False,True,False,[],0,"['Sulfa', 'Peanuts']",2,2
+41,Female,2025-09-18 14:38:39.151160,moderate head injury,132,71,84,95,22,37.9,5,Alert,False,False,False,['Hypertension'],1,[],1,3
+44,Male,2025-09-18 15:15:39.161670,mild constipation,137,72,86,97,15,36.8,1,Alert,False,False,False,[],0,[],3,5
+39,Female,2025-09-18 14:47:39.149169,moderate laceration,124,80,76,95,23,37.2,4,Alert,False,False,False,['Heart Disease'],1,[],3,3
+83,Male,2025-09-18 14:22:39.145172,altered mental status,171,99,51,91,32,37.3,8,Alert,False,False,False,"['Asthma', 'Arthritis', 'COPD']",9,[],5,2
+63,Male,2025-09-18 14:21:39.160674,common cold symptoms,123,74,71,96,13,37.3,2,Alert,False,False,False,"['Kidney Disease', 'Diabetes', 'Asthma']",9,[],4,5
+41,Male,2025-09-18 14:34:39.153663,back pain,119,77,85,98,17,37.5,5,Alert,True,False,False,"['Heart Disease', 'Cancer']",6,[],2,4
+46,Female,2025-09-18 14:48:39.158679,sore throat,120,83,78,97,14,37.0,4,Alert,False,False,True,[],0,[],3,4
+15,Male,2025-09-18 14:36:39.160674,common cold symptoms,113,72,61,96,15,37.1,1,Alert,False,False,False,[],0,['Shellfish'],0,5
+30,Female,2025-09-18 14:32:39.148170,kidney stone pain,101,89,62,96,22,37.4,7,Alert,False,True,False,['Asthma'],3,['Peanuts'],0,3
+24,Male,2025-09-18 14:06:39.157675,mild headache,130,80,73,100,18,37.3,5,Alert,False,False,False,['Asthma'],3,[],1,4
+26,Male,2025-09-18 14:28:39.159673,medication refill,125,83,82,98,13,36.7,1,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",2,5
+31,Male,2025-09-18 14:42:39.159673,mild constipation,119,83,66,96,17,37.0,2,Alert,False,False,False,['Asthma'],2,[],1,5
+26,Female,2025-09-18 14:24:39.154669,sore throat,137,71,82,99,13,36.8,5,Alert,True,False,False,['Asthma'],1,[],0,4
+74,Male,2025-09-18 14:13:39.147171,asthma exacerbation,102,92,67,93,21,37.7,6,Alert,True,False,False,"['Asthma', 'Arthritis', 'Kidney Disease']",3,"['Shellfish', 'Peanuts']",3,3
+50,Female,2025-09-18 13:52:39.154669,mild headache,115,71,75,98,18,37.4,3,Alert,False,False,False,"['Arthritis', 'Diabetes']",4,"['Latex', 'Sulfa']",5,4
+52,Male,2025-09-18 14:51:39.152159,sprained ankle,117,72,66,97,12,37.1,5,Alert,True,False,False,['Kidney Disease'],1,[],5,4
+10,Female,2025-09-18 15:20:39.151160,kidney stone pain,142,89,61,93,22,36.7,5,Alert,True,True,False,[],0,[],0,3
+24,Female,2025-09-18 14:05:39.155677,minor burn,131,75,62,96,15,36.7,2,Alert,False,False,False,[],0,['Peanuts'],0,4
+63,Female,2025-09-18 13:34:39.152159,moderate laceration,113,92,78,96,20,37.0,5,Alert,True,False,True,"['COPD', 'Asthma', 'Cancer']",6,"['Peanuts', 'Shellfish']",4,3
+46,Female,2025-09-18 15:06:39.153663,back pain,135,81,73,98,15,37.2,4,Alert,False,False,False,[],0,"['Sulfa', 'Penicillin']",3,4
+31,Male,2025-09-18 14:43:39.146168,fever with vomiting,149,73,73,93,18,37.0,4,Alert,False,False,False,['Heart Disease'],1,[],2,3
+39,Female,2025-09-18 13:56:39.150164,fever with vomiting,118,69,63,94,19,38.0,5,Alert,False,False,False,['Heart Disease'],3,"['Penicillin', 'Peanuts']",2,3
+33,Male,2025-09-18 14:38:39.153663,mild headache,116,77,88,98,12,37.4,4,Alert,False,False,False,[],0,"['Shellfish', 'Sulfa']",3,4
+46,Male,2025-09-18 14:34:39.153663,ear pain,136,71,66,98,14,36.7,4,Alert,False,False,False,['Diabetes'],1,"['Latex', 'Shellfish']",3,4
+19,Female,2025-09-18 14:43:39.153663,minor laceration,136,77,86,99,13,37.5,2,Alert,True,False,False,[],0,[],0,4
+5,Male,2025-09-18 14:43:39.144167,chest pain with sweating,158,99,73,90,31,36.3,10,Voice,False,False,True,[],0,"['Latex', 'Shellfish']",0,2
+56,Female,2025-09-18 13:31:39.149169,moderate abdominal pain,154,76,81,96,23,36.8,7,Alert,False,False,False,[],0,"['Sulfa', 'Penicillin']",4,3
+46,Male,2025-09-18 13:26:39.155677,sore throat,118,76,74,97,12,37.4,5,Alert,False,False,False,['Hypertension'],3,[],2,4
+29,Female,2025-09-18 15:19:39.160674,medication refill,130,75,63,96,12,37.2,1,Alert,False,False,False,[],0,[],2,5
+32,Female,2025-09-18 14:08:39.158679,minor laceration,111,70,64,99,13,37.2,5,Alert,False,False,False,[],0,[],2,4
+5,Male,2025-09-18 13:50:39.146168,severe bleeding from head wound,75,62,146,91,24,36.8,10,Alert,True,False,False,[],0,[],0,2
+34,Female,2025-09-18 14:36:39.149169,fever with vomiting,158,67,60,94,20,36.8,4,Alert,False,False,False,['Hypertension'],3,[],0,3
+43,Female,2025-09-18 13:32:39.158679,back pain,134,82,77,99,18,37.0,4,Alert,False,False,False,['Cancer'],3,['Shellfish'],3,4
+41,Female,2025-09-18 13:58:39.160674,mild constipation,110,75,80,96,16,37.4,0,Alert,False,False,False,[],0,['Sulfa'],1,5
+45,Female,2025-09-18 13:56:39.152159,sprained ankle,121,76,89,100,14,37.3,5,Alert,False,False,False,[],0,[],4,4
+37,Female,2025-09-18 13:28:39.153663,minor burn,125,76,74,100,15,37.2,5,Alert,False,False,False,[],0,[],3,4
+36,Female,2025-09-18 13:26:39.146168,moderate laceration,128,91,98,96,21,36.7,7,Alert,False,False,False,[],0,['Peanuts'],3,3
+12,Male,2025-09-18 13:28:39.155677,minor laceration,130,81,69,98,12,37.1,5,Alert,False,False,False,[],0,['Latex'],0,4
+50,Female,2025-09-18 14:17:39.157675,sprained ankle,139,79,72,96,16,37.0,4,Alert,False,False,False,"['Kidney Disease', 'Cancer']",2,['Peanuts'],4,4
+21,Female,2025-09-18 14:46:39.146168,kidney stone pain,123,93,65,96,24,38.4,5,Alert,True,False,False,['COPD'],1,[],0,3
+6,Male,2025-09-18 14:21:39.152159,minor burn,104,84,95,100,17,37.3,5,Alert,False,False,False,['Diabetes'],1,[],0,4
+22,Female,2025-09-18 14:04:39.149169,moderate abdominal pain,118,78,104,95,23,36.5,4,Alert,True,False,False,[],0,['Shellfish'],2,3
+33,Male,2025-09-18 14:47:39.155677,minor burn,114,75,65,100,18,37.5,4,Alert,False,False,False,['Hypertension'],1,[],1,4
+41,Female,2025-09-18 13:50:39.159673,mild constipation,135,79,81,99,18,36.9,0,Alert,False,False,False,[],0,"['Sulfa', 'Shellfish']",3,5
+0,Female,2025-09-18 15:03:39.151160,moderate head injury,133,71,116,93,18,38.0,7,Alert,False,True,False,[],0,"['Latex', 'Sulfa']",0,3
+25,Female,2025-09-18 15:13:39.155677,sprained ankle,119,71,82,100,18,36.7,5,Alert,False,False,False,[],0,[],2,4
+72,Male,2025-09-18 13:26:39.155677,sore throat,126,85,75,99,15,36.7,2,Alert,False,False,True,"['Asthma', 'Kidney Disease', 'Diabetes', 'Heart Disease']",4,[],3,4
+33,Female,2025-09-18 15:13:39.147171,broken bone suspected,120,80,76,94,22,37.7,5,Alert,True,False,False,['Cancer'],3,[],1,3
+31,Male,2025-09-18 14:42:39.158679,minor burn,120,85,85,97,14,37.3,4,Alert,False,False,False,['Cancer'],3,[],0,4
+39,Male,2025-09-18 14:25:39.158679,back pain,128,71,90,97,16,37.0,5,Alert,False,False,True,[],0,"['Shellfish', 'Penicillin']",0,4
+33,Male,2025-09-18 15:09:39.149169,moderate abdominal pain,128,84,60,96,24,37.1,5,Alert,False,False,False,[],0,[],0,3
+55,Male,2025-09-18 13:36:39.153663,sore throat,121,82,81,97,12,37.2,4,Alert,False,False,False,"['Cancer', 'Asthma']",4,[],3,4
+28,Female,2025-09-18 14:44:39.160674,medication refill,133,85,83,98,14,37.3,2,Alert,False,False,False,[],0,[],1,5
+87,Male,2025-09-18 13:33:39.145172,stroke symptoms,178,96,118,91,31,37.4,9,Voice,True,True,False,"['Cancer', 'Arthritis', 'Hypertension', 'COPD']",4,[],4,2
+68,Female,2025-09-18 13:51:39.151160,kidney stone pain,129,70,73,96,21,36.7,4,Alert,False,True,False,"['Arthritis', 'Asthma']",6,[],5,3
+53,Male,2025-09-18 13:27:39.151160,moderate abdominal pain,129,95,105,93,20,37.8,7,Alert,False,False,False,['Asthma'],3,[],5,3
+42,Female,2025-09-18 14:32:39.158679,ear pain,119,72,87,99,14,36.5,5,Alert,False,False,False,['Arthritis'],1,[],2,4
+31,Male,2025-09-18 13:44:39.157675,minor laceration,131,76,70,100,12,37.1,4,Alert,False,False,False,['Arthritis'],3,"['Shellfish', 'Penicillin']",0,4
+30,Female,2025-09-18 14:44:39.152159,kidney stone pain,136,66,78,94,23,36.6,7,Alert,False,False,True,['COPD'],2,[],1,3
+72,Female,2025-09-18 13:41:39.159673,routine check-up,129,85,63,99,14,37.0,2,Alert,False,False,False,['Arthritis'],2,['Sulfa'],2,5
+56,Female,2025-09-18 14:14:39.148170,broken bone suspected,134,75,74,94,22,37.8,5,Alert,False,False,False,"['Cancer', 'Arthritis']",6,[],0,3
+19,Male,2025-09-18 15:16:39.155677,back pain,119,77,60,96,18,37.3,2,Alert,False,False,False,[],0,[],0,4
+17,Male,2025-09-18 14:26:39.159673,routine check-up,138,84,89,100,12,37.4,2,Alert,False,False,False,[],0,[],1,5
+60,Male,2025-09-18 13:31:39.155677,ear pain,121,85,76,96,14,37.5,2,Alert,False,False,True,[],0,[],2,4
+33,Male,2025-09-18 14:58:39.155677,ear pain,134,73,88,100,18,36.9,2,Alert,True,False,False,['Asthma'],3,[],2,4
+54,Female,2025-09-18 13:36:39.161670,minor rash,130,84,73,100,18,37.5,2,Alert,False,False,False,[],0,"['Shellfish', 'Sulfa']",2,5
+64,Male,2025-09-18 15:25:39.151160,kidney stone pain,133,68,86,94,23,37.8,4,Alert,False,True,False,"['Heart Disease', 'Asthma']",2,[],2,3
+55,Male,2025-09-18 14:00:39.151160,broken bone suspected,105,85,65,94,19,37.4,7,Alert,False,True,False,['Arthritis'],3,[],0,3
+50,Female,2025-09-18 13:51:39.149169,moderate head injury,100,93,77,96,18,38.3,7,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",2,3
+4,Female,2025-09-18 13:51:39.144167,chest pain with sweating,158,100,69,89,31,36.3,9,Voice,False,True,True,['Asthma'],3,[],0,2
+60,Female,2025-09-18 14:43:39.153663,back pain,139,77,66,99,14,36.9,3,Alert,False,False,False,[],0,[],2,4
+46,Male,2025-09-18 15:09:39.157675,back pain,115,71,88,99,12,36.5,4,Alert,False,False,False,"['Heart Disease', 'Asthma']",4,[],4,4
+2,Male,2025-09-18 14:36:39.144167,stroke symptoms,148,109,71,88,24,38.0,7,Voice,True,True,False,[],0,[],0,2
+12,Male,2025-09-18 14:31:39.158679,sprained ankle,124,82,72,96,17,37.5,4,Alert,False,False,False,[],0,[],0,4
+98,Female,2025-09-18 14:51:39.157675,sprained ankle,125,72,80,98,18,37.3,2,Alert,False,False,False,"['COPD', 'Cancer', 'Arthritis']",6,[],0,4
+57,Female,2025-09-18 13:29:39.155677,sprained ankle,113,73,60,97,18,37.1,3,Alert,False,False,False,['Diabetes'],2,[],4,4
+50,Female,2025-09-18 14:42:39.157675,mild headache,133,76,72,97,18,37.4,3,Alert,False,False,False,"['COPD', 'Hypertension']",2,[],1,4
+40,Female,2025-09-18 15:01:39.160674,minor rash,139,79,77,99,15,37.3,0,Alert,False,False,False,[],0,['Penicillin'],3,5
+50,Female,2025-09-18 13:27:39.156676,sore throat,131,85,65,100,16,37.4,4,Alert,True,False,False,['Hypertension'],3,[],0,4
+34,Male,2025-09-18 15:03:39.148170,asthma exacerbation,106,73,68,93,18,38.5,5,Alert,False,False,False,[],0,[],2,3
+15,Male,2025-09-18 15:21:39.152159,mild headache,115,82,84,98,13,37.4,5,Alert,False,False,True,[],0,[],1,4
+26,Male,2025-09-18 14:30:39.161670,mild constipation,133,71,86,98,12,36.8,2,Alert,False,False,False,[],0,"['Peanuts', 'Sulfa']",2,5
+41,Female,2025-09-18 13:27:39.155677,mild headache,115,71,71,99,17,37.2,4,Alert,False,False,False,['Hypertension'],3,"['Shellfish', 'Penicillin']",3,4
+49,Male,2025-09-18 14:56:39.150164,kidney stone pain,124,86,65,95,22,38.2,6,Alert,False,False,True,['Hypertension'],1,[],3,3
+35,Female,2025-09-18 13:39:39.147171,broken bone suspected,128,95,109,93,18,36.6,7,Alert,False,False,False,['Arthritis'],3,[],0,3
+28,Female,2025-09-18 13:27:39.150164,kidney stone pain,138,66,63,94,22,37.5,4,Alert,False,True,False,[],0,"['Shellfish', 'Latex']",2,3
+0,Male,2025-09-18 14:31:39.144167,severe burn,70,58,75,88,24,35.6,7,Voice,True,False,False,[],0,['Latex'],0,2
+46,Male,2025-09-18 13:29:39.146168,moderate laceration,127,72,88,96,19,38.3,5,Alert,False,True,False,"['Asthma', 'Hypertension']",4,[],0,3
+36,Male,2025-09-18 13:28:39.157675,back pain,115,81,72,98,17,36.9,4,Alert,False,False,False,[],0,['Sulfa'],3,4
+49,Male,2025-09-18 13:58:39.151160,moderate laceration,155,94,108,96,23,37.3,7,Alert,True,False,True,['Arthritis'],2,[],0,3
+65,Male,2025-09-18 15:04:39.145172,difficulty breathing,173,98,49,89,30,36.3,10,Voice,False,False,False,['COPD'],2,[],4,2
+53,Male,2025-09-18 14:14:39.152159,sore throat,135,81,72,98,15,36.9,2,Alert,False,False,False,"['COPD', 'Heart Disease']",4,[],4,4
+40,Male,2025-09-18 13:30:39.149169,asthma exacerbation,103,88,103,95,19,38.1,4,Alert,False,False,True,['Asthma'],1,[],1,3
+7,Female,2025-09-18 14:12:39.159673,minor rash,117,75,97,100,18,36.7,1,Alert,False,False,False,['Heart Disease'],1,[],0,5
+8,Male,2025-09-18 13:31:39.151160,moderate laceration,84,86,101,93,20,37.5,6,Alert,False,False,False,[],0,[],0,3
+90,Male,2025-09-18 14:07:39.144167,severe abdominal pain,86,60,130,92,31,35.6,10,Voice,False,True,False,['Diabetes'],3,[],2,2
+24,Male,2025-09-18 13:42:39.159673,common cold symptoms,112,79,71,98,12,37.1,1,Alert,False,False,False,['Diabetes'],3,[],1,5
+60,Male,2025-09-18 13:40:39.151160,broken bone suspected,148,86,82,93,24,38.3,7,Alert,False,False,False,"['Cancer', 'Diabetes']",2,[],3,3
+66,Male,2025-09-18 13:29:39.159673,mild constipation,134,75,66,99,12,36.7,1,Alert,False,False,False,"['Hypertension', 'Cancer', 'Asthma', 'Diabetes']",8,[],3,5
+45,Female,2025-09-18 14:23:39.150164,broken bone suspected,116,79,89,94,18,36.9,5,Alert,False,False,True,[],0,[],1,3
+24,Female,2025-09-18 13:59:39.159673,mild constipation,115,71,74,99,15,37.0,2,Alert,False,False,False,['Asthma'],1,[],1,5
+46,Female,2025-09-18 14:34:39.153663,back pain,124,80,83,98,17,37.0,2,Alert,True,False,False,[],0,['Sulfa'],1,4
+32,Male,2025-09-18 14:48:39.152159,mild headache,122,83,67,100,12,37.5,5,Alert,False,False,False,[],0,['Latex'],1,4
+67,Female,2025-09-18 15:09:39.153663,minor laceration,124,81,74,99,15,36.9,3,Alert,True,False,True,"['Diabetes', 'Arthritis', 'Asthma', 'Heart Disease']",8,[],1,4
+48,Female,2025-09-18 14:41:39.160674,common cold symptoms,122,75,62,96,17,36.8,0,Alert,False,False,False,['Hypertension'],1,[],3,5
+50,Female,2025-09-18 13:36:39.150164,fever with vomiting,136,94,62,93,20,38.2,6,Alert,False,False,False,[],0,"['Peanuts', 'Shellfish']",0,3
+18,Female,2025-09-18 13:26:39.155677,minor burn,132,85,61,100,13,36.8,5,Alert,False,False,False,['Cancer'],3,['Peanuts'],0,4
+34,Female,2025-09-18 14:55:39.148170,fever with vomiting,119,68,62,94,20,36.6,7,Alert,False,False,False,['Cancer'],2,[],1,3
+31,Male,2025-09-18 14:37:39.155677,sore throat,132,83,85,99,17,37.0,3,Alert,False,False,False,[],0,[],3,4
+34,Female,2025-09-18 14:52:39.160674,common cold symptoms,111,80,69,96,17,37.1,2,Alert,False,False,False,['Cancer'],2,['Penicillin'],2,5
+44,Female,2025-09-18 13:59:39.158679,minor laceration,118,77,74,97,14,37.1,4,Alert,False,False,False,[],0,['Shellfish'],2,4
+35,Female,2025-09-18 13:33:39.155677,sprained ankle,110,80,85,96,13,36.9,3,Alert,False,False,True,[],0,['Peanuts'],1,4
+69,Female,2025-09-18 13:57:39.153663,minor laceration,114,73,65,98,13,37.0,3,Alert,False,False,False,"['Cancer', 'Diabetes', 'Arthritis']",9,[],5,4
+30,Female,2025-09-18 13:37:39.160674,medication refill,111,74,71,100,14,36.8,0,Alert,False,False,False,['Hypertension'],2,[],0,5
+67,Male,2025-09-18 15:17:39.152159,minor laceration,112,77,85,100,16,36.5,5,Alert,False,False,False,"['Cancer', 'Hypertension', 'Asthma', 'Arthritis']",4,['Sulfa'],1,4
+34,Female,2025-09-18 13:57:39.155677,ear pain,130,78,73,98,16,37.2,5,Alert,False,False,False,['Cancer'],3,[],0,4
+29,Male,2025-09-18 14:00:39.151160,fever with vomiting,146,92,87,96,22,37.1,7,Alert,False,True,True,[],0,[],0,3
+65,Female,2025-09-18 14:05:39.159673,common cold symptoms,112,72,79,100,18,36.9,1,Alert,False,False,False,"['Heart Disease', 'Cancer', 'COPD']",3,[],3,5
+55,Male,2025-09-18 13:48:39.149169,asthma exacerbation,127,66,72,96,18,37.6,7,Alert,False,False,False,"['Kidney Disease', 'Arthritis']",6,"['Latex', 'Shellfish']",5,3
+43,Female,2025-09-18 14:30:39.161670,routine check-up,137,79,71,97,12,36.5,1,Alert,False,False,False,['Diabetes'],1,[],4,5
+30,Male,2025-09-18 14:18:39.152159,back pain,127,77,67,99,14,37.2,4,Alert,False,False,False,['COPD'],3,[],3,4
+54,Female,2025-09-18 14:58:39.149169,moderate abdominal pain,107,74,101,93,18,36.7,4,Alert,False,False,False,"['Diabetes', 'Kidney Disease']",4,[],4,3
+40,Male,2025-09-18 14:53:39.160674,routine check-up,131,82,85,99,17,37.2,2,Alert,False,False,False,[],0,['Penicillin'],1,5
+39,Female,2025-09-18 15:10:39.160674,mild constipation,134,70,82,98,16,37.5,2,Alert,False,False,False,['COPD'],2,[],1,5
+1,Female,2025-09-18 14:01:39.152159,moderate abdominal pain,87,66,116,96,23,37.3,6,Alert,False,False,False,[],0,[],0,3
+67,Male,2025-09-18 15:16:39.152159,moderate laceration,105,68,98,95,22,37.9,5,Alert,False,False,False,['Diabetes'],3,['Penicillin'],3,3
+54,Male,2025-09-18 14:58:39.154669,sore throat,114,75,87,97,14,36.9,4,Alert,False,False,False,"['Arthritis', 'COPD']",4,"['Peanuts', 'Sulfa']",0,4
+44,Female,2025-09-18 15:22:39.153663,sore throat,139,74,76,98,17,37.2,5,Alert,False,False,False,"['Hypertension', 'Kidney Disease']",2,[],3,4
+34,Male,2025-09-18 14:57:39.156676,sore throat,116,75,74,98,16,36.6,4,Alert,True,False,False,['Diabetes'],1,[],3,4
+34,Female,2025-09-18 13:31:39.157675,sprained ankle,116,83,86,98,16,36.8,2,Alert,False,False,False,['Diabetes'],1,"['Peanuts', 'Sulfa']",1,4
+29,Female,2025-09-18 14:17:39.158679,mild headache,137,71,76,100,13,36.9,2,Alert,False,False,False,[],0,['Penicillin'],2,4
+38,Female,2025-09-18 14:04:39.150164,kidney stone pain,109,91,73,95,24,37.0,6,Alert,False,False,False,[],0,[],2,3
+68,Female,2025-09-18 14:40:39.148170,moderate abdominal pain,137,76,64,94,24,38.3,5,Alert,True,True,False,"['Diabetes', 'Asthma', 'Cancer']",3,['Latex'],3,3
+28,Female,2025-09-18 14:42:39.147171,asthma exacerbation,160,89,97,96,23,37.7,5,Alert,False,False,False,[],0,[],2,3
+36,Male,2025-09-18 14:23:39.151160,moderate head injury,100,88,74,94,20,37.4,7,Alert,False,False,False,['Cancer'],1,[],2,3
+18,Female,2025-09-18 15:07:39.160674,routine check-up,111,76,83,98,17,36.7,1,Alert,False,False,False,[],0,[],1,5
+50,Female,2025-09-18 14:04:39.155677,back pain,125,75,73,98,13,36.5,5,Alert,True,False,True,[],0,[],3,4
+45,Female,2025-09-18 14:28:39.155677,minor burn,129,77,68,96,17,37.4,2,Alert,False,False,False,"['Kidney Disease', 'Diabetes']",4,[],3,4
+15,Female,2025-09-18 14:32:39.152159,mild headache,121,81,71,97,16,36.7,3,Alert,False,False,False,['COPD'],2,[],1,4
+6,Male,2025-09-18 14:31:39.152159,minor laceration,106,71,110,99,12,37.1,3,Alert,False,False,True,['Asthma'],3,[],0,4
+21,Male,2025-09-18 13:29:39.158679,sprained ankle,140,85,89,98,17,37.2,4,Alert,True,False,False,[],0,[],2,4
+70,Female,2025-09-18 15:02:39.153663,mild headache,116,70,85,96,14,36.5,4,Alert,True,False,False,"['Hypertension', 'COPD', 'Cancer']",6,[],0,4
+0,Female,2025-09-18 14:14:39.149169,broken bone suspected,140,67,115,95,19,38.4,5,Alert,False,False,False,['Arthritis'],2,[],0,3
+54,Female,2025-09-18 13:35:39.151160,kidney stone pain,146,89,64,94,19,36.9,4,Alert,False,False,False,"['Kidney Disease', 'Hypertension']",6,[],5,3
+24,Male,2025-09-18 14:19:39.152159,fever with vomiting,129,92,99,93,23,38.3,5,Alert,False,False,False,['COPD'],3,[],2,3
+47,Female,2025-09-18 13:57:39.149169,moderate head injury,127,67,102,93,22,37.3,5,Alert,False,False,False,[],0,"['Peanuts', 'Latex']",1,3
+15,Male,2025-09-18 13:40:39.155677,ear pain,114,83,66,97,15,36.7,2,Alert,False,False,False,[],0,[],0,4
+41,Male,2025-09-18 13:57:39.152159,broken bone suspected,128,88,103,95,24,36.9,7,Alert,False,False,True,[],0,[],0,3
+43,Female,2025-09-18 14:18:39.148170,moderate laceration,113,66,88,93,18,37.8,5,Alert,False,False,True,['Arthritis'],3,['Sulfa'],1,3
+28,Female,2025-09-18 14:03:39.156676,mild headache,127,84,63,98,18,37.4,2,Alert,False,False,True,['Cancer'],3,[],0,4
+60,Female,2025-09-18 14:12:39.154669,minor burn,121,79,62,99,18,36.7,3,Alert,False,False,False,[],0,[],3,4
+57,Female,2025-09-18 14:34:39.145172,severe burn,185,103,50,89,25,38.9,9,Alert,False,False,False,[],0,[],2,2
+45,Female,2025-09-18 15:23:39.158679,sore throat,114,85,72,100,13,37.0,3,Alert,False,False,False,"['Cancer', 'COPD']",6,['Latex'],2,4
+66,Male,2025-09-18 13:25:39.148170,moderate laceration,131,71,79,95,21,37.9,5,Alert,False,False,False,"['Cancer', 'COPD']",6,[],2,3
+22,Male,2025-09-18 13:57:39.147171,moderate abdominal pain,106,75,85,94,18,37.0,7,Alert,False,False,False,[],0,"['Latex', 'Peanuts']",0,3
+41,Male,2025-09-18 15:07:39.155677,mild headache,113,76,74,96,15,36.8,3,Alert,False,False,False,['Arthritis'],3,[],1,4
+44,Female,2025-09-18 13:40:39.150164,moderate head injury,151,88,108,96,23,38.1,6,Alert,False,True,False,"['Arthritis', 'Asthma']",6,[],4,3
+26,Female,2025-09-18 15:22:39.157675,back pain,138,72,76,98,12,37.5,5,Alert,False,False,False,[],0,[],2,4
+65,Male,2025-09-18 13:44:39.153663,minor burn,127,78,64,97,14,37.0,3,Alert,True,False,False,"['Diabetes', 'Kidney Disease']",4,[],2,4
+42,Female,2025-09-18 14:21:39.145172,severe bleeding from head wound,167,106,119,89,29,36.7,10,Voice,False,True,True,[],0,[],2,2
+29,Male,2025-09-18 14:50:39.144167,unresponsive after accident,83,51,174,77,9,35.3,8,Unresponsive,False,True,True,['Diabetes'],2,[],1,1
+19,Female,2025-09-18 14:45:39.152159,minor burn,135,75,88,99,16,36.5,5,Alert,False,False,False,[],0,[],1,4
+51,Female,2025-09-18 14:28:39.159673,mild constipation,131,73,84,96,12,37.4,0,Alert,False,False,False,['COPD'],1,"['Peanuts', 'Shellfish']",4,5
+23,Female,2025-09-18 13:54:39.152159,fever with vomiting,149,84,88,93,23,37.6,6,Alert,False,False,True,[],0,[],2,3
+40,Female,2025-09-18 14:46:39.157675,sore throat,135,76,79,96,13,36.5,3,Alert,False,False,False,[],0,[],1,4
+25,Female,2025-09-18 13:37:39.159673,routine check-up,134,78,63,97,14,37.1,2,Alert,False,False,False,[],0,[],2,5
+30,Female,2025-09-18 13:34:39.152159,mild headache,122,83,70,96,13,36.5,4,Alert,True,False,False,[],0,[],2,4
+20,Male,2025-09-18 14:21:39.151160,broken bone suspected,146,95,85,94,20,38.0,4,Alert,True,False,True,[],0,[],1,3
+49,Female,2025-09-18 15:13:39.148170,moderate abdominal pain,113,84,72,95,19,36.6,5,Alert,False,False,False,"['Kidney Disease', 'Asthma']",4,[],2,3
+38,Male,2025-09-18 15:14:39.154669,sore throat,117,79,63,100,17,36.7,4,Alert,False,False,False,[],0,[],3,4
+25,Female,2025-09-18 13:42:39.154669,ear pain,117,78,76,98,13,36.5,4,Alert,False,False,False,[],0,[],2,4
+24,Male,2025-09-18 14:20:39.145172,stroke symptoms,92,60,125,92,32,36.6,7,Voice,False,True,True,['Asthma'],1,[],2,2
+62,Female,2025-09-18 15:16:39.153663,minor laceration,140,74,75,99,16,37.4,4,Alert,False,False,False,"['Hypertension', 'Asthma', 'Arthritis', 'Cancer']",4,[],3,4
+20,Female,2025-09-18 14:47:39.155677,mild headache,129,82,72,97,15,36.8,5,Alert,False,False,False,[],0,['Shellfish'],2,4
+11,Female,2025-09-18 13:39:39.155677,minor laceration,114,81,87,96,17,37.1,5,Alert,True,False,True,[],0,"['Sulfa', 'Peanuts']",1,4
+53,Female,2025-09-18 14:44:39.149169,moderate head injury,106,95,74,96,20,38.1,5,Alert,False,False,False,['Asthma'],3,[],1,3
+29,Female,2025-09-18 14:38:39.147171,asthma exacerbation,147,67,84,96,24,38.2,4,Alert,False,False,False,['Asthma'],2,[],0,3
+1,Male,2025-09-18 13:44:39.151160,moderate laceration,91,77,110,94,18,37.8,5,Alert,False,False,True,[],0,"['Penicillin', 'Sulfa']",0,3
+35,Male,2025-09-18 13:54:39.159673,minor rash,135,80,84,98,18,36.7,0,Alert,False,False,False,['Hypertension'],1,[],2,5
+48,Female,2025-09-18 13:28:39.160674,medication refill,128,84,70,97,13,37.4,2,Alert,False,False,False,['Diabetes'],3,[],4,5
+89,Male,2025-09-18 14:14:39.146168,difficulty breathing,180,105,128,91,29,36.7,8,Alert,False,True,False,"['Arthritis', 'Kidney Disease', 'Hypertension']",9,[],0,2
+56,Male,2025-09-18 13:59:39.149169,fever with vomiting,101,65,69,95,19,36.6,4,Alert,False,True,False,[],0,[],5,3
+61,Male,2025-09-18 14:05:39.159673,common cold symptoms,125,74,86,96,16,37.2,1,Alert,False,False,False,"['COPD', 'Heart Disease', 'Cancer']",3,[],0,5
+43,Male,2025-09-18 14:15:39.160674,routine check-up,137,80,85,97,16,36.8,0,Alert,False,False,False,['COPD'],1,['Shellfish'],0,5
+19,Male,2025-09-18 14:13:39.152159,mild headache,138,70,86,98,18,37.3,2,Alert,False,False,False,[],0,[],0,4
+54,Male,2025-09-18 13:56:39.147171,moderate laceration,128,95,64,93,24,37.2,4,Alert,False,True,False,[],0,[],2,3
+32,Male,2025-09-18 13:57:39.152159,minor laceration,139,80,80,99,13,36.8,5,Alert,False,False,True,['Diabetes'],1,[],0,4
+54,Male,2025-09-18 15:03:39.151160,kidney stone pain,144,65,92,95,22,36.6,5,Alert,False,False,False,['Cancer'],3,"['Shellfish', 'Latex']",3,3
+40,Female,2025-09-18 15:19:39.154669,minor laceration,117,72,71,96,17,37.0,2,Alert,False,False,False,['Heart Disease'],3,[],0,4
+64,Female,2025-09-18 13:37:39.159673,medication refill,130,84,89,98,15,36.9,1,Alert,False,False,False,"['Cancer', 'Asthma']",2,[],2,5
+35,Female,2025-09-18 14:47:39.154669,minor burn,110,85,76,100,14,36.6,3,Alert,False,False,False,['Arthritis'],3,[],3,4
+33,Female,2025-09-18 15:25:39.148170,broken bone suspected,129,93,68,93,24,36.6,4,Alert,False,False,False,['Arthritis'],3,[],2,3
+18,Male,2025-09-18 14:33:39.158679,mild headache,128,77,65,100,17,37.1,2,Alert,False,False,False,[],0,[],0,4
+42,Female,2025-09-18 14:05:39.155677,back pain,122,82,65,99,16,37.0,4,Alert,False,False,False,['Diabetes'],2,"['Sulfa', 'Penicillin']",4,4
+23,Female,2025-09-18 14:40:39.152159,sprained ankle,125,82,73,96,14,36.6,2,Alert,True,False,False,['Heart Disease'],2,[],1,4
+41,Male,2025-09-18 14:35:39.158679,mild headache,110,85,65,100,16,37.2,5,Alert,False,False,False,[],0,[],1,4
+46,Male,2025-09-18 15:00:39.152159,moderate abdominal pain,112,74,109,93,19,37.2,6,Alert,False,True,False,"['Hypertension', 'Asthma']",6,['Penicillin'],2,3
+38,Male,2025-09-18 13:44:39.150164,fever with vomiting,159,95,83,96,21,38.1,7,Alert,False,True,True,[],0,[],3,3
+23,Female,2025-09-18 14:02:39.152159,minor laceration,124,73,67,98,18,37.0,5,Alert,False,False,False,['COPD'],2,[],1,4
+91,Male,2025-09-18 14:59:39.159673,routine check-up,122,73,61,96,13,37.0,0,Alert,False,False,False,"['Hypertension', 'Kidney Disease']",4,[],5,5
+44,Male,2025-09-18 15:09:39.151160,moderate head injury,104,74,63,93,23,37.1,5,Alert,True,True,False,[],0,['Latex'],2,3
+56,Male,2025-09-18 14:21:39.149169,fever with vomiting,121,85,86,93,22,37.7,7,Alert,False,True,False,['Kidney Disease'],2,[],3,3
+13,Male,2025-09-18 13:49:39.153663,back pain,131,84,64,100,14,36.9,2,Alert,False,False,False,['Diabetes'],3,[],0,4
+28,Male,2025-09-18 13:44:39.160674,medication refill,132,74,83,97,14,36.9,2,Alert,False,False,False,[],0,[],0,5
+87,Female,2025-09-18 14:07:39.154669,sprained ankle,120,70,69,100,14,36.7,4,Alert,True,False,False,"['Arthritis', 'Diabetes']",2,[],1,4
+3,Female,2025-09-18 14:43:39.144167,stroke symptoms,158,101,147,88,25,38.8,9,Voice,True,True,False,[],0,[],0,2
+53,Female,2025-09-18 14:58:39.150164,asthma exacerbation,127,77,82,93,22,37.9,5,Alert,False,True,False,['Heart Disease'],1,[],2,3
+58,Male,2025-09-18 14:44:39.148170,moderate abdominal pain,127,84,102,96,20,37.6,6,Alert,True,False,False,['Heart Disease'],2,[],4,3
+47,Male,2025-09-18 15:06:39.157675,mild headache,120,75,75,99,16,37.0,4,Alert,True,False,False,"['Kidney Disease', 'Diabetes']",2,['Peanuts'],3,4
+87,Male,2025-09-18 14:06:39.146168,chest pain with sweating,88,63,51,92,25,36.9,10,Voice,False,False,True,"['Cancer', 'Hypertension', 'Heart Disease']",6,[],2,2
+53,Female,2025-09-18 14:55:39.157675,mild headache,139,84,78,98,13,36.7,4,Alert,False,False,False,['Asthma'],1,['Latex'],2,4
+22,Male,2025-09-18 15:11:39.157675,ear pain,125,81,74,98,12,36.8,5,Alert,False,False,False,[],0,[],2,4
+42,Female,2025-09-18 13:42:39.157675,sprained ankle,121,77,83,97,17,37.5,5,Alert,False,False,False,['COPD'],1,[],4,4
+60,Male,2025-09-18 13:59:39.150164,kidney stone pain,153,83,84,96,19,36.9,6,Alert,False,False,False,"['Kidney Disease', 'Cancer']",2,[],1,3
+15,Female,2025-09-18 14:01:39.149169,kidney stone pain,102,76,87,93,19,38.2,4,Alert,False,False,False,['Cancer'],2,[],0,3
+29,Female,2025-09-18 14:53:39.158679,minor laceration,132,75,71,98,13,37.3,4,Alert,False,False,False,[],0,[],1,4
+50,Male,2025-09-18 15:12:39.153663,sore throat,113,72,81,100,14,36.7,5,Alert,False,False,True,['Asthma'],1,"['Sulfa', 'Shellfish']",1,4
+61,Male,2025-09-18 15:02:39.147171,kidney stone pain,135,89,97,96,24,37.1,7,Alert,False,False,True,['Cancer'],3,[],4,3
+11,Male,2025-09-18 15:13:39.161670,medication refill,132,78,75,98,18,37.0,1,Alert,False,False,False,[],0,[],0,5
+77,Female,2025-09-18 13:56:39.145172,chest pain with sweating,176,95,54,92,24,38.4,10,Voice,False,True,True,"['Hypertension', 'Cancer']",6,[],2,2
+12,Female,2025-09-18 15:19:39.147171,asthma exacerbation,160,79,83,94,19,37.0,6,Alert,False,False,False,[],0,[],1,3
+34,Female,2025-09-18 14:16:39.160674,routine check-up,135,85,84,97,17,36.6,2,Alert,False,False,False,['Cancer'],1,['Peanuts'],3,5
+33,Male,2025-09-18 15:01:39.151160,kidney stone pain,124,76,67,93,21,38.2,7,Alert,True,False,False,['Diabetes'],1,['Latex'],2,3
+40,Female,2025-09-18 13:56:39.150164,asthma exacerbation,137,89,104,93,18,36.8,6,Alert,False,True,True,[],0,[],0,3
+0,Male,2025-09-18 14:15:39.146168,altered mental status,151,102,149,88,25,37.0,10,Alert,False,True,False,['Cancer'],3,"['Peanuts', 'Latex']",0,2
+22,Male,2025-09-18 14:38:39.159673,mild constipation,125,79,79,99,16,37.1,2,Alert,False,False,False,['Asthma'],1,[],0,5
+47,Male,2025-09-18 14:20:39.160674,minor rash,138,82,86,97,16,37.0,2,Alert,False,False,False,"['Heart Disease', 'Diabetes']",2,"['Sulfa', 'Shellfish']",4,5
+51,Male,2025-09-18 13:42:39.153663,minor burn,140,78,75,96,16,37.4,4,Alert,False,False,False,['Kidney Disease'],1,[],0,4
+71,Male,2025-09-18 14:47:39.160674,medication refill,121,85,83,100,12,37.1,0,Alert,False,False,False,['Heart Disease'],2,[],3,5
+41,Male,2025-09-18 14:35:39.154669,minor laceration,126,80,82,98,16,37.4,3,Alert,False,False,False,[],0,"['Shellfish', 'Latex']",2,4
+23,Male,2025-09-18 14:10:39.160674,common cold symptoms,132,70,63,96,15,37.1,0,Alert,False,False,False,['Asthma'],1,[],2,5
+38,Female,2025-09-18 15:10:39.151160,asthma exacerbation,127,86,92,95,19,36.6,4,Alert,False,False,True,[],0,[],3,3
+59,Male,2025-09-18 15:13:39.153663,sore throat,127,83,63,97,15,36.6,3,Alert,False,False,False,[],0,['Peanuts'],0,4
+44,Male,2025-09-18 13:54:39.155677,ear pain,115,80,83,97,12,37.2,2,Alert,False,False,False,"['Cancer', 'Asthma']",4,[],1,4
+26,Female,2025-09-18 13:39:39.150164,fever with vomiting,110,76,101,96,20,36.8,7,Alert,False,True,False,[],0,"['Sulfa', 'Penicillin']",0,3
+20,Male,2025-09-18 14:32:39.150164,moderate head injury,144,75,69,95,21,37.9,6,Alert,False,False,False,[],0,['Penicillin'],1,3
+20,Female,2025-09-18 14:53:39.147171,asthma exacerbation,141,81,97,93,18,37.2,7,Alert,False,False,False,['COPD'],1,[],1,3
+54,Female,2025-09-18 14:03:39.159673,routine check-up,113,80,64,98,17,37.4,1,Alert,False,False,False,[],0,['Latex'],1,5
+16,Male,2025-09-18 14:29:39.158679,ear pain,126,75,89,100,12,37.4,4,Alert,True,False,False,[],0,"['Latex', 'Peanuts']",1,4
+33,Male,2025-09-18 14:01:39.159673,routine check-up,135,74,75,100,13,37.2,0,Alert,False,False,False,['Kidney Disease'],1,"['Shellfish', 'Sulfa']",1,5
+26,Male,2025-09-18 14:30:39.151160,moderate abdominal pain,125,79,75,94,21,38.0,4,Alert,False,False,False,['Asthma'],2,"['Shellfish', 'Penicillin']",2,3
+28,Male,2025-09-18 13:27:39.147171,moderate head injury,159,78,84,93,24,38.1,5,Alert,False,False,False,['Kidney Disease'],2,[],2,3
+38,Female,2025-09-18 14:20:39.157675,sore throat,112,79,81,98,13,37.2,4,Alert,False,False,False,['Cancer'],2,[],0,4
+44,Female,2025-09-18 13:27:39.150164,asthma exacerbation,117,88,74,93,20,38.3,6,Alert,False,False,True,['Cancer'],1,[],4,3
+25,Male,2025-09-18 14:21:39.151160,broken bone suspected,144,84,66,95,18,38.0,7,Alert,False,False,True,['Hypertension'],3,"['Latex', 'Shellfish']",2,3
+39,Female,2025-09-18 14:41:39.158679,mild headache,126,77,69,100,13,37.1,5,Alert,False,False,False,[],0,[],2,4
+62,Female,2025-09-18 15:15:39.153663,sore throat,120,75,67,96,13,37.4,4,Alert,False,False,False,"['COPD', 'Hypertension']",2,[],1,4
+65,Female,2025-09-18 13:57:39.159673,medication refill,137,76,73,96,15,36.7,2,Alert,False,False,False,"['Kidney Disease', 'Heart Disease', 'Diabetes', 'Hypertension']",8,[],4,5
+21,Male,2025-09-18 14:04:39.146168,kidney stone pain,133,77,95,93,20,38.0,7,Alert,False,False,True,['Heart Disease'],3,['Penicillin'],1,3
+43,Female,2025-09-18 14:53:39.152159,minor burn,140,70,60,99,16,36.7,3,Alert,False,False,True,[],0,['Sulfa'],0,4
+48,Male,2025-09-18 14:45:39.153663,minor burn,121,84,82,99,18,36.5,2,Alert,False,False,False,[],0,[],2,4
+55,Male,2025-09-18 14:30:39.147171,kidney stone pain,139,66,68,95,24,38.2,5,Alert,False,False,False,['Kidney Disease'],1,[],5,3
+38,Female,2025-09-18 14:16:39.147171,asthma exacerbation,136,67,90,94,24,38.0,4,Alert,True,False,False,['Arthritis'],3,[],0,3
+48,Female,2025-09-18 14:26:39.155677,minor laceration,111,71,85,99,12,36.6,5,Alert,False,False,False,['Asthma'],1,[],4,4
+28,Male,2025-09-18 13:51:39.148170,asthma exacerbation,106,76,68,94,20,36.8,6,Alert,True,True,True,[],0,[],2,3
+24,Female,2025-09-18 13:49:39.159673,minor rash,132,74,79,96,13,37.1,0,Alert,False,False,False,[],0,['Sulfa'],0,5
+53,Female,2025-09-18 14:25:39.148170,fever with vomiting,138,89,90,96,23,38.2,4,Alert,True,False,False,['Hypertension'],2,[],1,3
+73,Female,2025-09-18 14:46:39.149169,moderate head injury,117,81,81,94,18,38.2,6,Alert,False,False,False,['Cancer'],2,[],4,3
+2,Female,2025-09-18 14:49:39.145172,difficulty breathing,147,107,141,89,24,37.4,8,Alert,False,True,False,[],0,[],0,2
+22,Male,2025-09-18 14:02:39.144167,severe trauma,83,46,172,88,33,40.5,9,Pain,True,True,True,['Diabetes'],2,[],2,1
+45,Male,2025-09-18 14:26:39.157675,back pain,114,74,82,96,15,36.5,3,Alert,False,False,False,"['Heart Disease', 'COPD']",2,"['Penicillin', 'Peanuts']",0,4
+13,Male,2025-09-18 14:48:39.155677,minor laceration,110,79,71,98,13,37.3,3,Alert,False,False,False,[],0,[],0,4
+31,Male,2025-09-18 13:33:39.156676,mild headache,124,73,87,96,18,36.7,4,Alert,False,False,False,['Heart Disease'],1,[],2,4
+32,Female,2025-09-18 15:15:39.153663,minor laceration,134,81,63,96,16,37.5,3,Alert,True,False,False,['Diabetes'],2,"['Shellfish', 'Sulfa']",1,4
+24,Female,2025-09-18 14:28:39.152159,ear pain,113,78,66,99,16,37.2,5,Alert,True,False,False,[],0,"['Latex', 'Shellfish']",1,4
+53,Female,2025-09-18 14:58:39.146168,asthma exacerbation,110,75,81,96,20,37.7,7,Alert,False,False,False,"['Arthritis', 'Cancer']",4,[],0,3
+45,Female,2025-09-18 14:43:39.151160,broken bone suspected,128,86,108,93,21,37.8,4,Alert,False,False,False,[],0,['Latex'],0,3
+0,Male,2025-09-18 15:06:39.153663,minor laceration,109,71,104,98,18,36.9,2,Alert,False,False,False,[],0,[],0,4
+90,Male,2025-09-18 15:21:39.155677,minor laceration,124,72,80,97,18,36.5,2,Alert,False,False,False,"['Hypertension', 'Cancer', 'Arthritis']",6,"['Penicillin', 'Shellfish']",5,4
+41,Female,2025-09-18 13:39:39.148170,moderate laceration,105,65,70,93,18,36.7,7,Alert,False,True,False,"['COPD', 'Heart Disease']",4,[],0,3
+87,Male,2025-09-18 14:56:39.158679,back pain,134,75,90,99,15,37.3,3,Alert,False,False,False,"['Heart Disease', 'Hypertension', 'Cancer', 'Kidney Disease']",4,[],5,4
+23,Female,2025-09-18 15:21:39.159673,common cold symptoms,127,83,63,97,17,36.5,1,Alert,False,False,False,['Diabetes'],3,"['Peanuts', 'Sulfa']",0,5
+35,Female,2025-09-18 13:42:39.148170,moderate head injury,146,74,108,96,20,37.3,5,Alert,False,False,False,['Asthma'],1,[],1,3
+13,Male,2025-09-18 14:17:39.152159,minor laceration,137,78,61,99,17,37.5,3,Alert,False,False,False,[],0,[],0,4
+0,Male,2025-09-18 13:25:39.153663,ear pain,113,82,110,96,17,36.9,5,Alert,False,False,True,['Cancer'],1,[],0,4
+31,Female,2025-09-18 14:11:39.157675,sprained ankle,128,82,78,96,15,37.2,3,Alert,False,False,False,[],0,[],1,4
+79,Male,2025-09-18 15:00:39.145172,chest pain with sweating,183,106,52,88,28,38.4,8,Voice,False,False,True,"['Hypertension', 'Arthritis', 'Diabetes', 'Heart Disease']",4,[],3,2
+53,Male,2025-09-18 13:25:39.151160,broken bone suspected,113,93,68,94,20,37.8,7,Alert,False,False,True,[],0,"['Latex', 'Shellfish']",3,3
+15,Male,2025-09-18 15:15:39.154669,mild headache,122,76,63,98,12,36.6,4,Alert,False,False,False,[],0,['Sulfa'],1,4
+49,Female,2025-09-18 14:28:39.157675,ear pain,137,71,60,98,18,36.6,4,Alert,False,False,False,['Kidney Disease'],3,[],2,4
+32,Male,2025-09-18 14:24:39.151160,moderate abdominal pain,156,93,66,94,21,37.5,7,Alert,True,False,True,[],0,['Penicillin'],2,3
+43,Female,2025-09-18 14:54:39.152159,sprained ankle,139,80,88,96,18,37.1,3,Alert,False,False,False,"['Cancer', 'Hypertension']",2,[],0,4
+67,Male,2025-09-18 15:14:39.159673,minor rash,128,78,84,100,12,36.8,1,Alert,False,False,False,['Kidney Disease'],2,['Shellfish'],5,5
+30,Female,2025-09-18 13:56:39.144167,difficulty breathing,89,62,122,88,30,39.0,9,Voice,False,False,False,[],0,[],2,2
+52,Male,2025-09-18 14:22:39.149169,kidney stone pain,122,93,77,93,20,38.0,6,Alert,False,False,False,['Asthma'],2,"['Peanuts', 'Latex']",0,3
+61,Male,2025-09-18 14:01:39.149169,moderate abdominal pain,120,69,69,94,18,36.9,6,Alert,True,False,False,"['Arthritis', 'COPD']",4,[],5,3
+88,Female,2025-09-18 14:15:39.144167,severe allergic reaction with difficulty breathing,188,135,139,85,38,35.3,10,Pain,False,True,True,"['Hypertension', 'Heart Disease']",4,[],2,1
+0,Male,2025-09-18 14:16:39.153663,minor laceration,94,72,98,99,15,37.1,3,Alert,False,False,False,[],0,[],0,4
+55,Male,2025-09-18 13:51:39.151160,kidney stone pain,158,77,65,94,20,38.2,4,Alert,True,True,True,"['Kidney Disease', 'Heart Disease']",6,[],4,3
+44,Male,2025-09-18 13:36:39.148170,asthma exacerbation,116,87,76,96,23,37.5,6,Alert,True,False,False,"['Diabetes', 'Asthma']",2,[],3,3
+17,Male,2025-09-18 14:54:39.157675,back pain,124,82,90,96,12,37.0,4,Alert,False,False,False,[],0,[],0,4
+5,Male,2025-09-18 14:45:39.144167,severe trauma,188,110,151,77,8,34.3,10,Unresponsive,True,True,True,['Diabetes'],2,[],0,1
+53,Male,2025-09-18 15:07:39.146168,kidney stone pain,141,68,92,96,22,37.6,6,Alert,False,False,False,"['Cancer', 'Asthma']",4,[],5,3
+69,Female,2025-09-18 14:04:39.149169,broken bone suspected,133,82,68,96,20,36.8,6,Alert,False,False,False,"['Heart Disease', 'Arthritis']",6,[],4,3
+74,Female,2025-09-18 14:32:39.145172,severe abdominal pain,174,102,53,89,26,36.9,7,Voice,False,False,False,"['Hypertension', 'Cancer', 'COPD', 'Kidney Disease']",8,[],3,2
+55,Female,2025-09-18 13:47:39.159673,routine check-up,120,73,69,100,18,36.6,2,Alert,False,False,False,"['Heart Disease', 'Arthritis']",2,[],5,5
+67,Female,2025-09-18 14:54:39.147171,fever with vomiting,120,88,87,93,20,37.8,7,Alert,True,False,False,"['Hypertension', 'Asthma', 'Diabetes']",3,[],0,3
+54,Male,2025-09-18 15:03:39.150164,kidney stone pain,137,76,77,94,20,36.6,5,Alert,False,True,False,[],0,[],5,3
+53,Female,2025-09-18 14:02:39.152159,moderate laceration,105,81,95,96,20,37.7,6,Alert,False,True,True,"['Hypertension', 'Diabetes']",4,"['Sulfa', 'Penicillin']",4,3
+37,Male,2025-09-18 13:55:39.152159,moderate head injury,143,83,106,96,20,38.0,7,Alert,False,False,False,['Diabetes'],2,[],3,3
+65,Female,2025-09-18 15:03:39.149169,moderate laceration,132,91,82,93,19,38.2,6,Alert,False,True,False,"['Cancer', 'Kidney Disease', 'Diabetes']",3,"['Sulfa', 'Shellfish']",4,3
+36,Female,2025-09-18 14:03:39.150164,moderate laceration,117,89,87,93,21,38.2,7,Alert,False,True,False,[],0,"['Sulfa', 'Penicillin']",3,3
+69,Male,2025-09-18 14:31:39.150164,moderate abdominal pain,109,72,86,95,19,37.6,5,Alert,False,True,False,"['Arthritis', 'Heart Disease', 'Kidney Disease']",6,[],2,3
+65,Female,2025-09-18 13:27:39.153663,minor laceration,134,71,61,100,17,37.3,5,Alert,False,False,False,"['Kidney Disease', 'Hypertension', 'Diabetes']",3,[],1,4
+35,Female,2025-09-18 13:36:39.149169,moderate head injury,140,84,73,93,23,36.9,6,Alert,False,False,False,[],0,['Sulfa'],2,3
+40,Female,2025-09-18 14:31:39.150164,moderate head injury,148,82,72,93,24,38.3,5,Alert,False,False,False,[],0,[],3,3
+27,Female,2025-09-18 14:36:39.159673,medication refill,134,85,60,98,15,36.5,0,Alert,False,False,False,[],0,"['Sulfa', 'Latex']",0,5
+58,Male,2025-09-18 14:16:39.147171,kidney stone pain,159,82,97,94,23,38.2,5,Alert,True,False,True,[],0,[],3,3
+29,Female,2025-09-18 14:41:39.152159,asthma exacerbation,125,75,74,95,22,37.3,6,Alert,False,False,False,[],0,['Peanuts'],2,3
+46,Female,2025-09-18 14:17:39.157675,minor burn,110,84,81,97,16,37.3,3,Alert,False,False,False,[],0,[],4,4
+50,Male,2025-09-18 14:10:39.150164,kidney stone pain,126,79,78,93,20,36.7,6,Alert,False,False,False,[],0,[],0,3
+42,Female,2025-09-18 14:33:39.149169,moderate head injury,103,67,102,93,23,36.6,6,Alert,False,False,False,"['Diabetes', 'Cancer']",2,[],1,3
+0,Female,2025-09-18 13:50:39.145172,severe burn,70,61,72,91,30,38.3,9,Alert,False,False,True,[],0,"['Latex', 'Sulfa']",0,2
+38,Male,2025-09-18 14:18:39.152159,minor burn,116,75,82,98,13,37.2,2,Alert,True,False,False,['Heart Disease'],3,[],1,4
+23,Male,2025-09-18 15:05:39.159673,minor rash,125,83,62,96,14,36.7,0,Alert,False,False,False,[],0,[],1,5
+49,Female,2025-09-18 13:35:39.160674,routine check-up,123,85,88,96,15,36.9,0,Alert,False,False,False,['Arthritis'],1,[],2,5
+79,Female,2025-09-18 14:54:39.144167,respiratory failure,218,123,141,78,34,40.8,9,Unresponsive,False,True,False,"['Kidney Disease', 'Hypertension', 'COPD', 'Cancer']",4,[],1,1
+54,Male,2025-09-18 13:52:39.157675,back pain,119,73,61,99,18,36.8,3,Alert,True,False,False,[],0,[],5,4
+72,Female,2025-09-18 13:26:39.149169,fever with vomiting,153,66,85,96,21,38.0,5,Alert,True,False,False,"['Diabetes', 'Hypertension', 'COPD']",9,[],1,3
+49,Female,2025-09-18 13:33:39.152159,mild headache,128,80,77,98,15,36.6,5,Alert,False,False,False,"['COPD', 'Arthritis']",6,['Penicillin'],3,4
+5,Female,2025-09-18 14:20:39.146168,severe bleeding from head wound,164,110,131,89,29,38.0,7,Voice,True,True,True,['Cancer'],3,"['Shellfish', 'Peanuts']",0,2
+39,Male,2025-09-18 14:24:39.148170,broken bone suspected,100,85,61,93,20,37.7,7,Alert,False,False,False,['COPD'],3,[],2,3
+0,Female,2025-09-18 15:08:39.151160,moderate abdominal pain,137,70,83,95,18,37.4,6,Alert,False,False,True,[],0,[],0,3
+27,Male,2025-09-18 14:34:39.146168,difficulty breathing,179,110,51,88,26,35.8,9,Voice,True,False,False,['Arthritis'],2,[],0,2
+12,Female,2025-09-18 13:40:39.153663,back pain,131,78,63,96,15,37.0,4,Alert,False,False,False,[],0,[],1,4
+25,Male,2025-09-18 13:34:39.155677,sprained ankle,117,78,74,96,16,37.5,2,Alert,False,False,False,[],0,[],0,4
+82,Male,2025-09-18 14:31:39.144167,active seizure,193,126,44,77,35,35.0,10,Unresponsive,True,True,False,"['Heart Disease', 'Arthritis']",2,[],0,1
+74,Male,2025-09-18 13:45:39.153663,sore throat,110,79,85,98,13,36.6,4,Alert,False,False,False,['COPD'],3,[],1,4
+73,Female,2025-09-18 14:35:39.160674,routine check-up,115,74,88,96,18,36.6,2,Alert,False,False,False,['Asthma'],2,['Penicillin'],3,5
+30,Male,2025-09-18 14:08:39.159673,mild constipation,137,73,83,97,17,36.5,2,Alert,False,False,False,[],0,['Peanuts'],2,5
+47,Female,2025-09-18 15:18:39.158679,minor burn,134,76,82,99,17,36.5,5,Alert,False,False,False,"['Heart Disease', 'Hypertension']",6,[],1,4
+50,Male,2025-09-18 15:05:39.152159,broken bone suspected,101,71,76,96,23,38.4,5,Alert,False,False,True,[],0,[],0,3
+45,Female,2025-09-18 15:02:39.146168,asthma exacerbation,151,66,70,95,20,38.1,4,Alert,True,False,False,[],0,[],2,3
+57,Female,2025-09-18 14:26:39.147171,moderate head injury,144,76,61,96,24,37.8,5,Alert,False,False,True,"['Arthritis', 'Diabetes']",2,['Shellfish'],3,3
+28,Female,2025-09-18 14:51:39.148170,moderate abdominal pain,155,75,83,95,18,38.5,5,Alert,False,False,False,[],0,[],2,3
+30,Male,2025-09-18 14:15:39.149169,asthma exacerbation,127,68,72,93,20,36.9,4,Alert,True,False,False,['Diabetes'],1,[],3,3
+13,Male,2025-09-18 13:59:39.160674,common cold symptoms,129,82,63,97,14,37.0,0,Alert,False,False,False,['Hypertension'],3,[],0,5
+41,Male,2025-09-18 14:07:39.152159,moderate head injury,142,91,85,94,18,37.1,4,Alert,False,True,False,[],0,[],1,3
+35,Female,2025-09-18 13:34:39.159673,minor rash,121,78,69,96,12,37.2,1,Alert,False,False,False,[],0,"['Penicillin', 'Peanuts']",2,5
+26,Female,2025-09-18 14:37:39.151160,fever with vomiting,111,75,99,96,21,37.6,6,Alert,False,False,False,[],0,[],0,3
+20,Female,2025-09-18 15:16:39.159673,routine check-up,128,73,80,100,14,37.3,2,Alert,False,False,False,['Diabetes'],3,[],1,5
+53,Female,2025-09-18 15:09:39.159673,mild constipation,115,76,64,97,17,37.1,2,Alert,False,False,False,[],0,['Sulfa'],1,5
+58,Male,2025-09-18 15:11:39.159673,medication refill,139,77,71,100,12,37.1,0,Alert,False,False,False,[],0,[],2,5
+40,Male,2025-09-18 14:52:39.157675,sore throat,127,81,68,97,16,36.8,3,Alert,True,False,False,[],0,"['Sulfa', 'Latex']",4,4
+39,Female,2025-09-18 14:39:39.151160,asthma exacerbation,152,94,68,93,20,37.6,7,Alert,False,False,False,['Kidney Disease'],2,[],3,3
+74,Female,2025-09-18 14:12:39.155677,back pain,138,73,69,100,16,37.0,2,Alert,False,False,False,"['Heart Disease', 'Arthritis', 'Diabetes', 'Cancer']",8,[],4,4
+56,Female,2025-09-18 13:56:39.156676,mild headache,114,76,72,98,15,36.8,3,Alert,True,False,False,[],0,[],3,4
+28,Female,2025-09-18 14:33:39.152159,broken bone suspected,131,77,83,96,20,36.5,4,Alert,True,False,False,[],0,[],0,3
+36,Female,2025-09-18 15:22:39.159673,medication refill,124,81,71,100,16,37.3,2,Alert,False,False,False,[],0,[],3,5
+53,Female,2025-09-18 14:40:39.159673,mild constipation,111,71,87,99,15,36.7,1,Alert,False,False,False,['Hypertension'],3,['Sulfa'],0,5
+65,Female,2025-09-18 15:16:39.154669,minor laceration,113,74,74,97,16,37.0,5,Alert,False,False,False,"['Arthritis', 'Asthma', 'Cancer', 'Heart Disease']",12,['Shellfish'],0,4
+34,Female,2025-09-18 13:42:39.151160,asthma exacerbation,154,76,84,93,19,37.2,5,Alert,False,False,False,[],0,[],3,3
+53,Male,2025-09-18 14:12:39.151160,asthma exacerbation,112,77,84,95,19,37.8,5,Alert,False,False,True,"['Diabetes', 'Heart Disease']",6,[],1,3
+36,Female,2025-09-18 14:09:39.153663,sore throat,136,82,73,96,13,36.6,2,Alert,False,False,False,['Heart Disease'],3,['Latex'],0,4
+43,Male,2025-09-18 13:45:39.144167,severe burn,167,107,125,89,32,37.4,10,Alert,False,True,False,[],0,['Latex'],4,2
+24,Male,2025-09-18 15:07:39.150164,moderate abdominal pain,153,77,102,93,23,37.2,5,Alert,False,False,False,['Kidney Disease'],1,[],0,3
+16,Male,2025-09-18 15:04:39.151160,asthma exacerbation,149,73,110,93,21,37.0,4,Alert,False,False,False,['COPD'],1,[],0,3
+34,Female,2025-09-18 13:56:39.159673,common cold symptoms,116,70,84,98,18,36.7,0,Alert,False,False,False,[],0,[],1,5
+66,Female,2025-09-18 14:22:39.144167,stroke symptoms,85,57,115,89,32,35.7,9,Alert,False,True,False,"['COPD', 'Diabetes', 'Heart Disease', 'Kidney Disease']",4,"['Shellfish', 'Sulfa']",3,2
+50,Male,2025-09-18 14:14:39.147171,moderate laceration,119,75,86,94,20,37.4,5,Alert,False,False,False,[],0,[],0,3
+40,Female,2025-09-18 14:27:39.155677,ear pain,114,75,89,100,16,37.0,4,Alert,False,False,False,['Hypertension'],3,['Latex'],2,4
+29,Male,2025-09-18 14:37:39.153663,sore throat,140,84,67,97,17,37.0,2,Alert,False,False,False,['Arthritis'],1,[],2,4
+26,Male,2025-09-18 15:25:39.153663,sprained ankle,126,77,68,100,15,37.1,5,Alert,False,False,False,['Asthma'],3,[],0,4
+37,Female,2025-09-18 13:58:39.147171,asthma exacerbation,127,95,109,95,23,37.8,6,Alert,False,False,False,['Hypertension'],2,[],2,3
+72,Female,2025-09-18 14:20:39.154669,sprained ankle,125,72,84,99,16,37.3,2,Alert,False,False,False,['Cancer'],2,['Shellfish'],2,4
+3,Male,2025-09-18 13:38:39.144167,chest pain with sweating,70,58,67,88,25,38.6,7,Alert,False,False,True,['Hypertension'],3,['Peanuts'],0,2
+51,Male,2025-09-18 14:13:39.153663,sprained ankle,137,79,60,98,16,37.2,2,Alert,False,False,False,['Kidney Disease'],2,"['Latex', 'Penicillin']",5,4
+19,Female,2025-09-18 15:00:39.153663,ear pain,140,72,72,98,17,37.0,4,Alert,False,False,False,['Arthritis'],2,[],1,4
+49,Female,2025-09-18 14:47:39.157675,minor burn,124,73,72,98,14,36.8,5,Alert,False,False,True,[],0,"['Sulfa', 'Shellfish']",0,4
+28,Female,2025-09-18 13:34:39.160674,medication refill,138,83,69,100,13,36.9,0,Alert,False,False,False,['Kidney Disease'],3,['Shellfish'],1,5
+54,Male,2025-09-18 13:25:39.154669,ear pain,114,70,83,98,16,36.9,5,Alert,False,False,False,"['Asthma', 'Hypertension']",6,[],3,4
+69,Female,2025-09-18 13:26:39.148170,kidney stone pain,158,72,105,94,22,38.1,7,Alert,False,False,True,"['Kidney Disease', 'COPD']",6,[],4,3
+60,Male,2025-09-18 13:57:39.157675,ear pain,135,80,88,96,13,36.5,2,Alert,False,False,False,['Cancer'],2,[],3,4
+51,Male,2025-09-18 13:47:39.158679,mild headache,137,80,61,96,13,37.5,2,Alert,False,False,False,[],0,"['Penicillin', 'Shellfish']",1,4
+0,Female,2025-09-18 13:43:39.154669,minor burn,107,85,108,96,18,36.8,3,Alert,False,False,True,[],0,"['Shellfish', 'Penicillin']",0,4
+42,Male,2025-09-18 14:19:39.145172,severe abdominal pain,165,104,130,89,28,37.0,9,Alert,True,True,True,[],0,[],1,2
+45,Female,2025-09-18 14:47:39.159673,routine check-up,132,74,85,96,12,36.8,2,Alert,False,False,False,"['Diabetes', 'Cancer']",2,[],0,5
+1,Male,2025-09-18 15:24:39.144167,difficulty breathing,164,110,68,92,26,38.4,9,Alert,False,False,True,['Heart Disease'],1,"['Peanuts', 'Penicillin']",0,2
+34,Male,2025-09-18 14:19:39.145172,severe abdominal pain,95,61,47,90,25,38.8,7,Alert,False,False,True,['Arthritis'],1,"['Latex', 'Penicillin']",1,2
+59,Female,2025-09-18 13:58:39.155677,sprained ankle,136,83,67,98,15,36.6,2,Alert,False,False,False,"['COPD', 'Cancer']",4,"['Latex', 'Penicillin']",0,4
+36,Female,2025-09-18 13:34:39.158679,sprained ankle,128,70,69,96,12,37.4,4,Alert,False,False,False,[],0,[],1,4
+0,Male,2025-09-18 14:41:39.149169,broken bone suspected,132,85,95,93,20,37.8,6,Alert,False,True,False,[],0,['Sulfa'],0,3
+29,Male,2025-09-18 14:51:39.149169,kidney stone pain,134,76,68,94,20,38.1,5,Alert,True,False,True,[],0,[],2,3
+0,Male,2025-09-18 14:53:39.160674,routine check-up,108,71,108,99,13,37.2,2,Alert,False,False,False,['Arthritis'],2,['Sulfa'],0,5
+53,Male,2025-09-18 14:29:39.147171,broken bone suspected,129,67,86,94,19,36.6,6,Alert,False,True,False,"['Hypertension', 'Arthritis']",6,[],0,3
+44,Male,2025-09-18 14:53:39.147171,moderate abdominal pain,152,66,108,93,24,37.5,5,Alert,False,True,False,['COPD'],3,['Sulfa'],3,3
+48,Female,2025-09-18 14:50:39.146168,moderate abdominal pain,124,92,84,93,23,37.9,6,Alert,False,False,False,['COPD'],1,[],4,3
+47,Female,2025-09-18 15:19:39.155677,minor laceration,119,70,63,99,15,37.3,5,Alert,False,False,False,[],0,"['Shellfish', 'Latex']",0,4
+28,Male,2025-09-18 15:14:39.144167,severe trauma,84,43,138,82,7,40.7,8,Pain,False,True,False,['Kidney Disease'],2,[],2,1
+76,Female,2025-09-18 14:49:39.144167,cardiac arrest,219,116,39,75,35,35.4,9,Unresponsive,True,True,False,"['Diabetes', 'Asthma']",2,[],0,1
+20,Male,2025-09-18 14:58:39.149169,kidney stone pain,114,77,81,95,21,36.5,4,Alert,False,True,False,['Kidney Disease'],2,[],2,3
+26,Male,2025-09-18 15:13:39.152159,mild headache,138,85,63,98,17,36.6,5,Alert,False,False,True,['Arthritis'],2,[],1,4
+20,Female,2025-09-18 13:43:39.151160,moderate head injury,105,75,87,95,22,37.0,5,Alert,True,False,False,['Cancer'],1,[],2,3
+74,Male,2025-09-18 14:26:39.158679,back pain,137,71,67,100,13,37.3,5,Alert,False,False,False,"['Arthritis', 'Diabetes', 'Hypertension', 'Kidney Disease']",4,[],4,4
+85,Male,2025-09-18 13:37:39.157675,sore throat,129,71,86,99,17,36.6,3,Alert,False,False,False,"['Hypertension', 'Heart Disease']",2,[],4,4
+54,Female,2025-09-18 15:04:39.149169,broken bone suspected,145,71,65,94,20,36.7,4,Alert,False,True,False,['Asthma'],3,"['Latex', 'Sulfa']",5,3
+58,Male,2025-09-18 13:30:39.152159,mild headache,137,74,63,100,13,36.7,4,Alert,False,False,False,[],0,[],3,4
+35,Male,2025-09-18 13:37:39.149169,fever with vomiting,160,78,71,93,24,38.2,5,Alert,True,False,False,[],0,[],1,3
+29,Male,2025-09-18 14:35:39.159673,common cold symptoms,138,82,62,97,16,37.3,1,Alert,False,False,False,['Hypertension'],1,['Shellfish'],2,5
+53,Female,2025-09-18 15:17:39.150164,kidney stone pain,145,86,110,96,22,38.0,6,Alert,False,False,False,['Heart Disease'],3,[],5,3
+34,Male,2025-09-18 13:35:39.160674,routine check-up,139,76,84,100,17,37.3,2,Alert,False,False,False,['Diabetes'],1,['Latex'],2,5
+54,Male,2025-09-18 14:05:39.155677,back pain,129,70,62,97,13,36.8,3,Alert,False,False,False,['Asthma'],2,[],2,4
+58,Male,2025-09-18 13:33:39.144167,severe bleeding from head wound,92,58,129,89,32,36.7,7,Alert,False,True,True,"['Cancer', 'Heart Disease']",4,[],1,2
+19,Male,2025-09-18 13:46:39.154669,back pain,128,84,69,98,17,37.1,4,Alert,False,False,False,['Heart Disease'],3,['Latex'],1,4
+90,Female,2025-09-18 14:43:39.152159,mild headache,136,80,77,100,17,36.8,2,Alert,False,False,False,"['Cancer', 'Hypertension', 'COPD']",9,[],2,4
+16,Female,2025-09-18 14:12:39.153663,mild headache,113,85,82,96,15,36.6,5,Alert,False,False,False,[],0,[],1,4
+42,Male,2025-09-18 13:25:39.158679,sprained ankle,118,79,70,99,15,37.0,3,Alert,False,False,True,['Diabetes'],2,[],4,4
+39,Male,2025-09-18 14:55:39.155677,sore throat,127,81,84,97,15,37.0,2,Alert,False,False,False,['Cancer'],2,"['Peanuts', 'Penicillin']",2,4
+87,Female,2025-09-18 15:24:39.144167,difficulty breathing,89,58,119,89,28,37.1,9,Alert,False,True,False,['Heart Disease'],3,[],1,2
+25,Female,2025-09-18 15:07:39.153663,back pain,120,81,65,97,14,37.2,3,Alert,False,False,False,['Hypertension'],2,[],2,4
+56,Female,2025-09-18 13:39:39.152159,mild headache,132,72,65,99,15,36.7,4,Alert,True,False,False,[],0,[],0,4
+29,Female,2025-09-18 15:22:39.157675,sore throat,117,73,74,100,16,37.4,2,Alert,False,False,False,[],0,['Shellfish'],1,4
+4,Female,2025-09-18 14:21:39.146168,difficulty breathing,70,60,70,90,31,37.5,7,Alert,True,True,False,[],0,['Latex'],0,2
+14,Male,2025-09-18 14:45:39.157675,minor laceration,135,74,86,96,17,36.8,3,Alert,False,False,False,['COPD'],1,"['Shellfish', 'Penicillin']",0,4
+27,Male,2025-09-18 14:55:39.148170,broken bone suspected,123,91,101,96,21,37.3,7,Alert,False,False,True,['COPD'],1,['Latex'],0,3
+40,Female,2025-09-18 15:03:39.153663,ear pain,130,72,89,98,14,36.7,2,Alert,True,False,False,[],0,[],3,4
+48,Male,2025-09-18 15:02:39.150164,kidney stone pain,128,73,84,95,23,38.1,6,Alert,False,False,False,['Asthma'],3,[],0,3
+49,Male,2025-09-18 14:38:39.147171,moderate laceration,128,72,97,96,22,38.4,5,Alert,False,True,False,['Diabetes'],3,[],2,3
+1,Male,2025-09-18 14:33:39.144167,severe bleeding from head wound,74,56,68,89,32,38.6,10,Voice,True,False,False,[],0,[],0,2
+45,Female,2025-09-18 14:44:39.151160,broken bone suspected,130,77,94,93,18,37.5,5,Alert,False,False,False,['Kidney Disease'],1,[],0,3
+17,Male,2025-09-18 13:48:39.155677,ear pain,118,73,73,100,16,36.7,5,Alert,False,False,False,['COPD'],1,[],1,4
+67,Female,2025-09-18 14:57:39.152159,ear pain,112,79,74,99,12,37.4,4,Alert,True,False,False,"['COPD', 'Arthritis']",6,[],2,4
+47,Male,2025-09-18 14:35:39.154669,ear pain,115,79,85,98,16,36.9,3,Alert,False,False,False,['Asthma'],1,['Shellfish'],4,4
+7,Female,2025-09-18 14:29:39.149169,moderate head injury,90,74,120,94,20,37.8,4,Alert,True,False,False,[],0,[],0,3
+49,Female,2025-09-18 14:07:39.149169,broken bone suspected,155,80,110,95,23,38.2,4,Alert,False,False,True,['COPD'],3,[],1,3
+101,Female,2025-09-18 14:51:39.152159,ear pain,112,82,74,97,12,37.1,5,Alert,False,False,False,['Diabetes'],1,[],3,4
+44,Female,2025-09-18 14:17:39.147171,kidney stone pain,108,67,110,93,18,36.7,5,Alert,True,False,False,['Arthritis'],3,[],4,3
+35,Male,2025-09-18 13:28:39.148170,broken bone suspected,121,88,107,93,22,37.7,7,Alert,False,False,False,['Diabetes'],2,['Peanuts'],3,3
+33,Male,2025-09-18 14:28:39.149169,fever with vomiting,139,95,66,93,21,38.0,6,Alert,False,False,False,['Hypertension'],1,"['Penicillin', 'Latex']",1,3
+24,Female,2025-09-18 13:41:39.160674,routine check-up,126,72,80,97,14,36.7,2,Alert,False,False,False,[],0,[],1,5
+12,Male,2025-09-18 13:29:39.146168,asthma exacerbation,136,82,97,93,22,36.5,6,Alert,True,False,False,[],0,[],1,3
+40,Male,2025-09-18 14:55:39.150164,moderate abdominal pain,113,88,108,96,19,36.6,6,Alert,False,True,False,['Arthritis'],2,[],0,3
+41,Male,2025-09-18 13:45:39.159673,minor rash,123,78,82,96,12,36.9,2,Alert,False,False,False,['Cancer'],1,[],4,5
+69,Female,2025-09-18 14:52:39.155677,mild headache,110,82,65,98,17,37.2,2,Alert,True,False,False,"['Diabetes', 'Arthritis']",6,[],2,4
+54,Female,2025-09-18 14:43:39.155677,minor burn,118,77,63,100,15,37.2,3,Alert,False,False,False,[],0,[],0,4
+25,Female,2025-09-18 15:15:39.151160,asthma exacerbation,119,77,64,94,23,38.3,6,Alert,False,False,False,[],0,['Penicillin'],2,3
+75,Male,2025-09-18 14:12:39.158679,minor laceration,121,85,86,100,16,36.9,4,Alert,False,False,False,"['Heart Disease', 'Arthritis', 'Asthma']",6,[],1,4
+22,Male,2025-09-18 14:24:39.149169,kidney stone pain,138,92,92,93,21,38.0,5,Alert,True,True,True,[],0,[],1,3
+57,Male,2025-09-18 14:48:39.152159,sore throat,119,70,79,99,18,37.1,3,Alert,False,False,False,[],0,[],1,4
+95,Male,2025-09-18 14:40:39.143160,respiratory failure,204,110,40,73,9,34.3,9,Pain,False,True,True,"['Heart Disease', 'Arthritis', 'Cancer']",9,[],1,1
+57,Male,2025-09-18 15:18:39.159673,mild constipation,111,77,65,98,12,37.2,1,Alert,False,False,False,[],0,[],5,5
+61,Male,2025-09-18 13:44:39.153663,back pain,134,71,85,98,18,37.1,5,Alert,False,False,False,"['Hypertension', 'Kidney Disease', 'Heart Disease', 'COPD']",12,"['Sulfa', 'Peanuts']",1,4
+4,Female,2025-09-18 15:18:39.144167,unresponsive after accident,190,117,51,84,34,34.3,9,Unresponsive,False,True,True,[],0,[],0,1
+14,Male,2025-09-18 13:33:39.152159,minor burn,123,73,65,96,16,37.0,3,Alert,True,False,False,['Cancer'],3,[],0,4
+29,Female,2025-09-18 14:09:39.148170,moderate head injury,146,66,77,95,21,38.1,6,Alert,False,False,False,[],0,"['Latex', 'Penicillin']",1,3
+3,Female,2025-09-18 13:37:39.144167,difficulty breathing,157,109,74,92,30,36.3,7,Alert,False,False,False,[],0,[],0,2
+54,Female,2025-09-18 13:41:39.151160,fever with vomiting,154,66,89,93,22,38.0,4,Alert,False,False,False,[],0,['Shellfish'],2,3
+60,Female,2025-09-18 14:40:39.157675,minor burn,114,71,80,99,17,36.6,3,Alert,False,False,False,['Heart Disease'],3,[],5,4
+73,Female,2025-09-18 14:35:39.146168,chest pain with sweating,88,64,45,88,31,35.9,10,Alert,False,True,False,['COPD'],3,['Penicillin'],4,2
+38,Female,2025-09-18 15:08:39.147171,moderate head injury,143,70,95,93,21,38.5,6,Alert,False,False,False,['Arthritis'],1,[],3,3
+50,Male,2025-09-18 13:37:39.157675,minor burn,132,83,90,99,13,37.2,3,Alert,False,False,False,['Asthma'],1,"['Penicillin', 'Shellfish']",2,4
+43,Female,2025-09-18 14:55:39.148170,broken bone suspected,160,93,106,94,21,38.2,4,Alert,False,False,False,[],0,"['Sulfa', 'Latex']",0,3
+14,Female,2025-09-18 15:15:39.151160,fever with vomiting,118,83,92,96,22,38.2,6,Alert,True,False,False,['Diabetes'],1,"['Peanuts', 'Sulfa']",1,3
+35,Female,2025-09-18 13:38:39.155677,mild headache,121,80,61,97,15,37.5,5,Alert,False,False,False,['Arthritis'],3,[],0,4
+0,Male,2025-09-18 13:47:39.154669,minor burn,96,81,88,100,17,37.1,3,Alert,False,False,False,[],0,[],0,4
+98,Female,2025-09-18 14:02:39.158679,sore throat,133,75,79,97,15,37.5,5,Alert,False,False,False,"['Hypertension', 'Arthritis', 'Diabetes', 'Heart Disease']",4,[],0,4
+23,Male,2025-09-18 13:32:39.152159,broken bone suspected,150,73,75,96,21,38.0,4,Alert,False,True,False,['Arthritis'],3,['Penicillin'],0,3
+13,Female,2025-09-18 14:59:39.159673,minor rash,127,84,90,100,13,37.3,0,Alert,False,False,False,['Hypertension'],2,['Shellfish'],0,5
+28,Male,2025-09-18 15:05:39.149169,moderate abdominal pain,133,71,92,94,18,38.4,7,Alert,False,False,True,[],0,[],1,3
+63,Male,2025-09-18 13:47:39.148170,kidney stone pain,108,87,63,93,20,36.8,6,Alert,False,False,False,"['Hypertension', 'Arthritis']",6,[],3,3
+40,Male,2025-09-18 13:35:39.150164,broken bone suspected,122,77,82,95,18,38.0,4,Alert,False,False,False,['Hypertension'],1,[],2,3
+37,Male,2025-09-18 13:58:39.154669,sprained ankle,119,78,75,100,16,37.4,3,Alert,True,False,False,['Diabetes'],2,[],1,4
+83,Male,2025-09-18 14:47:39.149169,fever with vomiting,149,91,60,93,18,38.4,7,Alert,True,False,False,"['Cancer', 'Diabetes']",6,[],0,3
+53,Female,2025-09-18 13:37:39.152159,moderate abdominal pain,119,66,85,94,18,37.9,7,Alert,False,True,False,"['Cancer', 'Heart Disease']",6,[],3,3
+37,Female,2025-09-18 15:14:39.150164,moderate laceration,152,92,70,95,24,37.5,5,Alert,False,False,False,[],0,['Latex'],2,3
+21,Male,2025-09-18 15:21:39.160674,medication refill,123,84,77,96,18,36.9,2,Alert,False,False,False,['Cancer'],3,[],0,5
+42,Female,2025-09-18 15:10:39.150164,moderate laceration,106,92,77,96,22,38.1,6,Alert,True,False,False,[],0,[],2,3
+59,Female,2025-09-18 15:08:39.144167,severe abdominal pain,93,55,54,88,32,35.6,7,Voice,True,False,False,['Kidney Disease'],3,"['Sulfa', 'Latex']",0,2
+47,Female,2025-09-18 14:17:39.147171,moderate head injury,152,90,79,96,18,38.3,7,Alert,False,False,False,['Kidney Disease'],3,[],4,3
+85,Female,2025-09-18 14:15:39.146168,altered mental status,167,106,53,91,29,38.9,7,Alert,False,False,False,"['COPD', 'Diabetes']",6,[],5,2
+42,Male,2025-09-18 14:57:39.157675,back pain,133,75,73,100,15,37.1,5,Alert,False,False,False,[],0,[],2,4
+57,Female,2025-09-18 14:17:39.150164,moderate laceration,137,80,88,94,22,37.5,7,Alert,True,False,False,[],0,[],2,3
+63,Female,2025-09-18 14:18:39.150164,asthma exacerbation,152,83,61,93,22,36.6,4,Alert,False,True,True,['Hypertension'],1,[],1,3
+20,Female,2025-09-18 14:41:39.145172,severe burn,166,98,53,91,32,37.3,10,Alert,True,True,False,[],0,[],2,2
+47,Male,2025-09-18 14:19:39.149169,broken bone suspected,104,90,62,94,18,37.7,5,Alert,False,False,False,[],0,['Latex'],4,3
+17,Female,2025-09-18 14:49:39.152159,minor burn,137,73,72,100,17,37.1,4,Alert,False,False,False,[],0,"['Penicillin', 'Latex']",0,4
+35,Female,2025-09-18 14:17:39.143160,severe trauma,212,135,36,73,7,34.9,10,Pain,False,True,True,[],0,[],2,1
+62,Male,2025-09-18 15:23:39.151160,moderate laceration,151,95,103,94,18,37.6,5,Alert,False,False,False,"['COPD', 'Asthma', 'Hypertension']",3,[],0,3
+1,Female,2025-09-18 15:13:39.143160,unresponsive after accident,197,133,180,81,7,39.8,8,Pain,False,True,False,[],0,[],0,1
+31,Male,2025-09-18 14:26:39.159673,medication refill,124,76,62,100,15,36.6,1,Alert,False,False,False,['Cancer'],1,[],3,5
+53,Male,2025-09-18 15:25:39.154669,minor burn,129,81,68,96,13,36.9,3,Alert,False,False,False,"['Hypertension', 'Diabetes']",6,[],0,4
+34,Female,2025-09-18 14:31:39.152159,asthma exacerbation,136,93,110,93,21,38.0,4,Alert,False,False,False,[],0,[],1,3
+23,Female,2025-09-18 13:52:39.148170,broken bone suspected,152,94,66,93,18,38.1,7,Alert,False,True,False,[],0,"['Sulfa', 'Penicillin']",1,3
+39,Female,2025-09-18 14:44:39.154669,minor laceration,123,76,83,99,17,37.2,3,Alert,False,False,False,['Kidney Disease'],2,[],0,4
+22,Male,2025-09-18 14:33:39.152159,asthma exacerbation,142,70,77,93,19,38.2,5,Alert,False,False,False,['Heart Disease'],2,[],0,3
+60,Male,2025-09-18 14:04:39.155677,sprained ankle,116,72,81,98,14,36.6,3,Alert,False,False,True,[],0,[],0,4
+39,Female,2025-09-18 14:55:39.149169,moderate head injury,117,87,108,96,20,36.9,4,Alert,False,True,True,['Diabetes'],3,[],0,3
+35,Female,2025-09-18 13:57:39.153663,sore throat,129,72,84,96,18,36.9,4,Alert,False,False,True,[],0,[],3,4
+50,Male,2025-09-18 13:44:39.158679,sore throat,120,71,83,99,12,37.3,5,Alert,False,False,False,"['Kidney Disease', 'Arthritis']",2,[],1,4
+7,Female,2025-09-18 15:12:39.149169,moderate head injury,127,66,89,93,24,36.8,5,Alert,False,True,True,['Hypertension'],3,[],0,3
+47,Female,2025-09-18 14:43:39.147171,fever with vomiting,119,94,101,93,23,36.6,7,Alert,False,False,False,['Heart Disease'],2,[],4,3
+26,Female,2025-09-18 14:55:39.152159,moderate laceration,155,67,78,94,19,37.4,4,Alert,False,False,False,['Asthma'],1,['Peanuts'],2,3
+55,Female,2025-09-18 14:49:39.157675,minor burn,110,85,62,100,16,37.1,2,Alert,False,False,False,[],0,[],0,4
+30,Male,2025-09-18 14:59:39.150164,broken bone suspected,106,91,68,94,18,38.3,6,Alert,True,False,False,[],0,[],3,3
+36,Male,2025-09-18 13:29:39.157675,sprained ankle,131,74,75,98,15,36.7,5,Alert,False,False,False,[],0,"['Sulfa', 'Penicillin']",2,4
+31,Female,2025-09-18 13:47:39.154669,minor burn,124,71,74,100,12,37.2,4,Alert,False,False,False,[],0,[],1,4
+49,Male,2025-09-18 14:05:39.152159,moderate head injury,148,93,87,94,22,36.8,6,Alert,False,False,False,[],0,['Shellfish'],1,3
+22,Female,2025-09-18 14:40:39.146168,asthma exacerbation,152,95,97,93,20,36.9,4,Alert,False,False,True,[],0,[],1,3
+50,Male,2025-09-18 15:13:39.148170,moderate laceration,119,83,81,96,20,38.3,4,Alert,False,False,True,"['Diabetes', 'Hypertension']",2,[],0,3
+51,Male,2025-09-18 15:08:39.159673,medication refill,126,84,77,98,14,37.1,1,Alert,False,False,False,[],0,"['Latex', 'Shellfish']",3,5
+62,Female,2025-09-18 14:41:39.149169,moderate head injury,146,79,87,94,20,37.1,5,Alert,False,False,False,"['Hypertension', 'Heart Disease']",6,[],3,3
+29,Male,2025-09-18 14:20:39.160674,mild constipation,117,70,90,97,17,37.2,0,Alert,False,False,False,[],0,[],0,5
+4,Male,2025-09-18 15:03:39.145172,chest pain with sweating,74,61,148,90,26,36.3,10,Alert,False,True,True,['Hypertension'],2,[],0,2
+30,Female,2025-09-18 15:10:39.149169,fever with vomiting,115,86,100,95,19,37.7,5,Alert,False,False,False,['Cancer'],3,[],0,3
+42,Male,2025-09-18 13:31:39.160674,medication refill,140,70,82,100,18,36.5,1,Alert,False,False,False,"['Heart Disease', 'Asthma']",4,[],1,5
+34,Female,2025-09-18 14:55:39.151160,moderate laceration,142,87,106,94,22,37.0,5,Alert,False,False,True,[],0,[],0,3
+39,Female,2025-09-18 15:18:39.155677,sore throat,111,84,78,100,13,37.2,2,Alert,False,False,False,[],0,[],0,4
+73,Male,2025-09-18 13:46:39.160674,routine check-up,140,85,84,99,16,36.8,0,Alert,False,False,False,['Cancer'],3,[],4,5
+25,Male,2025-09-18 14:18:39.145172,severe burn,87,55,52,90,31,36.7,7,Voice,False,False,True,[],0,[],1,2
+43,Male,2025-09-18 13:27:39.154669,ear pain,136,76,88,96,18,36.8,2,Alert,True,False,False,[],0,[],2,4
+48,Male,2025-09-18 13:33:39.157675,ear pain,114,75,60,99,13,37.4,5,Alert,True,False,False,[],0,[],1,4
+58,Female,2025-09-18 14:16:39.152159,sprained ankle,123,81,83,98,12,36.6,5,Alert,False,False,False,['Hypertension'],3,[],2,4
+25,Female,2025-09-18 13:30:39.148170,moderate abdominal pain,111,78,101,93,18,38.1,4,Alert,True,True,False,['Heart Disease'],3,[],2,3
+0,Male,2025-09-18 15:00:39.154669,mild headache,110,72,87,99,18,36.6,3,Alert,False,False,False,['Heart Disease'],2,[],0,4

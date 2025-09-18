@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     DATABASE_URL: str = "sqlite:///./emergency_triage.db"
 
-    CORS_ORIGINS: list = ["http://localhost:8501", "http://localhost:3000"]
+    CORS_ORIGINS: list = ["http://localhost:8501", "http://localhost:3000", "http://localhost:5173"]
 
     ESI_LEVELS: dict = {
         1: {"name": "Resuscitation", "color": "#FF0000", "max_wait": 0},

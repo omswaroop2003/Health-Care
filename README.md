@@ -1,8 +1,6 @@
 # 🚨 AI-Powered Medical Emergency Triage System
 
-## AVINYA 2K25 Hackathon Submission
-
-An intelligent emergency room triage system that uses AI to categorize patients by severity (ESI levels 1-5), reduce wait times by 60%, and save lives through intelligent prioritization.
+An intelligent emergency room triage system that uses AI to categorize patients by severity (ESI levels 1-5), reduce wait times by 60%, and save lives through intelligent prioritization. This personal project demonstrates the application of AI in healthcare for automated patient triage and emergency department optimization.
 
 ## 🌟 Key Features
 
@@ -22,18 +20,21 @@ An intelligent emergency room triage system that uses AI to categorize patients 
 ## 🏗️ System Architecture
 
 ```
-Frontend (Streamlit)     →     Backend (FastAPI)     →     ML Pipeline
+Frontend (React)         →     Backend (FastAPI)     →     ML Pipeline
     ↓                              ↓                           ↓
-Dashboard & UI            REST APIs & WebSocket         ESI Algorithm
-Queue Visualization       Patient Management           Random Forest
-Alert Display            Triage Processing            XGBoost Ensemble
+Modern Web Dashboard      REST APIs & WebSocket         ESI Algorithm
+Real-time UI             Patient Management           Random Forest
+Interactive Charts       Triage Processing            XGBoost Ensemble
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
+- Node.js 16+ and npm
 - pip package manager
+- MongoDB Atlas account OR MongoDB Compass (local)
+- 11Labs API key (for voice alerts)
 
 ### Installation & Setup
 
@@ -43,62 +44,68 @@ git clone <repository-url>
 cd emergency-triage-system
 ```
 
-2. **Run the setup script**
+2. **Configure Environment**
 ```bash
-# Windows
-setup.bat
-
-# Linux/Mac
-chmod +x setup.sh
-./setup.sh
+# Copy and edit the environment file
+cp .env.example .env
+# Add your MongoDB URL and 11Labs API key to .env
 ```
 
-This will:
-- Install all dependencies
-- Generate synthetic training data
-- Train the ML model
-- Initialize the database
-
-3. **Start the Backend Server**
+3. **Install Dependencies**
 ```bash
-# Windows
-run_backend.bat
+# Backend dependencies
+cd backend
+pip install -r requirements.txt
 
-# Linux/Mac
-./run_backend.sh
+# Frontend dependencies
+cd ../frontend-react
+npm install
+```
+
+4. **Start the MongoDB Backend Server**
+```bash
+cd backend
+python -m app.main_mongo
 ```
 
 The API will be available at `http://localhost:8000`
 
-4. **Start the Frontend Dashboard**
+5. **Start the React Frontend**
 ```bash
-# Windows
-run_frontend.bat
-
-# Linux/Mac
-./run_frontend.sh
+cd frontend-react
+npm run dev
 ```
 
-The dashboard will open at `http://localhost:8501`
+The modern React dashboard will open at `http://localhost:5173`
 
 ## 💻 Usage
 
+### Modern React Dashboard
+Access the professional healthcare interface at `http://localhost:5173`
+
 ### Patient Registration
-1. Navigate to "Patient Intake" in the sidebar
+1. Navigate to "Patient Intake" tab
 2. Enter patient demographics and symptoms
-3. Input vital signs
-4. System automatically performs triage and assigns ESI level
+3. Input vital signs using the intuitive form
+4. System automatically performs triage and assigns ESI level with instant visual feedback
 
-### Queue Monitoring
-- View real-time patient queue in "Queue Monitor"
-- Patients are color-coded by severity
-- Auto-refresh option available
+### Real-time Queue Monitoring
+- View live patient queue with color-coded ESI levels
+- Auto-refresh functionality (every 10 seconds)
+- Interactive queue statistics and wait time analytics
+- Professional healthcare-grade table with sorting and filtering
 
-### Demo Scenarios
-Test the system with pre-configured scenarios:
-- Mass Casualty Event (50 patients)
-- Pediatric Emergency
-- Overcrowded ER Optimization
+### Interactive Demo Scenarios
+Experience the system with realistic scenarios:
+- **Mass Casualty Event**: 50+ patient bus accident simulation
+- **Pediatric Emergency**: Critical anaphylaxis case with < 30 second response
+- **Overcrowded ER**: AI optimization showing 40% wait time reduction
+
+### Real-time Dashboard Features
+- Live metrics with animated updates
+- ESI distribution charts using Recharts
+- Alert system with critical patient notifications
+- Professional healthcare color scheme
 
 ## 🔧 API Endpoints
 
@@ -181,6 +188,28 @@ Test the system with pre-configured scenarios:
 - System-wide announcements
 - Acknowledgment tracking
 
+## 🎨 React Frontend Features
+
+### Modern Healthcare UI
+- **Professional Design**: Healthcare-appropriate color scheme and layout
+- **Responsive Interface**: Works seamlessly on desktop, tablet, and mobile
+- **Accessibility**: Proper contrast ratios and keyboard navigation
+- **Real-time Updates**: Live data with smooth animations
+
+### Interactive Components
+- **Dashboard**: Real-time metrics with animated counters and live charts
+- **Patient Intake**: Comprehensive form with instant triage feedback
+- **Queue Monitor**: Live patient queue with auto-refresh and ESI color coding
+- **Demo Scenarios**: Interactive simulations for presentations
+
+### Technical Implementation
+- **React 18**: Latest version with concurrent features
+- **Vite**: Lightning-fast development and build tool
+- **Tailwind CSS**: Utility-first styling via CDN for rapid development
+- **Recharts**: Professional data visualization library
+- **Lucide React**: Consistent medical and UI icons
+- **React Router**: Smooth navigation between sections
+
 ## 🔐 Security & Compliance
 
 - HIPAA-compliant data handling
@@ -190,11 +219,14 @@ Test the system with pre-configured scenarios:
 
 ## 📚 Technical Stack
 
-- **Backend**: FastAPI, SQLAlchemy, Pydantic
-- **Frontend**: Streamlit, Plotly
-- **ML**: Scikit-learn, XGBoost, Pandas
-- **Database**: SQLite (development), PostgreSQL (production-ready)
+- **Backend**: FastAPI, Beanie ODM, Pydantic
+- **Frontend**: React 18, Vite, Tailwind CSS, Recharts
+- **ML**: Scikit-learn, XGBoost, Pandas (with rule-based fallback)
+- **Database**: MongoDB Atlas (cloud), MongoDB Compass (local)
 - **Real-time**: WebSocket support
+- **Voice Alerts**: 11Labs Text-to-Speech API
+- **Icons**: Lucide React
+- **Routing**: React Router
 
 ## 🎯 Future Enhancements
 
@@ -214,22 +246,22 @@ Test the system with pre-configured scenarios:
 
 ## 🤝 Contributing
 
-This project was developed for the AVINYA 2K25 Hackathon. For contributions or questions:
+This is a personal project demonstrating AI applications in healthcare. For contributions or questions:
 - Create an issue in the repository
-- Contact the development team
+- Contact me through the repository
 
 ## 📄 License
 
-This project is developed for educational and demonstration purposes as part of AVINYA 2K25 Hackathon.
+This project is developed for educational, research, and demonstration purposes. Open source contributions are welcome.
 
 ## 🙏 Acknowledgments
 
-- AVINYA 2K25 Hackathon organizers
 - Emergency medicine professionals for domain expertise
-- Open-source community for amazing tools
+- Open-source community for amazing tools and libraries
+- Healthcare AI research community
 
 ---
 
-**Built with ❤️ for saving lives through AI**
+**Built with ❤️ for saving lives through AI innovation**
 
-*AVINYA 2K25 - Innovating Healthcare with AI*
+*Personal Project - Advancing Healthcare through AI Technology*

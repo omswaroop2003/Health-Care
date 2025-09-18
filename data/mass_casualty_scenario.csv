@@ -1,0 +1,51 @@
+age,gender,arrival_time,chief_complaint,bp_systolic,bp_diastolic,heart_rate,o2_saturation,respiratory_rate,temperature,pain_scale,consciousness_level,bleeding,breathing_difficulty,trauma_indicator,chronic_conditions,medications_count,allergies,previous_admissions,true_esi_level,mass_casualty_patient,incident
+74,Male,2025-09-18 15:51:39.177695,active seizure,191,115,147,80,7,34.0,10,Unresponsive,False,True,False,"['Heart Disease', 'COPD', 'Diabetes', 'Asthma']",12,[],0,1,True,Bus accident - Highway 101
+69,Male,2025-09-18 15:39:39.177695,active seizure,84,57,40,86,33,34.9,8,Pain,True,True,True,['Heart Disease'],3,[],5,1,True,Bus accident - Highway 101
+54,Male,2025-09-18 15:54:39.177695,respiratory failure,76,40,36,87,5,34.5,8,Unresponsive,True,True,False,"['Arthritis', 'COPD']",2,[],1,1,True,Bus accident - Highway 101
+5,Male,2025-09-18 15:37:39.177695,unresponsive after accident,70,47,53,77,5,40.4,10,Unresponsive,False,True,True,[],0,[],0,1,True,Bus accident - Highway 101
+55,Female,2025-09-18 15:32:39.177695,active seizure,202,136,158,87,8,35.2,10,Unresponsive,True,True,True,['COPD'],1,"['Penicillin', 'Shellfish']",1,1,True,Bus accident - Highway 101
+45,Male,2025-09-18 15:51:39.177695,stroke symptoms,183,95,126,88,29,37.0,9,Alert,False,True,True,['Arthritis'],2,[],0,2,True,Bus accident - Highway 101
+5,Female,2025-09-18 15:45:39.177695,severe burn,71,55,72,89,27,36.1,8,Voice,False,False,False,[],0,[],0,2,True,Bus accident - Highway 101
+50,Male,2025-09-18 15:52:39.177695,difficulty breathing,92,65,120,92,24,38.6,9,Alert,False,True,True,[],0,[],0,2,True,Bus accident - Highway 101
+91,Male,2025-09-18 15:25:39.177695,altered mental status,85,64,51,91,25,36.8,8,Voice,False,True,False,"['COPD', 'Asthma', 'Hypertension']",6,[],1,2,True,Bus accident - Highway 101
+74,Female,2025-09-18 15:48:39.177695,stroke symptoms,167,110,130,91,30,35.9,8,Alert,False,True,False,['COPD'],3,[],4,2,True,Bus accident - Highway 101
+77,Female,2025-09-18 15:35:39.177695,stroke symptoms,176,106,47,90,25,36.8,10,Voice,False,False,True,"['Kidney Disease', 'Cancer']",2,[],2,2,True,Bus accident - Highway 101
+37,Male,2025-09-18 15:28:39.177695,stroke symptoms,178,101,118,88,30,37.4,10,Alert,False,True,False,[],0,[],3,2,True,Bus accident - Highway 101
+32,Male,2025-09-18 15:47:39.177695,altered mental status,88,58,46,89,31,36.4,8,Voice,True,True,True,['COPD'],1,[],0,2,True,Bus accident - Highway 101
+83,Male,2025-09-18 15:38:39.177695,severe abdominal pain,90,56,53,92,31,38.3,10,Alert,False,True,False,['Arthritis'],2,[],5,2,True,Bus accident - Highway 101
+1,Male,2025-09-18 15:36:39.177695,difficulty breathing,73,56,150,92,24,38.3,7,Voice,False,False,False,[],0,[],0,2,True,Bus accident - Highway 101
+16,Male,2025-09-18 15:36:39.177695,moderate head injury,140,68,104,93,20,36.7,6,Alert,True,False,False,[],0,[],0,3,True,Bus accident - Highway 101
+32,Female,2025-09-18 15:53:39.177695,moderate abdominal pain,119,77,100,93,23,38.1,4,Alert,False,False,False,[],0,[],3,3,True,Bus accident - Highway 101
+50,Male,2025-09-18 15:53:39.177695,asthma exacerbation,106,79,71,95,19,36.9,7,Alert,False,False,False,[],0,[],5,3,True,Bus accident - Highway 101
+41,Male,2025-09-18 15:42:39.177695,moderate head injury,113,71,72,95,22,37.0,7,Alert,True,False,True,[],0,[],0,3,True,Bus accident - Highway 101
+22,Female,2025-09-18 15:37:39.177695,fever with vomiting,126,73,97,94,21,37.7,6,Alert,True,False,False,[],0,[],2,3,True,Bus accident - Highway 101
+40,Male,2025-09-18 15:47:39.177695,moderate abdominal pain,155,86,94,95,20,36.9,7,Alert,False,False,False,['Heart Disease'],3,['Penicillin'],2,3,True,Bus accident - Highway 101
+9,Female,2025-09-18 15:49:39.177695,moderate head injury,101,68,96,96,19,38.0,7,Alert,False,False,False,[],0,[],0,3,True,Bus accident - Highway 101
+63,Female,2025-09-18 15:54:39.177695,fever with vomiting,116,81,110,93,22,37.9,4,Alert,True,True,False,['COPD'],3,[],0,3,True,Bus accident - Highway 101
+35,Female,2025-09-18 15:27:39.177695,broken bone suspected,123,73,85,95,24,36.9,4,Alert,False,True,False,[],0,['Latex'],0,3,True,Bus accident - Highway 101
+62,Female,2025-09-18 15:36:39.177695,asthma exacerbation,157,75,72,96,21,38.3,4,Alert,True,False,False,['Kidney Disease'],2,[],2,3,True,Bus accident - Highway 101
+29,Female,2025-09-18 15:46:39.177695,kidney stone pain,105,82,65,93,23,37.8,7,Alert,False,False,False,['Diabetes'],3,[],2,3,True,Bus accident - Highway 101
+29,Male,2025-09-18 15:52:39.177695,fever with vomiting,113,69,65,93,18,37.7,7,Alert,False,False,False,[],0,['Peanuts'],0,3,True,Bus accident - Highway 101
+24,Male,2025-09-18 15:26:39.177695,moderate laceration,136,66,73,94,19,38.4,6,Alert,False,False,False,[],0,[],0,3,True,Bus accident - Highway 101
+57,Male,2025-09-18 15:54:39.177695,fever with vomiting,152,68,78,95,22,38.4,5,Alert,False,False,False,"['Cancer', 'Arthritis']",2,[],5,3,True,Bus accident - Highway 101
+25,Male,2025-09-18 15:37:39.177695,moderate laceration,109,76,96,95,21,36.9,6,Alert,False,True,False,[],0,"['Peanuts', 'Sulfa']",2,3,True,Bus accident - Highway 101
+52,Female,2025-09-18 15:54:39.177695,minor burn,110,75,74,99,18,37.0,2,Alert,False,False,False,['Kidney Disease'],3,"['Shellfish', 'Penicillin']",3,4,True,Bus accident - Highway 101
+32,Male,2025-09-18 15:47:39.177695,minor burn,122,78,87,98,14,36.6,2,Alert,False,False,False,[],0,['Shellfish'],0,4,True,Bus accident - Highway 101
+0,Male,2025-09-18 15:43:39.177695,mild headache,92,71,94,97,12,37.3,4,Alert,False,False,False,[],0,[],0,4,True,Bus accident - Highway 101
+28,Male,2025-09-18 15:41:39.177695,minor laceration,118,83,68,97,12,37.2,5,Alert,False,False,False,['Kidney Disease'],3,[],2,4,True,Bus accident - Highway 101
+16,Male,2025-09-18 15:46:39.177695,back pain,124,71,83,99,13,36.8,3,Alert,False,False,False,[],0,['Shellfish'],0,4,True,Bus accident - Highway 101
+40,Female,2025-09-18 15:36:39.177695,ear pain,140,84,65,98,14,37.5,4,Alert,False,False,False,[],0,[],1,4,True,Bus accident - Highway 101
+16,Male,2025-09-18 15:47:39.177695,sore throat,138,82,64,98,15,37.3,5,Alert,False,False,False,['Hypertension'],2,[],0,4,True,Bus accident - Highway 101
+58,Female,2025-09-18 15:38:39.177695,mild headache,121,83,69,97,14,36.9,3,Alert,True,False,False,['Hypertension'],1,"['Peanuts', 'Latex']",2,4,True,Bus accident - Highway 101
+38,Female,2025-09-18 15:33:39.177695,back pain,131,70,84,98,13,37.0,5,Alert,True,False,False,['Diabetes'],3,[],0,4,True,Bus accident - Highway 101
+36,Male,2025-09-18 15:41:39.177695,back pain,139,81,89,96,15,37.2,3,Alert,False,False,False,['Heart Disease'],1,"['Peanuts', 'Penicillin']",2,4,True,Bus accident - Highway 101
+53,Male,2025-09-18 15:28:39.177695,minor laceration,133,83,80,98,15,36.9,4,Alert,False,False,False,['Arthritis'],3,['Sulfa'],2,4,True,Bus accident - Highway 101
+59,Female,2025-09-18 15:42:39.177695,sprained ankle,125,73,73,98,17,37.0,2,Alert,False,False,False,"['Asthma', 'Heart Disease']",2,[],3,4,True,Bus accident - Highway 101
+39,Female,2025-09-18 15:30:39.177695,back pain,138,82,76,97,12,37.4,4,Alert,False,False,False,[],0,['Penicillin'],1,4,True,Bus accident - Highway 101
+24,Female,2025-09-18 15:35:39.177695,minor laceration,124,80,73,98,12,37.3,4,Alert,True,False,False,[],0,[],1,4,True,Bus accident - Highway 101
+4,Female,2025-09-18 15:29:39.177695,minor burn,111,79,82,99,18,36.5,4,Alert,False,False,False,[],0,"['Peanuts', 'Sulfa']",0,4,True,Bus accident - Highway 101
+26,Female,2025-09-18 15:29:39.177695,routine check-up,131,74,60,100,13,36.6,2,Alert,False,False,False,['COPD'],3,[],0,5,True,Bus accident - Highway 101
+27,Male,2025-09-18 15:25:39.177695,common cold symptoms,126,82,78,97,13,37.1,0,Alert,False,False,False,[],0,['Shellfish'],0,5,True,Bus accident - Highway 101
+42,Male,2025-09-18 15:40:39.177695,minor rash,119,74,62,98,15,37.0,1,Alert,False,False,False,[],0,[],2,5,True,Bus accident - Highway 101
+33,Male,2025-09-18 15:26:39.177695,mild constipation,120,77,79,97,16,37.1,1,Alert,False,False,False,[],0,[],2,5,True,Bus accident - Highway 101
+53,Male,2025-09-18 15:37:39.177695,mild constipation,134,85,81,100,12,36.9,0,Alert,False,False,False,[],0,[],2,5,True,Bus accident - Highway 101

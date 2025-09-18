@@ -6,7 +6,7 @@ import uvicorn
 
 from .core.config import settings
 from .core.database import engine, Base, get_db
-from .api.v1 import patients, triage
+from .api.v1 import patients, triage, voice, websocket
 from .models import Patient, TriageAssessment, QueueEntry, Alert
 
 # Create database tables
@@ -18,10 +18,10 @@ app = FastAPI(
     description="AI-Powered Emergency Triage System for rapid patient assessment and queue management"
 )
 
-# Configure CORS
+# Configure CORS - Allow all origins for development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=["*"],  # Allow all origins for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -38,6 +38,18 @@ app.include_router(
     triage.router,
     prefix=f"{settings.API_V1_STR}/triage",
     tags=["triage"]
+)
+
+app.include_router(
+    voice.router,
+    prefix=f"{settings.API_V1_STR}/voice",
+    tags=["voice-alerts"]
+)
+
+app.include_router(
+    websocket.router,
+    prefix=f"{settings.API_V1_STR}/ws",
+    tags=["websocket"]
 )
 
 @app.get("/")

@@ -7,33 +7,26 @@ const QueueMonitor = () => {
   const [autoRefresh, setAutoRefresh] = useState(true)
   const [lastUpdated, setLastUpdated] = useState(new Date())
 
-  // Mock data for demonstration
-  const mockQueueData = [
-    { id: 1, patient_id: 'P1001', esi_level: 1, severity: 'Resuscitation', complaint: 'Chest pain', wait_time: 0, status: '🏥 In Treatment' },
-    { id: 2, patient_id: 'P1002', esi_level: 1, severity: 'Resuscitation', complaint: 'Breathing difficulty', wait_time: 2, status: '⏳ Waiting' },
-    { id: 3, patient_id: 'P1003', esi_level: 2, severity: 'Emergent', complaint: 'Severe headache', wait_time: 5, status: '⏳ Waiting' },
-    { id: 4, patient_id: 'P1004', esi_level: 2, severity: 'Emergent', complaint: 'Abdominal pain', wait_time: 8, status: '⏳ Waiting' },
-    { id: 5, patient_id: 'P1005', esi_level: 3, severity: 'Urgent', complaint: 'Fracture', wait_time: 15, status: '⏳ Waiting' },
-    { id: 6, patient_id: 'P1006', esi_level: 3, severity: 'Urgent', complaint: 'Laceration', wait_time: 22, status: '⏳ Waiting' },
-    { id: 7, patient_id: 'P1007', esi_level: 3, severity: 'Urgent', complaint: 'Fever', wait_time: 28, status: '⏳ Waiting' },
-    { id: 8, patient_id: 'P1008', esi_level: 4, severity: 'Less Urgent', complaint: 'Sprained ankle', wait_time: 35, status: '⏳ Waiting' },
-    { id: 9, patient_id: 'P1009', esi_level: 4, severity: 'Less Urgent', complaint: 'Sore throat', wait_time: 42, status: '⏳ Waiting' },
-    { id: 10, patient_id: 'P1010', esi_level: 5, severity: 'Non-Urgent', complaint: 'Minor rash', wait_time: 85, status: '⏳ Waiting' },
-  ]
-
   useEffect(() => {
-    setQueueData(mockQueueData)
+    // Load real queue data on component mount
+    loadQueueData()
   }, [])
+
+  const loadQueueData = async () => {
+    try {
+      const response = await triageAPI.getQueue()
+      setQueueData(response.data)
+      setLastUpdated(new Date())
+    } catch (error) {
+      console.error('Failed to load queue data:', error)
+    }
+  }
 
   useEffect(() => {
     if (autoRefresh) {
       const interval = setInterval(() => {
-        // Simulate queue updates
-        setQueueData(prev => prev.map(patient => ({
-          ...patient,
-          wait_time: patient.wait_time + 1
-        })))
-        setLastUpdated(new Date())
+        // Refresh with real data from MongoDB
+        loadQueueData()
       }, 10000) // Update every 10 seconds
 
       return () => clearInterval(interval)
@@ -63,13 +56,7 @@ const QueueMonitor = () => {
   }
 
   const refreshQueue = async () => {
-    try {
-      const response = await triageAPI.getQueue()
-      setQueueData(response.data)
-    } catch (error) {
-      console.log('Using mock data - API not available')
-    }
-    setLastUpdated(new Date())
+    await loadQueueData()
   }
 
   return (
@@ -108,7 +95,7 @@ const QueueMonitor = () => {
             </span>
           </div>
           <div className="text-sm text-gray-600">
-            Total patients waiting: {queueData.filter(p => p.status.includes('Waiting')).length}
+            Total patients waiting: {queueData.filter(p => p.status === 'waiting').length}
           </div>
         </div>
 
@@ -116,11 +103,11 @@ const QueueMonitor = () => {
           <table className="w-full">
             <thead>
               <tr className="border-b border-gray-200">
-                <th className="text-left py-3 px-4 font-semibold text-gray-800">#</th>
-                <th className="text-left py-3 px-4 font-semibold text-gray-800">Patient ID</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-800">Position</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-800">Patient Name</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">ESI Level</th>
-                <th className="text-left py-3 px-4 font-semibold text-gray-800">Severity</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Chief Complaint</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-800">Priority Score</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Wait Time</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Status</th>
               </tr>
@@ -128,27 +115,40 @@ const QueueMonitor = () => {
             <tbody>
               {queueData.map((patient, index) => (
                 <tr
-                  key={patient.id}
+                  key={patient.patient_id}
                   className={`border-b border-gray-100 hover:bg-gray-50 ${getRowClass(patient.esi_level)}`}
                 >
-                  <td className="py-4 px-4 font-medium">#{index + 1}</td>
-                  <td className="py-4 px-4 font-medium">{patient.patient_id}</td>
+                  <td className="py-4 px-4 font-medium">#{patient.queue_position}</td>
+                  <td className="py-4 px-4 font-medium">
+                    {patient.patient_name || `Patient ${patient.patient_id}`}
+                    <br />
+                    <span className="text-sm text-gray-500">ID: {patient.patient_id}</span>
+                  </td>
                   <td className="py-4 px-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getESIColor(patient.esi_level)}`}>
-                      {patient.esi_level}
+                      Level {patient.esi_level}
                     </span>
                   </td>
-                  <td className="py-4 px-4 font-medium">{patient.severity}</td>
-                  <td className="py-4 px-4">{patient.complaint}</td>
+                  <td className="py-4 px-4">{patient.chief_complaint}</td>
+                  <td className="py-4 px-4 font-medium">{patient.priority_score.toFixed(1)}</td>
                   <td className="py-4 px-4">
                     <div className="flex items-center space-x-1">
                       <Clock size={16} className="text-gray-500" />
-                      <span className={`font-medium ${patient.wait_time > 60 ? 'text-red-600' : 'text-gray-800'}`}>
-                        {patient.wait_time} min
+                      <span className={`font-medium ${patient.wait_time_minutes > 60 ? 'text-red-600' : 'text-gray-800'}`}>
+                        {patient.wait_time_minutes} min
                       </span>
                     </div>
                   </td>
-                  <td className="py-4 px-4">{patient.status}</td>
+                  <td className="py-4 px-4">
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      patient.status === 'waiting' ? 'bg-yellow-100 text-yellow-800' :
+                      patient.status === 'in_treatment' ? 'bg-blue-100 text-blue-800' :
+                      patient.status === 'completed' ? 'bg-green-100 text-green-800' :
+                      'bg-gray-100 text-gray-800'
+                    }`}>
+                      {patient.status.replace('_', ' ').toUpperCase()}
+                    </span>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -169,7 +169,7 @@ const QueueMonitor = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Average Wait Time</h3>
           <div className="text-3xl font-bold text-blue-600">
-            {Math.round(queueData.reduce((acc, p) => acc + p.wait_time, 0) / queueData.length)} min
+            {queueData.length > 0 ? Math.round(queueData.reduce((acc, p) => acc + p.wait_time_minutes, 0) / queueData.length) : 0} min
           </div>
           <p className="text-gray-600 text-sm">All patients</p>
         </div>
@@ -177,7 +177,7 @@ const QueueMonitor = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Longest Wait</h3>
           <div className="text-3xl font-bold text-orange-600">
-            {Math.max(...queueData.map(p => p.wait_time))} min
+            {queueData.length > 0 ? Math.max(...queueData.map(p => p.wait_time_minutes)) : 0} min
           </div>
           <p className="text-gray-600 text-sm">Single patient</p>
         </div>

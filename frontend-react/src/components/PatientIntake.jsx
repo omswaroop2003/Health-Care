@@ -4,16 +4,17 @@ import { patientAPI } from '../services/api'
 
 const PatientIntake = () => {
   const [formData, setFormData] = useState({
-    age: 35,
+    name: '',
+    age: '',
     gender: 'Male',
     chief_complaint: '',
-    bp_systolic: 120,
-    bp_diastolic: 80,
-    heart_rate: 75,
-    temperature: 37.0,
-    o2_saturation: 98,
-    respiratory_rate: 16,
-    pain_scale: 5,
+    bp_systolic: '',
+    bp_diastolic: '',
+    heart_rate: '',
+    temperature: '',
+    o2_saturation: '',
+    respiratory_rate: '',
+    pain_scale: 0,
     consciousness_level: 'Alert',
     bleeding: false,
     breathing_difficulty: false,
@@ -39,39 +40,69 @@ const PatientIntake = () => {
     setIsSubmitting(true)
 
     try {
-      const response = await patientAPI.create(formData)
+      // Prepare data for backend - convert empty strings to null/undefined for optional fields
+      const submitData = {
+        ...formData,
+        // Convert empty string numbers to null for optional fields
+        bp_systolic: formData.bp_systolic === '' ? null : formData.bp_systolic,
+        bp_diastolic: formData.bp_diastolic === '' ? null : formData.bp_diastolic,
+        heart_rate: formData.heart_rate === '' ? null : formData.heart_rate,
+        temperature: formData.temperature === '' ? null : formData.temperature,
+        o2_saturation: formData.o2_saturation === '' ? null : formData.o2_saturation,
+        respiratory_rate: formData.respiratory_rate === '' ? null : formData.respiratory_rate,
+        // Required fields should have validation
+        age: formData.age === '' ? null : formData.age
+      }
 
-      // Simulate triage result
-      const esiLevel = response.data.esi_level || simulateTriageLevel()
+      // Debug: Log the data being sent
+      console.log('Sending patient data:', JSON.stringify(submitData, null, 2))
+
+      // Submit patient data to MongoDB backend
+      const response = await patientAPI.create(submitData)
+
+      // Use real AI triage results from backend
       setTriageResult({
-        esi_level: esiLevel,
+        esi_level: response.data.esi_level,
         patient_id: response.data.id,
-        priority_score: 500,
-        wait_time: getWaitTime(esiLevel),
-        queue_position: 12
+        priority_score: response.data.priority_score,
+        ai_confidence: response.data.ai_confidence,
+        wait_time: getWaitTime(response.data.esi_level),
+        queue_position: response.data.queue_position,
+        patient_name: response.data.name
       })
+
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        age: '',
+        gender: 'Male',
+        chief_complaint: '',
+        bp_systolic: '',
+        bp_diastolic: '',
+        heart_rate: '',
+        temperature: '',
+        o2_saturation: '',
+        respiratory_rate: '',
+        pain_scale: 0,
+        consciousness_level: 'Alert',
+        bleeding: false,
+        breathing_difficulty: false,
+        trauma_indicator: false,
+        medical_history: {},
+        allergies: [],
+        current_medications: []
+      })
+
     } catch (error) {
-      // Fallback to mock triage
-      const esiLevel = simulateTriageLevel()
-      setTriageResult({
-        esi_level: esiLevel,
-        patient_id: Math.floor(Math.random() * 1000) + 1000,
-        priority_score: 500,
-        wait_time: getWaitTime(esiLevel),
-        queue_position: 12
-      })
+      console.error('Failed to submit patient data:', error)
+      console.error('Error details:', error.response?.data || error.message)
+      console.error('Status:', error.response?.status)
+      alert(`Failed to register patient: ${error.response?.data?.detail || error.message}. Please check if the backend server is running and try again.`)
     }
 
     setIsSubmitting(false)
   }
 
-  const simulateTriageLevel = () => {
-    if (formData.consciousness_level === 'Unresponsive' || formData.o2_saturation < 90) return 1
-    if (formData.breathing_difficulty || formData.bp_systolic < 90 || formData.pain_scale >= 8) return 2
-    if (formData.pain_scale >= 5) return 3
-    if (formData.pain_scale >= 3) return 4
-    return 5
-  }
 
   const getWaitTime = (level) => [0, 10, 30, 60, 120][level - 1]
 
@@ -99,31 +130,48 @@ const PatientIntake = () => {
               <User className="mr-2" size={20} />
               Demographics
             </h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Patient Name</label>
                 <input
-                  type="number"
-                  name="age"
-                  value={formData.age}
+                  type="text"
+                  name="name"
+                  value={formData.name}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  min="0"
-                  max="120"
+                  placeholder="Enter patient's full name"
+                  required
                 />
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Gender</label>
-                <select
-                  name="gender"
-                  value={formData.gender}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                  <input
+                    type="number"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    min="0"
+                    max="120"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Gender</label>
+                  <select
+                    name="gender"
+                    value={formData.gender}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  >
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -229,6 +277,7 @@ const PatientIntake = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     min="60"
                     max="250"
+                    required
                   />
                 </div>
                 <div>
@@ -241,6 +290,7 @@ const PatientIntake = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     min="40"
                     max="150"
+                    required
                   />
                 </div>
               </div>
@@ -254,6 +304,7 @@ const PatientIntake = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   min="30"
                   max="200"
+                  required
                 />
               </div>
               <div>
@@ -267,6 +318,7 @@ const PatientIntake = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   min="32"
                   max="42"
+                  required
                 />
               </div>
               <div>
@@ -279,6 +331,7 @@ const PatientIntake = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   min="70"
                   max="100"
+                  required
                 />
               </div>
               <div>
@@ -291,6 +344,7 @@ const PatientIntake = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   min="8"
                   max="40"
+                  required
                 />
               </div>
             </div>
@@ -311,26 +365,47 @@ const PatientIntake = () => {
         <div className="mt-8 bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold text-green-600 mb-6">✅ Patient Registered Successfully!</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {triageResult.patient_name && (
+            <div className="mb-4 p-4 bg-blue-50 rounded-lg">
+              <h3 className="text-lg font-semibold text-blue-800">
+                Patient: {triageResult.patient_name} (ID: {triageResult.patient_id})
+              </h3>
+            </div>
+          )}
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-2">ESI Level: {triageResult.esi_level}</h3>
+              <h3 className="text-lg font-semibold mb-2">AI Triage Result</h3>
               <div className={`inline-block px-4 py-2 rounded-lg text-white font-bold ${getESIInfo(triageResult.esi_level).color}`}>
-                {getESIInfo(triageResult.esi_level).name}
+                ESI Level {triageResult.esi_level}
               </div>
-              <p className="mt-2 text-gray-600">
+              <p className="mt-2 text-sm text-gray-600">
+                {getESIInfo(triageResult.esi_level).name}
+              </p>
+              <p className="text-sm text-gray-600">
                 Priority: {getESIInfo(triageResult.esi_level).priority}
               </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-2">Estimated Wait Time</h3>
-              <p className="text-3xl font-bold text-blue-600">{triageResult.wait_time} minutes</p>
-              <p className="text-gray-600">Queue Position: #{triageResult.queue_position}</p>
+              <h3 className="text-lg font-semibold mb-2">AI Confidence</h3>
+              <p className="text-3xl font-bold text-purple-600">
+                {triageResult.ai_confidence ? `${Math.round(triageResult.ai_confidence * 100)}%` : 'N/A'}
+              </p>
+              <p className="text-sm text-gray-600">
+                Priority Score: {triageResult.priority_score}
+              </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-2">Recommended Actions</h3>
-              <div className="text-left space-y-1">
+              <h3 className="text-lg font-semibold mb-2">Queue Information</h3>
+              <p className="text-2xl font-bold text-blue-600">{triageResult.wait_time} min wait</p>
+              <p className="text-gray-600">Position #{triageResult.queue_position}</p>
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-lg font-semibold mb-2">Next Steps</h3>
+              <div className="text-left space-y-1 text-sm">
                 {triageResult.esi_level === 1 && (
                   <>
                     <p>• Immediate resuscitation</p>
