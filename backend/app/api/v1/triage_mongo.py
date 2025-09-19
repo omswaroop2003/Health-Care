@@ -1,5 +1,6 @@
 """
 Triage Management API Endpoints - MongoDB Version
+Updated with patient status management endpoints
 """
 
 from fastapi import APIRouter, HTTPException, Query
@@ -335,3 +336,103 @@ async def get_performance_metrics():
     except Exception as e:
         logger.error(f"Failed to get performance metrics: {e}")
         raise HTTPException(status_code=500, detail=f"Failed to get metrics: {str(e)}")
+
+@router.post("/queue/{patient_id}/start-treatment")
+async def start_patient_treatment(patient_id: str):
+    """Mark patient as starting treatment"""
+    try:
+        # Update queue entry status
+        queue_entry = await QueueEntry.find_one(QueueEntry.patient_id == patient_id)
+        if not queue_entry:
+            raise HTTPException(status_code=404, detail="Patient not found in queue")
+
+        queue_entry.status = QueueStatus.IN_TREATMENT
+        queue_entry.treatment_started = datetime.utcnow()
+        await queue_entry.save()
+
+        # Get patient for logging
+        patient = await Patient.get(patient_id)
+        patient_name = patient.name if patient else f"Patient {patient_id}"
+
+        logger.info(f"Started treatment for {patient_name} (ID: {patient_id})")
+
+        return {
+            "message": f"Treatment started for {patient_name}",
+            "patient_id": patient_id,
+            "status": "in_treatment",
+            "timestamp": datetime.utcnow().isoformat()
+        }
+
+    except Exception as e:
+        logger.error(f"Failed to start treatment for patient {patient_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to start treatment: {str(e)}")
+
+@router.post("/queue/{patient_id}/complete-treatment")
+async def complete_patient_treatment(patient_id: str):
+    """Mark patient treatment as completed"""
+    try:
+        # Update queue entry status
+        queue_entry = await QueueEntry.find_one(QueueEntry.patient_id == patient_id)
+        if not queue_entry:
+            raise HTTPException(status_code=404, detail="Patient not found in queue")
+
+        queue_entry.status = QueueStatus.COMPLETED
+        queue_entry.treatment_completed = datetime.utcnow()
+
+        # Calculate treatment duration
+        if queue_entry.treatment_started:
+            duration = queue_entry.treatment_completed - queue_entry.treatment_started
+            queue_entry.actual_treatment_time = int(duration.total_seconds() / 60)
+
+        await queue_entry.save()
+
+        # Get patient for logging
+        patient = await Patient.get(patient_id)
+        patient_name = patient.name if patient else f"Patient {patient_id}"
+
+        logger.info(f"Completed treatment for {patient_name} (ID: {patient_id})")
+
+        return {
+            "message": f"Treatment completed for {patient_name}",
+            "patient_id": patient_id,
+            "status": "completed",
+            "treatment_duration_minutes": queue_entry.actual_treatment_time,
+            "timestamp": datetime.utcnow().isoformat()
+        }
+
+    except Exception as e:
+        logger.error(f"Failed to complete treatment for patient {patient_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to complete treatment: {str(e)}")
+
+@router.post("/queue/{patient_id}/discharge")
+async def discharge_patient(patient_id: str):
+    """Discharge patient and remove from queue"""
+    try:
+        # Update queue entry status
+        queue_entry = await QueueEntry.find_one(QueueEntry.patient_id == patient_id)
+        if not queue_entry:
+            raise HTTPException(status_code=404, detail="Patient not found in queue")
+
+        queue_entry.status = QueueStatus.DISCHARGED
+        await queue_entry.save()
+
+        # Get patient for logging
+        patient = await Patient.get(patient_id)
+        if patient:
+            patient.status = "discharged"
+            patient.updated_at = datetime.utcnow()
+            await patient.save()
+
+        patient_name = patient.name if patient else f"Patient {patient_id}"
+        logger.info(f"Discharged patient {patient_name} (ID: {patient_id})")
+
+        return {
+            "message": f"Patient {patient_name} discharged successfully",
+            "patient_id": patient_id,
+            "status": "discharged",
+            "timestamp": datetime.utcnow().isoformat()
+        }
+
+    except Exception as e:
+        logger.error(f"Failed to discharge patient {patient_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to discharge patient: {str(e)}")

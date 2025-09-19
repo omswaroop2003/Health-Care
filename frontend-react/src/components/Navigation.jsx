@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Activity, UserPlus, Clock, PlayCircle } from 'lucide-react'
+import { Activity, UserPlus, Mic, Clock, PlayCircle } from 'lucide-react'
 
 const Navigation = () => {
   const location = useLocation()
@@ -7,6 +7,7 @@ const Navigation = () => {
   const navItems = [
     { path: '/', name: 'Dashboard', icon: Activity },
     { path: '/intake', name: 'Patient Intake', icon: UserPlus },
+    { path: '/voice-intake', name: 'Voice Intake', icon: Mic },
     { path: '/queue', name: 'Queue Monitor', icon: Clock },
     { path: '/demo', name: 'Demo Scenarios', icon: PlayCircle },
   ]

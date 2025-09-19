@@ -279,15 +279,15 @@ if __name__ == "__main__":
 
     # Generate training dataset
     train_df = generator.generate_dataset(n_samples=5000)
-    train_df.to_csv("../../data/train_patients.csv", index=False)
+    train_df.to_csv("../data/train_patients.csv", index=False)
 
     # Generate validation dataset
     val_df = generator.generate_dataset(n_samples=1000)
-    val_df.to_csv("../../data/val_patients.csv", index=False)
+    val_df.to_csv("../data/val_patients.csv", index=False)
 
     # Generate mass casualty scenario
     mass_casualty = generator.generate_mass_casualty_event(50)
-    pd.DataFrame(mass_casualty).to_csv("../../data/mass_casualty_scenario.csv", index=False)
+    pd.DataFrame(mass_casualty).to_csv("../data/mass_casualty_scenario.csv", index=False)
 
     print(f"Generated {len(train_df)} training samples")
     print(f"Generated {len(val_df)} validation samples")

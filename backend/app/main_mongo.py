@@ -18,7 +18,7 @@ from .core.mongo_config import startup_db, shutdown_db, mongo_config
 from .models.mongo_models import Patient, QueueEntry, Alert
 
 # API routes
-from .api.v1 import patients_mongo, triage_mongo, voice_mongo, websocket
+from .api.v1 import patients_mongo, triage_mongo, voice_mongo, websocket, voice_conversation
 
 # Services
 from .services.realtime_service_mongo import connection_manager
@@ -96,6 +96,12 @@ app.include_router(
     voice_mongo.router,
     prefix="/api/v1/voice",
     tags=["voice-alerts"]
+)
+
+app.include_router(
+    voice_conversation.router,
+    prefix="/api/v1/voice-conversation",
+    tags=["voice-conversation"]
 )
 
 app.include_router(
@@ -257,7 +263,7 @@ async def reset_system():
 if __name__ == "__main__":
     uvicorn.run(
         "app.main_mongo:app",
-        host="0.0.0.0",
+        host="127.0.0.1",
         port=8000,
         reload=True,
         log_level="info"

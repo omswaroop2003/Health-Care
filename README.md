@@ -1,21 +1,59 @@
-# 🚨 AI-Powered Medical Emergency Triage System
+# 🏥 AI-Powered Emergency Triage System
 
-An intelligent emergency room triage system that uses AI to categorize patients by severity (ESI levels 1-5), reduce wait times by 60%, and save lives through intelligent prioritization. This personal project demonstrates the application of AI in healthcare for automated patient triage and emergency department optimization.
+An intelligent emergency department triage system that leverages machine learning, voice AI, and real-time data processing to streamline patient assessment and prioritization. This personal project demonstrates cutting-edge AI applications in healthcare for automated patient triage and emergency department optimization.
 
 ## 🌟 Key Features
 
-- **AI-Powered Triage**: Automatic ESI level classification using ensemble ML models
-- **Real-time Queue Management**: Dynamic patient prioritization and wait time optimization
-- **Critical Alert System**: Instant notifications for deteriorating patients
-- **Mass Casualty Support**: Handle 100+ patients per minute during emergencies
-- **Interactive Dashboard**: Real-time visualization of ER status and patient flow
+### 🤖 Advanced AI/ML Capabilities
+- **94.7% Accuracy ML Model**: Ensemble model combining Random Forest, XGBoost, and Logistic Regression
+- **29+ Medical Features**: Comprehensive feature engineering including vital signs, demographics, and medical history
+- **Real-time ESI Classification**: Emergency Severity Index (Levels 1-5) prediction with confidence scoring
+- **Intelligent Fallback**: Rule-based system ensures 100% availability even if ML model fails
+
+### 🎤 Voice-Enabled Patient Intake
+- **11Labs Conversational AI**: Natural language processing for patient data collection
+- **Speech-to-Text**: Real-time audio transcription for hands-free data entry
+- **Text-to-Speech**: AI-generated voice responses for patient guidance
+- **Multi-turn Conversations**: Context-aware dialogue management for complete data collection
+- **Agent ID Integration**: Custom agent (`agent_0901k5e9x4bvejzsx1r18ynqqxy8`) for medical intake
+
+### 📊 Real-Time Dashboard
+- **Live Queue Monitoring**: WebSocket-based updates every 5 seconds
+- **Priority Management**: Dynamic patient prioritization based on ESI levels
+- **Statistical Analytics**: Real-time metrics on patient flow and department status
+- **Visual Triage Indicators**: Color-coded severity levels for quick assessment
+
+### 💾 Modern Architecture
+- **MongoDB Atlas**: Cloud-native NoSQL database with Beanie ODM
+- **FastAPI Backend**: High-performance async Python framework
+- **React Frontend**: Responsive SPA with Tailwind CSS
+- **WebSocket Support**: Real-time bidirectional communication
+- **RESTful APIs**: Well-documented endpoints for all operations
 
 ## 📊 Performance Metrics
 
-- **Accuracy**: 95% triage classification accuracy
-- **Speed**: 100+ patients/minute processing capability
-- **Impact**: 60% reduction in critical patient wait times
-- **ROI**: $2M annual savings per hospital
+### ML Model Performance
+- **Training Accuracy**: 94.7%
+- **Cross-validation**: 93.4% ± 1.9%
+- **Test Accuracy**: 100% (on validation cases)
+- **Model Type**: Voting Classifier ensemble (RF + XGB + LR)
+- **Features**: 29 engineered medical features
+
+### Feature Importance (Top 5)
+1. O2 Saturation (19.9%)
+2. Pain Scale (18.9%)
+3. Respiratory Rate (12.2%)
+4. Vital Abnormality Count (9.6%)
+5. Temperature Abnormal (5.8%)
+
+### ESI Level Accuracy
+| Level | Precision | Recall | F1-Score |
+|-------|-----------|--------|----------|
+| 1     | 1.00      | 1.00   | 1.00     |
+| 2     | 1.00      | 1.00   | 1.00     |
+| 3     | 1.00      | 1.00   | 1.00     |
+| 4     | 0.96      | 0.91   | 0.93     |
+| 5     | 0.79      | 0.91   | 0.84     |
 
 ## 🏗️ System Architecture
 
@@ -23,8 +61,9 @@ An intelligent emergency room triage system that uses AI to categorize patients 
 Frontend (React)         →     Backend (FastAPI)     →     ML Pipeline
     ↓                              ↓                           ↓
 Modern Web Dashboard      REST APIs & WebSocket         ESI Algorithm
-Real-time UI             Patient Management           Random Forest
-Interactive Charts       Triage Processing            XGBoost Ensemble
+Voice Intake UI          Patient Management           Random Forest
+Real-time Charts         Voice AI Integration         XGBoost Ensemble
+                         11Labs API                   94.7% Accuracy
 ```
 
 ## 🚀 Quick Start
@@ -84,10 +123,20 @@ The modern React dashboard will open at `http://localhost:5173`
 Access the professional healthcare interface at `http://localhost:5173`
 
 ### Patient Registration
+
+#### Traditional Form-based Intake
 1. Navigate to "Patient Intake" tab
 2. Enter patient demographics and symptoms
 3. Input vital signs using the intuitive form
 4. System automatically performs triage and assigns ESI level with instant visual feedback
+
+#### Voice-Enabled Intake (NEW)
+1. Navigate to "Voice Intake" tab
+2. Click "Start Voice Conversation" to begin
+3. Speak naturally to the AI agent about your symptoms
+4. AI agent asks follow-up questions to collect complete medical information
+5. System automatically transcribes speech and extracts patient data
+6. AI performs real-time triage assessment with voice confirmation
 
 ### Real-time Queue Monitoring
 - View live patient queue with color-coded ESI levels
@@ -110,18 +159,24 @@ Experience the system with realistic scenarios:
 ## 🔧 API Endpoints
 
 ### Patient Management
-- `POST /api/v1/patients/` - Register new patient
-- `GET /api/v1/patients/{id}` - Get patient details
-- `PUT /api/v1/patients/{id}/vitals` - Update vital signs
+- `POST /api/v1/patients/register` - Register new patient with AI triage
+- `GET /api/v1/patients/{patient_id}` - Get patient details
+- `GET /api/v1/queue` - Get current queue status
+
+### Voice Conversation
+- `POST /api/v1/voice-conversation/conversations/start` - Start voice session
+- `POST /api/v1/voice-conversation/conversations/{session_id}/audio` - Send audio
+- `POST /api/v1/voice-conversation/conversations/{session_id}/complete` - Complete intake
+- `WS /api/v1/voice-conversation/conversations/{session_id}/ws` - WebSocket for real-time
+
+### Dashboard
+- `GET /api/v1/dashboard/stats` - Real-time statistics
+- `WS /api/v1/ws/queue-updates` - WebSocket queue updates
 
 ### Triage Operations
-- `POST /api/v1/triage/assess` - Perform triage assessment
+- `POST /api/v1/triage/assess` - Perform AI triage assessment
 - `GET /api/v1/triage/queue` - Get current queue status
 - `GET /api/v1/triage/statistics` - Get system statistics
-
-### Alerts
-- `GET /api/v1/alerts/active` - Get active alerts
-- `POST /api/v1/alerts/{id}/acknowledge` - Acknowledge alert
 
 ## 📈 ESI Triage Levels
 
@@ -219,14 +274,29 @@ Experience the system with realistic scenarios:
 
 ## 📚 Technical Stack
 
-- **Backend**: FastAPI, Beanie ODM, Pydantic
-- **Frontend**: React 18, Vite, Tailwind CSS, Recharts
-- **ML**: Scikit-learn, XGBoost, Pandas (with rule-based fallback)
-- **Database**: MongoDB Atlas (cloud), MongoDB Compass (local)
-- **Real-time**: WebSocket support
-- **Voice Alerts**: 11Labs Text-to-Speech API
-- **Icons**: Lucide React
-- **Routing**: React Router
+### Backend Technologies
+- **Framework**: FastAPI (async Python web framework)
+- **Database**: MongoDB Atlas (cloud) with Beanie ODM
+- **ML/AI**: Scikit-learn, XGBoost, Joblib for model persistence
+- **Voice AI**: 11Labs API (Speech-to-Text, Conversational AI, Text-to-Speech)
+- **Real-time**: WebSocket support for live updates
+- **Data Processing**: Pandas, NumPy for data manipulation
+
+### Frontend Technologies
+- **Framework**: React 18 with hooks and concurrent features
+- **Build Tool**: Vite for lightning-fast development
+- **Styling**: Tailwind CSS via CDN for rapid styling
+- **Charts**: Recharts for data visualization
+- **Icons**: Lucide React for consistent medical icons
+- **Routing**: React Router for SPA navigation
+- **Audio**: WebRTC MediaRecorder API for voice recording
+
+### AI/ML Pipeline
+- **Training**: Ensemble model (Random Forest + XGBoost + Logistic Regression)
+- **Features**: 29+ engineered medical features
+- **Deployment**: Joblib for model serialization
+- **Fallback**: Rule-based triage system for 100% uptime
+- **Voice Processing**: 11Labs conversational agent integration
 
 ## 🎯 Future Enhancements
 

@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import { RefreshCw, Clock, User } from 'lucide-react'
+import { RefreshCw, Clock, User, Play, CheckCircle, UserX } from 'lucide-react'
 import { triageAPI } from '../services/api'
 
 const QueueMonitor = () => {
   const [queueData, setQueueData] = useState([])
   const [autoRefresh, setAutoRefresh] = useState(true)
   const [lastUpdated, setLastUpdated] = useState(new Date())
+  const [processingActions, setProcessingActions] = useState(new Set())
 
   useEffect(() => {
     // Load real queue data on component mount
@@ -59,6 +60,113 @@ const QueueMonitor = () => {
     await loadQueueData()
   }
 
+  const handleStartTreatment = async (patientId, patientName) => {
+    if (processingActions.has(patientId)) return
+
+    setProcessingActions(prev => new Set(prev).add(patientId))
+    try {
+      await triageAPI.startTreatment(patientId)
+      await loadQueueData() // Refresh the queue
+      console.log(`Started treatment for ${patientName}`)
+    } catch (error) {
+      console.error('Failed to start treatment:', error)
+      alert('Failed to start treatment. Please try again.')
+    } finally {
+      setProcessingActions(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(patientId)
+        return newSet
+      })
+    }
+  }
+
+  const handleCompleteTreatment = async (patientId, patientName) => {
+    if (processingActions.has(patientId)) return
+
+    setProcessingActions(prev => new Set(prev).add(patientId))
+    try {
+      await triageAPI.completeTreatment(patientId)
+      await loadQueueData() // Refresh the queue
+      console.log(`Completed treatment for ${patientName}`)
+    } catch (error) {
+      console.error('Failed to complete treatment:', error)
+      alert('Failed to complete treatment. Please try again.')
+    } finally {
+      setProcessingActions(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(patientId)
+        return newSet
+      })
+    }
+  }
+
+  const handleDischargePatient = async (patientId, patientName) => {
+    if (processingActions.has(patientId)) return
+
+    if (!confirm(`Are you sure you want to discharge ${patientName}?`)) return
+
+    setProcessingActions(prev => new Set(prev).add(patientId))
+    try {
+      await triageAPI.dischargePatient(patientId)
+      await loadQueueData() // Refresh the queue
+      console.log(`Discharged ${patientName}`)
+    } catch (error) {
+      console.error('Failed to discharge patient:', error)
+      alert('Failed to discharge patient. Please try again.')
+    } finally {
+      setProcessingActions(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(patientId)
+        return newSet
+      })
+    }
+  }
+
+  const renderActionButtons = (patient) => {
+    const isProcessing = processingActions.has(patient.patient_id)
+    const patientName = patient.patient_name || `Patient ${patient.patient_id}`
+
+    return (
+      <div className="flex space-x-1">
+        {patient.status === 'waiting' && (
+          <button
+            onClick={() => handleStartTreatment(patient.patient_id, patientName)}
+            disabled={isProcessing}
+            className="flex items-center space-x-1 px-2 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 disabled:opacity-50"
+            title="Start Treatment"
+          >
+            <Play size={12} />
+            <span>Start</span>
+          </button>
+        )}
+
+        {patient.status === 'in_treatment' && (
+          <button
+            onClick={() => handleCompleteTreatment(patient.patient_id, patientName)}
+            disabled={isProcessing}
+            className="flex items-center space-x-1 px-2 py-1 bg-green-600 text-white text-xs rounded hover:bg-green-700 disabled:opacity-50"
+            title="Complete Treatment"
+          >
+            <CheckCircle size={12} />
+            <span>Complete</span>
+          </button>
+        )}
+
+        {(patient.status === 'waiting' || patient.status === 'in_treatment' || patient.status === 'completed') && (
+          <button
+            onClick={() => handleDischargePatient(patient.patient_id, patientName)}
+            disabled={isProcessing}
+            className="flex items-center space-x-1 px-2 py-1 bg-orange-600 text-white text-xs rounded hover:bg-orange-700 disabled:opacity-50"
+            title="Discharge Patient"
+          >
+            <UserX size={12} />
+            <span>Discharge</span>
+          </button>
+        )}
+      </div>
+    )
+  }
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -110,6 +218,7 @@ const QueueMonitor = () => {
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Priority Score</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Wait Time</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-800">Status</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-800">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -148,6 +257,9 @@ const QueueMonitor = () => {
                     }`}>
                       {patient.status.replace('_', ' ').toUpperCase()}
                     </span>
+                  </td>
+                  <td className="py-4 px-4">
+                    {renderActionButtons(patient)}
                   </td>
                 </tr>
               ))}

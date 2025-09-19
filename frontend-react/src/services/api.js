@@ -24,6 +24,9 @@ export const triageAPI = {
   getStatistics: () => api.get('/triage/statistics'),
   getAlerts: () => api.get('/alerts/active'),
   acknowledgeAlert: (alertId) => api.post(`/alerts/${alertId}/acknowledge`),
+  startTreatment: (patientId) => api.post(`/triage/queue/${patientId}/start-treatment`),
+  completeTreatment: (patientId) => api.post(`/triage/queue/${patientId}/complete-treatment`),
+  dischargePatient: (patientId) => api.post(`/triage/queue/${patientId}/discharge`),
 };
 
 // Dashboard API
