@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { RefreshCw, Clock, User, Play, CheckCircle, UserX } from 'lucide-react'
 import { triageAPI } from '../services/api'
+import '../Glass.css'
 
 const QueueMonitor = () => {
   const [queueData, setQueueData] = useState([])
@@ -132,7 +133,7 @@ const QueueMonitor = () => {
           <button
             onClick={() => handleStartTreatment(patient.patient_id, patientName)}
             disabled={isProcessing}
-            className="flex items-center space-x-1 px-2 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 disabled:opacity-50"
+            className="glass-button flex items-center space-x-1 px-2 py-1 text-blue-600 text-xs rounded disabled:opacity-50"
             title="Start Treatment"
           >
             <Play size={12} />
@@ -144,7 +145,7 @@ const QueueMonitor = () => {
           <button
             onClick={() => handleCompleteTreatment(patient.patient_id, patientName)}
             disabled={isProcessing}
-            className="flex items-center space-x-1 px-2 py-1 bg-green-600 text-white text-xs rounded hover:bg-green-700 disabled:opacity-50"
+            className="glass-button flex items-center space-x-1 px-2 py-1 text-green-600 text-xs rounded disabled:opacity-50"
             title="Complete Treatment"
           >
             <CheckCircle size={12} />
@@ -156,7 +157,7 @@ const QueueMonitor = () => {
           <button
             onClick={() => handleDischargePatient(patient.patient_id, patientName)}
             disabled={isProcessing}
-            className="flex items-center space-x-1 px-2 py-1 bg-orange-600 text-white text-xs rounded hover:bg-orange-700 disabled:opacity-50"
+            className="glass-button flex items-center space-x-1 px-2 py-1 text-orange-600 text-xs rounded disabled:opacity-50"
             title="Discharge Patient"
           >
             <UserX size={12} />
@@ -183,7 +184,7 @@ const QueueMonitor = () => {
           </label>
           <button
             onClick={refreshQueue}
-            className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="glass-button flex items-center space-x-2 px-4 py-2 text-blue-600 rounded-lg hover:text-blue-700"
           >
             <RefreshCw size={16} />
             <span>Refresh</span>
@@ -191,7 +192,7 @@ const QueueMonitor = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-4">
+      <div className="glass-card p-4">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
@@ -270,7 +271,7 @@ const QueueMonitor = () => {
 
       {/* Queue Statistics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="glass-card p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Critical Patients</h3>
           <div className="text-3xl font-bold text-red-600">
             {queueData.filter(p => p.esi_level <= 2).length}
@@ -278,7 +279,7 @@ const QueueMonitor = () => {
           <p className="text-gray-600 text-sm">ESI Levels 1-2</p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="glass-card p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Average Wait Time</h3>
           <div className="text-3xl font-bold text-blue-600">
             {queueData.length > 0 ? Math.round(queueData.reduce((acc, p) => acc + p.wait_time_minutes, 0) / queueData.length) : 0} min
@@ -286,7 +287,7 @@ const QueueMonitor = () => {
           <p className="text-gray-600 text-sm">All patients</p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="glass-card p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Longest Wait</h3>
           <div className="text-3xl font-bold text-orange-600">
             {queueData.length > 0 ? Math.max(...queueData.map(p => p.wait_time_minutes)) : 0} min
@@ -296,7 +297,7 @@ const QueueMonitor = () => {
       </div>
 
       {/* ESI Level Legend */}
-      <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="glass-card p-6">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">ESI Level Guide</h3>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {[
